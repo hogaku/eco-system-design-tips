@@ -1,97 +1,95 @@
-# Les 115 bonnes pratiques
+# eco-system-design-tips
 
-## Le projet
+## プロジェクト
 
-Le contenu du référentiel d'écoconception a été publié par Frédéric Bordage / GreenIT.fr chez Eyrolles sous le titre:
+エコデザインのフレームワークの内容は、Frédéric Bordage / GreenIT.frが出版したものです:
 
-1. “écoconception web : les 100 bonnes pratiques” en octobre 2012
-2. “écoconception web : les 115 bonnes pratiques, 2ème édition” en septembre 2015
-3. “écoconception web : les 115 bonnes pratiques, 3ème édition” en avril 2019.
-4. “écoconception web : les 115 bonnes pratiques, 4ème édition” en mai 2022
+1. 2012年10月「エコデザインweb：100のグッドプラクティス」
+2. 2015年9月「エコデザインweb：115のグッドプラクティス 第2版」
+3. 2019年4月「エコデザインweb：115のグッドプラクティス 第3版」
+4. 2022年5月「エコデザインweb：115のグッドプラクティス 第4版」
+出版にあたりご協力いただいた皆様、アップデートしている全てのコントリビューターにとても感謝します。
 
-Nous remercions chaleureusement l'ensemble des contributrices et contributeurs qui ont participé à la mise au point de ce référentiel et le font évoluer.
+## ニーズ
 
-## Les besoins
+Webの継続的な進化を考えると、このリポジトリは定期的に更新される必要があります。
+改善、修正、削除など、どのような提案やアイデアでもWelcomeです。
 
-Étant donné les évolutions continues du web, ce référentiel a besoin de régulièrement être mis à jour.
-Toute proposition ou idée d'amélioration, de modification ou de suppression est bienvenue.
+## 貢献
 
-## Comment contribuer ?
+[Contributing Guide](CONTRIBUTING.md)を参照ください。
 
-N'hésitez pas à lire [le guide des contributeurs](CONTRIBUTING.md).
+## 本プロジェクtのDiscussionに関するショートカットリンク
 
-## Raccourci vers les discussions :
+検索の手間を省くために、ディスカッションのページではフィルタを利用することができます。
+  - :infinity: [全スレッド一覧](https://github.com/cnumr/best-practices/discussions)
+  - :heavy_plus_sign: [BP追加に関する議論一覧](https://github.com/cnumr/best-practices/discussions?discussions_q=label%3Aajout)
+  - :memo: [BP修正スレッド一覧](https://github.com/cnumr/best-practices/discussions?discussions_q=label%3Amodification)
+  - :heavy_multiplication_x: [BP削除に関する議論一覧](https://github.com/cnumr/best-practices/discussions?discussions_q=label%3Asuppression)
 
-Pour simplifier vos recherches, n'oubliez pas d’utiliser les filtres disponibles sur la page de discussions.
+## 115のbest practice集
 
-  - :infinity: [Liste de toutes les discussions](https://github.com/cnumr/best-practices/discussions)
-  - :heavy_plus_sign: [Liste des discussions d'ajout de BP](https://github.com/cnumr/best-practices/discussions?discussions_q=label%3Aajout)
-  - :memo: [Liste des discussions de modification de BP](https://github.com/cnumr/best-practices/discussions?discussions_q=label%3Amodification)
-  - :heavy_multiplication_x: [Liste des discussions de suppression de BP](https://github.com/cnumr/best-practices/discussions?discussions_q=label%3Asuppression)
-
-## La liste des Bonnes Pratiques
-
-* [Éliminer les fonctionnalités non essentielles](/chapters/BP_001_fr.md)
-* [Quantifier précisément le besoin](/chapters/BP_002_fr.md)
-* [Optimiser le parcours utilisateur](/chapters/BP_003_fr.md)
-* [Préférer la saisie assistée à l'autocomplétion](/chapters/BP_004_fr.md)
-* [Favoriser un design simple, épuré, adapté au web](/chapters/BP_005_fr.md)
-* [Privilégier une approche "mobile first", à défaut un chargement adaptatif](/chapters/BP_006_fr.md)
-* [Respecter le principe de navigation rapide dans l’historique](/chapters/BP_007_fr.md)
-* [Proposer un traitement asynchrone lorsque c'est possible](/chapters/BP_008_fr.md)
-* [Limiter le nombre de requêtes HTTP](/chapters/BP_009_fr.md)
-* [Stocker les données statiques localement](/chapters/BP_010_fr.md)
-* [Favoriser un développement sur-mesure à l'usage d'un CMS](/chapters/BP_011_fr.md)
-* [Favoriser les pages statiques](/chapters/BP_013_fr.md)
-* [Créer une architecture applicative modulaire](/chapters/BP_014_fr.md)
-* [Choisir les technologies les plus adaptées](/chapters/BP_015_fr.md)
-* [Utiliser certains forks applicatifs orientés "performance"](/chapters/BP_016_fr.md)
-* [Choisir un format de données adapté](/chapters/BP_017_fr.md)
-* [Limiter le nombre de domaine servant les ressources](/chapters/BP_018_fr.md)
-* [Remplacer les boutons officiels de partage des réseaux sociaux](/chapters/BP_019_fr.md)
-* [Découper les CSS](/chapters/BP_021_fr.md)
-* [Limiter le nombre de CSS](/chapters/BP_022_fr.md)
-* [Préférer les CSS aux images](/chapters/BP_023_fr.md)
-* [Écrire des sélecteurs CSS efficaces](/chapters/BP_024_fr.md)
-* [Grouper les déclarations CSS similaires](/chapters/BP_025_fr.md)
-* [Utiliser les notations CSS abrégées](/chapters/BP_026_fr.md)
-* [Fournir une CSS print](/chapters/BP_027_fr.md)
-* [Favoriser les polices standards](/chapters/BP_029_fr.md)
-* [Préférer les glyphs aux images](/chapters/BP_030_fr.md)
-* [Valider les pages auprès du W3C](/chapters/BP_031_fr.md)
-* [Externaliser les CSS et JavaScript](/chapters/BP_032_fr.md)
-* [Ne pas redimensionner les images coté navigateur](/chapters/BP_034_fr.md)
-* [Éviter d'utiliser des images matricielles pour l'interface](/chapters/BP_035_fr.md)
-* [Optimiser les images vectorielles](/chapters/BP_036_fr.md)
-* [Utiliser le chargement paresseux](/chapters/BP_037_fr.md)
-* [Utiliser le rechargement partiel d'une zone de contenu](/chapters/BP_038_fr.md)
-* [Éviter les animations JavaScript / CSS](/chapters/BP_039_fr.md)
-* [N'utilisez que les portions indispensables des librairies JavaScript et frameworks CSS](/chapters/BP_040_fr.md)
-* [Ne pas faire de modification du DOM lorsqu’on le traverse](/chapters/BP_041_fr.md)
-* [Rendre les éléments du DOM invisibles lors de leur modification](/chapters/BP_042_fr.md)
-* [Réduire au maximum le repaint (appearence) et le reflow (layout)](/chapters/BP_043_fr.md)
-* [Utiliser la délégation d'évènements](/chapters/BP_044_fr.md)
-* [Modifier plusieurs propriétés CSS en 1 seule fois](/chapters/BP_045_fr.md)
-* [Valider votre code avec un Linter](/chapters/BP_046_fr.md)
-* [Mettre en cache les objets souvent accédés en JavaScript](/chapters/BP_049_fr.md)
-* [Réduire les accès au DOM via JavaScript](/chapters/BP_054_fr.md)
-* [Utiliser tous les niveaux de cache du CMS](/chapters/BP_057_fr.md)
-* [Optimiser et générer les médias avant importation sur un CMS](/chapters/BP_058_fr.md)
-* [Encoder les sons en dehors du CMS](/chapters/BP_060_fr.md)
-* [Mettre en cache les données calculées souvent utilisées](/chapters/BP_064_fr.md)
-* [Supprimer tous les warning et toutes les notices](/chapters/BP_070_fr.md)
-* [Éviter d'effectuer des requêtes SQL à l’intérieur d’une boucle](/chapters/BP_072_fr.md)
-* [Ne se connecter à une base de données que si nécessaire](/chapters/BP_073_fr.md)
-* [Optimiser les requêtes aux bases de données](/chapters/BP_075_fr.md)
-* [Éviter le transfert d'une grande quantité de données pour réaliser un traitement](/chapters/BP_076_fr.md)
-* [Minifier les fichiers CSS, JavaScript, HTML et SVG](/chapters/BP_077_fr.md)
-* [Compresser les fichiers CSS, JavaScript, HTML et SVG](/chapters/BP_078_fr.md)
-* [Combiner les fichiers CSS et JavaScript](/chapters/BP_079_fr.md)
-* [Optimiser les images](/chapters/BP_080_fr.md)
-* [Optimiser la taille des cookies](/chapters/BP_082_fr.md)
-* [Favoriser HSTS Preload list aux redirections 301](/chapters/BP_084_fr.md)
-* [Mettre en place un plan de fin de vie du site](/chapters/BP_085_fr.md)
-* [Choisir un hébergeur "éco-responsable"](/chapters/BP_086_fr.md)
+* [不要な機能の削除](/chapters/BP_001_fr.md)
+* [ニーズを的確に定量化する](/chapters/BP_002_fr.md)
+* [ユーザーパスの最適化](/chapters/BP_003_fr.md)
+* [オートコンプリートよりもアシスト入力を優先する](/chapters/BP_004_fr.md)
+* [ウェブに適応したシンプルですっきりしたデザインを推奨](/chapters/BP_005_fr.md)
+* [モバイルファーストのアプローチで、アダプティブローディングを採用](/chapters/BP_006_fr.md)
+* [履歴のクイックナビゲーションの原則を尊重する](/chapters/BP_007_fr.md)
+* [可能な限り非同期処理を実現する](/chapters/BP_008_fr.md)
+* [HTTPリクエスト数を制限する](/chapters/BP_009_fr.md)
+* [静的データをローカルに保存](/chapters/BP_010_fr.md)
+* [CMSを利用したカスタマイズ開発の推進](/chapters/BP_011_fr.md)
+* [静的なページを推奨](/chapters/BP_013_fr.md)
+* [モジュール化されたアプリケーションアーキテクチャの構築](/chapters/BP_014_fr.md)
+* [最適な技術選定](/chapters/BP_015_fr.md)
+* [パフォーマンス重視のアプリケーションフォークをいくつか使用する](/chapters/BP_016_fr.md)
+* [適切なデータ形式を選択する](/chapters/BP_017_fr.md)
+* [リソースを提供するドメイン数を制限する](/chapters/BP_018_fr.md)
+* [公式SNSのシェアボタンの書き方](/chapters/BP_019_fr.md)
+* [CSSのカッティング](/chapters/BP_021_fr.md)
+* [ロードするCSSの数を減らす](/chapters/BP_022_fr.md)
+* [画像よりCSSを優先](/chapters/BP_023_fr.md)
+* [効果的なCSSセレクタの書き方](/chapters/BP_024_fr.md)
+* [類似のCSSのグループ化](/chapters/BP_025_fr.md)
+* [CSSの略記号の使用](/chapters/BP_026_fr.md)
+* [CSSにおけるフットプリントを抑える](/chapters/BP_027_fr.md)
+* [標準フォントの利用](/chapters/BP_029_fr.md)
+* [画像より絵文字を優先](/chapters/BP_030_fr.md)
+* [W3Cでページを検証する](/chapters/BP_031_fr.md)
+* [CSSとJavaScriptのアウトソーシング](/chapters/BP_032_fr.md)
+* [ブラウザ側で画像のリサイズを行わない](/chapters/BP_034_fr.md)
+* [インターフェイスにラスター画像を使用しない](/chapters/BP_035_fr.md)
+* [ベクター画像の最適化](/chapters/BP_036_fr.md)
+* [レイジーロードの使用](/chapters/BP_037_fr.md)
+* [コンテンツエリアの部分再読み込みの利用](/chapters/BP_038_fr.md)
+* [JavaScript / CSSによるアニメーションの回避](/chapters/BP_039_fr.md)
+* [JavaScriptライブラリやCSSフレームワークの必要な部分のみを使用する](/chapters/BP_040_fr.md)
+* [DOMをトラバースする際に、DOMに変更を加えないこと](/chapters/BP_041_fr.md)
+* [DOM 要素が変更されたときに見えないようにする](/chapters/BP_042_fr.md)
+* [再描画（外観）とリフロー（レイアウト）の最小化](/chapters/BP_043_fr.md)
+* [イベントデリゲーションの使用](/chapters/BP_044_fr.md)
+* [複数のCSSプロパティを一度に変更する](/chapters/BP_045_fr.md)
+* [Linterでコードを検証する](/chapters/BP_046_fr.md)
+* [JavaScriptで頻繁にアクセスされるオブジェクトをキャッシュする](/chapters/BP_049_fr.md)
+* [JavaScriptによるDOMアクセスの削減](/chapters/BP_054_fr.md)
+* [すべてのCMSキャッシュレベルを使用する](/chapters/BP_057_fr.md)
+* [CMSに取り込む前のメディアの最適化および生成](/chapters/BP_058_fr.md)
+* [CMS以外のサウンドをエンコードする](/chapters/BP_060_fr.md)
+* [よく使う計算データをキャッシュする](/chapters/BP_064_fr.md)
+* [警告と通知を削除する](/chapters/BP_070_fr.md)
+* [ループ内のSQLクエリを回避する](/chapters/BP_072_fr.md)
+* [必要な場合のみデータベースへの接続を行う](/chapters/BP_073_fr.md)
+* [データベースクエリの最適化](/chapters/BP_075_fr.md)
+* [大量のデータ転送を避ける](/chapters/BP_076_fr.md)
+* [CSS、JavaScript、HTML、SVGファイルの最小化](/chapters/BP_077_fr.md)
+* [CSS、JavaScript、HTML、SVGファイルを圧縮する。](/chapters/BP_078_fr.md)
+* [CSSとJavaScriptのファイルを結合する](/chapters/BP_079_fr.md)
+* [画像の最適化](/chapters/BP_080_fr.md)
+* [Cookieのサイズの最適化](/chapters/BP_082_fr.md)
+* [301リダイレクトよりFavour HSTS Preloadリスト](/chapters/BP_084_fr.md)
+* [webサイトのエンドオブライフの設計](/chapters/BP_085_fr.md)
+* [環境に配慮したホストの選択](/chapters/BP_086_fr.md)
 * [Privilégier un fournisseur d'électricité écoresponsable](/chapters/BP_087_fr.md)
 * [Adapter la qualité de service et le niveau de disponibilité](/chapters/BP_088_fr.md)
 * [Utiliser des serveurs virtualisés](/chapters/BP_089_fr.md)
