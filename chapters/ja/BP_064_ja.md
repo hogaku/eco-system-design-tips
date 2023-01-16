@@ -8,19 +8,19 @@
 
 ### カテゴリ
 
-| Cycle de vie |  Tiers  |  Responsable  |
+| ライフサイクル |  サードパーティ  |  担当者  |
 |:---------:|:----:|:----:|
-| 2. Conception | Réseau | Architecte Logiciel/Développeur |
+| 2. 設計 | ネットワーク | Architecte Logiciel/Développeur |
 
 ### 効果
 
-| Degré de priorité |      Mise en oeuvre       |  Impact écologique    |
+| 優先度 |      実装難易度       |  エコロジーへの影響度    |
 |:-------------------:|:-------------------------:|:---------------------:|
 | 4 | 3 | 4 |
 
-|Ressources Economisées                                      |
+|リソース                                      |
 |:----------------------------------------------------------:|
-|  Processeur / Mémoire vive |
+|  プロセッサ  / RAM |
 
 ### 説明
 
@@ -35,6 +35,6 @@ Les jetons d'accès en OAuth2 sont associés à une date d'expiration. Mettre en
 
 ### 検証原理
 
-| Le nombre ...     | est inférieur ou égal à   |  
+| 検証項目     | 次の値以下である   |  
 |-------------------|:-------------------------:|
 | de données peu volatiles, demandant un calcul et accédées plusieurs fois, non mises dans un système de cache  |  0 |

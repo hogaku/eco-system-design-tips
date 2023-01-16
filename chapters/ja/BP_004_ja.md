@@ -1,4 +1,4 @@
-## Préférer la saisie assistée à l'autocomplétion
+## No.4 オートコンプリートよりもアシスト入力を優先する
 
 ### 識別子
 
@@ -8,31 +8,31 @@
 
 ### カテゴリ
 
-| Cycle de vie |  Tiers  |  Responsable  |
+| ライフサイクル |  サードパーティ  |  担当者  |
 |:---------:|:----:|:----:|
-| 1. Spécification | Utilisateur/Terminal | PO/AMOA |
+| 1. 仕様 | ユーザ/端末 | PO/AMOA |
 
 ### 効果
 
-| Degré de priorité |      Mise en oeuvre       |  Impact écologique    |
+| 優先度 |      実装難易度       |  エコロジーへの影響度    |
 |:-------------------:|:-------------------------:|:---------------------:|
 | 3 | 3 | 3 |
 
-|Ressources Economisées                                      |
+|リソース                                      |
 |:----------------------------------------------------------:|
-| Requêtes    |
+| クエリ    |
 
 ### 説明
 
-L'autocomplétion, ou complément automatique est une fonctionnalité très répandue consistant à suggérer à l'utilisateur
+L'autocomplétion, ou complément automatique est une fonctionnalité très répandue consistant à suggérer à l'ユーザ
 des résultats correspondant à sa recherche pendant sa saisie. Par 例, un site permettant de rechercher un itinéraire
-va proposer « Paris », « Lyon Part-Dieu » et « Paray le Monial » quand l'utilisateur tape « Par ».
+va proposer « Paris », « Lyon Part-Dieu » et « Paray le Monial » quand l'ユーザ tape « Par ».
 
 L'implémentation de l'autocomplétion consiste à envoyer une requête au serveur à chaque caractère saisi pour récupérer les
 résultats correspondants. On peut donc avoir beaucoup de requêtes effectuées et beaucoup de ressources dépensées.
 
 Dans la mesure du possible, cette fonctionnalité est à remplacer par la saisie assistée.
-Cela consiste à guider l’utilisateur par un ensemble d’informations et d’indices : 
+Cela consiste à guider l’ユーザ par un ensemble d’informations et d’indices : 
  - Présentation du format attendu en grisé dans le champ de saisie (`placeholder`)
  - Texte expliquant le format attendu
  - Réaction de l’interface avec un message d’erreur ou un changement de couleur et aide textuelle lorsque la saisie est incorrecte
@@ -41,12 +41,12 @@ Cela consiste à guider l’utilisateur par un ensemble d’informations et d’
 Les interactions liées à la saisie assistée sont gérées localement, ce qui réduit les échanges avec le serveur.
 
 Pour l'例 de la recherche d'itinéraire et de la complétion des villes, il est possible, en cas d'ambiguïté, de proposer
-les différents résultats après la soumission du formulaire. L'utilisateur entre une chaine de caractère, par 例 « Lens »,
+les différents résultats après la soumission du formulaire. L'ユーザ entre une chaine de caractère, par 例 « Lens »,
 soumet le formulaire, et se voit à ce moment proposées différentes options : « Lens (France) », « Lens (Belgique) », 
 « Loison sous Lens ».
 
 Si le recours à l'autocomplétion ne peut pas être évité il est possible de minimiser le nombre de requêtes avec des optimisations simples : 
- - Ajouter un délai de quelque dixièmes de secondes entre l'ajout d'un caractère et la requête : cela permet de ne pas déclencher de requête si l'utilisateur n'a pas terminé sa saisie.
+ - Ajouter un délai de quelque dixièmes de secondes entre l'ajout d'un caractère et la requête : cela permet de ne pas déclencher de requête si l'ユーザ n'a pas terminé sa saisie.
  - Limiter le nombre de résultats affichés par l'autocomplétion, priorisés par une note de pertinence
  - Fixer un nombre de caractères minimal avant de chercher à compléter.
  - Si la taille de la base de données le permet, l'inclure dans le code html ou dans le `local storage` et effectuer l'autocomplétion côté client.
@@ -59,7 +59,7 @@ Gain potentiel : à chaque fois que l’on utilise la saisie assistée pour une 
 
 ### Solution alternative
 
-Si la donnée qui est proposée à l'utilisateur est assez petite en quantité, vous pouvez l'inclure directement dans votre code HTML et utiliser l'éléments natif [datalist](https://developer.mozilla.org/fr/docs/Web/HTML/Element/datalist).
+Si la donnée qui est proposée à l'ユーザ est assez petite en quantité, vous pouvez l'inclure directement dans votre code HTML et utiliser l'éléments natif [datalist](https://developer.mozilla.org/fr/docs/Web/HTML/Element/datalist).
 
 Ce système proposera nativement, et sans aller/retour avec le serveur, un mécanisme d'autocompletion.
 
@@ -78,6 +78,6 @@ Ce système proposera nativement, et sans aller/retour avec le serveur, un méca
 
 ### 検証原理
 
-| Le nombre ...     | est inférieur ou égal à   |  
+| 検証項目     | 次の値以下である   |  
 |-------------------|:-------------------------:|
 | de champs en autocomplétion  | 20%  |

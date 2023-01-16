@@ -8,19 +8,19 @@
 
 ### カテゴリ
 
-| Cycle de vie |  Tiers  |  Responsable  |
+| ライフサイクル |  サードパーティ  |  担当者  |
 |:---------:|:----:|:----:|
-| 5. Utilisation | Utilisateur/Terminal | Utilisateur |
+| 5. Utilisation | ユーザ/端末 | ユーザ |
 
 ### 効果
 
-| Degré de priorité |      Mise en oeuvre       |  Impact écologique    |
+| 優先度 |      実装難易度       |  エコロジーへの影響度    |
 |:-------------------:|:-------------------------:|:---------------------:|
 | 2 | 2 | 3 |
 
-|Ressources Economisées                                      |
+|リソース                                      |
 |:----------------------------------------------------------:|
-| Réseau |
+| ネットワーク |
 
 ### 説明
 
@@ -40,6 +40,6 @@ Dans le cas d’un fichier de référence WAV son.wav de 63 128 octets, sa conve
 
 ### 検証原理
 
-| Le nombre ...     | est inférieur ou égal à   |  
+| 検証項目     | 次の値以下である   |  
 |-------------------|:-------------------------:|
 | de codec audio propriétaires (non libres) et de pistes audio dont le ratio poids en mega octet/durée en minute est superieur a 1  | 0  |

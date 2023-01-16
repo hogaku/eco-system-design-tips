@@ -8,19 +8,19 @@
 
 ### カテゴリ
 
-| Cycle de vie |  Tiers  |  Responsable  |
+| ライフサイクル |  サードパーティ  |  担当者  |
 |:---------:|:----:|:----:|
-| 2. Conception | Utilisateur/Terminal | PO/AMOA |
+| 2. 設計 | ユーザ/端末 | PO/AMOA |
 
 ### 効果
 
-| Degré de priorité |      Mise en oeuvre       |  Impact écologique    |
+| 優先度 |      実装難易度       |  エコロジーへの影響度    |
 |:-------------------:|:-------------------------:|:---------------------:|
 | 2 | 3 | 2 |
 
-|Ressources Economisées                                      |
+|リソース                                      |
 |:----------------------------------------------------------:|
-|  Processeur / Réseau / Requêtes |
+|  プロセッサ  / ネットワーク / クエリ |
 
 ### 説明
 
@@ -37,6 +37,6 @@ Dans le cas d’un opérateur téléphonique ou d’une banque, laisser aux clie
 
 ### 検証原理
 
-| Le nombre ...     | est inférieur ou égal à   |  
+| 検証項目     | 次の値以下である   |  
 |-------------------|:-------------------------:|
 |  de fichiers de contacts en opt-out | 0  |

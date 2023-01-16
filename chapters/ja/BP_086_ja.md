@@ -1,4 +1,4 @@
-## Choisir un hébergeur "éco-responsable"
+## Choisir un hébergeur "éco-担当者"
 
 ### 識別子
 
@@ -8,17 +8,17 @@
 
 ### カテゴリ
 
-| Cycle de vie |  Tiers  |  Responsable  |
+| ライフサイクル |  サードパーティ  |  担当者  |
 |:---------:|:----:|:----:|
-| 4. Production | Datacenter | Administrateur systèmes |
+| 4. 制作 | データセンター | Administrateur systèmes |
 
 ### 効果
 
-| Degré de priorité |      Mise en oeuvre       |  Impact écologique    |
+| 優先度 |      実装難易度       |  エコロジーへの影響度    |
 |:-------------------:|:-------------------------:|:---------------------:|
 | 4 | 3 | 3 |
 
-|Ressources Economisées                                      |
+|リソース                                      |
 |:----------------------------------------------------------:|
 |  Déchets électroniques / Consommation électrique / Émissions de gaz à effet de serre |
 
@@ -30,7 +30,7 @@ Les six critères à prendre en compte sont :
 1. gestion des DEEE (déchets d’équipements électriques et électroniques) ;
 2. efficience énergétique du data center [Power Usage Effectiveness (PUE) / Carbon Usage Effectiveness (CUE) /
    Water Usage Effectiveness (WUE)] ;
-3. politique d’achat responsable ;
+3. politique d’achat 担当者 ;
 4. respect de la dimension sociale ;
 5. alimentation aux énergies bas carbone ;
 6. compensation carbone.
@@ -45,6 +45,6 @@ leurs indicateurs (PUE / CUE / WUE...). C'est le cas de :
 
 ### 検証原理
 
-| Le nombre ...     | est inférieur ou égal à   |  
+| 検証項目     | 次の値以下である   |  
 |-------------------|:-------------------------:|
 | d'hébergeurs dont le PUE supérieur à 1,5  |  0 |

@@ -1,4 +1,4 @@
-## Écrire des sélecteurs CSS efficaces
+## No.24 効果的なCSSセレクタの書き方 
 
 ### 識別子
 
@@ -8,19 +8,19 @@
 
 ### カテゴリ
 
-| Cycle de vie |  Tiers  |  Responsable  |
+| ライフサイクル |  サードパーティ  |  担当者  |
 |:---------:|:----:|:----:|
-| 3. Réalisation (fabrication / développement) | Réseau | Architecte Logiciel/Développeur |
+| 3. 実現 (製造 / 実装) | ネットワーク | Architecte Logiciel/Développeur |
 
 ### 効果
 
-| Degré de priorité |      Mise en oeuvre       |  Impact écologique    |
+| 優先度 |      実装難易度       |  エコロジーへの影響度    |
 |:-------------------:|:-------------------------:|:---------------------:|
 | 3 | 3 | 2 |
 
-|Ressources Economisées                                      |
+|リソース                                      |
 |:----------------------------------------------------------:|
-|  Processeur  |
+|  プロセッサ   |
 
 ### 説明
 
@@ -48,6 +48,6 @@ mais plutôt :
 
 ### 検証原理
 
-| Le nombre ...     | est inférieur ou égal à   |  
+| 検証項目     | 次の値以下である   |  
 |-------------------|:-------------------------:|
 | de sélecteurs CSS qui n'utilisent ni d'id, ni de class et ni d'attribut  |  0 |

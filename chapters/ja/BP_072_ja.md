@@ -8,19 +8,19 @@
 
 ### カテゴリ
 
-| Cycle de vie |  Tiers  |  Responsable  |
+| ライフサイクル |  サードパーティ  |  担当者  |
 |:---------:|:----:|:----:|
-| 3. Réalisation (fabrication / développement) | Datacenter | Architecte Logiciel/Développeur |
+| 3. 実現 (製造 / 実装) | データセンター | Architecte Logiciel/Développeur |
 
 ### 効果
 
-| Degré de priorité |      Mise en oeuvre       |  Impact écologique    |
+| 優先度 |      実装難易度       |  エコロジーへの影響度    |
 |:-------------------:|:-------------------------:|:---------------------:|
 | 3 | 3 | 3 |
 
-|Ressources Economisées                                      |
+|リソース                                      |
 |:----------------------------------------------------------:|
-|   Processeur / Mémoire vive / Réseau  |
+|   プロセッサ  / RAM / ネットワーク  |
 
 ### 説明
 
@@ -49,6 +49,6 @@ $query = 'INSERT INTO users (ﬁrst_name,last_name) VALUES'. implode(',', $userD
 
 ### 検証原理
 
-| Le nombre ...     | est inférieur ou égal à   |  
+| 検証項目     | 次の値以下である   |  
 |-------------------|:-------------------------:|
 | de requêtes SQL à l'intérieur d'une boucle  |  0 |

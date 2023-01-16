@@ -8,19 +8,19 @@
 
 ### カテゴリ
 
-| Cycle de vie |  Tiers  |  Responsable  |
+| ライフサイクル |  サードパーティ  |  担当者  |
 |:---------:|:----:|:----:|
-| 5. Utilisation | Utilisateur/Terminal | Utilisateur |
+| 5. Utilisation | ユーザ/端末 | ユーザ |
 
 ### 効果
 
-| Degré de priorité |      Mise en oeuvre       |  Impact écologique    |
+| 優先度 |      実装難易度       |  エコロジーへの影響度    |
 |:-------------------:|:-------------------------:|:---------------------:|
 | 3 | 3 | 3 |
 
-|Ressources Economisées                                      |
+|リソース                                      |
 |:----------------------------------------------------------:|
-|  Processeur / Réseau / Requêtes  |
+|  プロセッサ  / ネットワーク / クエリ  |
 
 ### 説明
 
@@ -44,6 +44,6 @@ Gestion client:
 
 ### 検証原理
 
-| Le nombre ...     | est inférieur ou égal à   |  
+| 検証項目     | 次の値以下である   |  
 |-------------------|:-------------------------:|
 | d'emails avec pièce jointe  | 0  |

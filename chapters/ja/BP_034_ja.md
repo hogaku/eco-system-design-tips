@@ -8,19 +8,19 @@
 
 ### カテゴリ
 
-| Cycle de vie |  Tiers  |  Responsable  |
+| ライフサイクル |  サードパーティ  |  担当者  |
 |:---------:|:----:|:----:|
-| 3. Réalisation (fabrication / développement) | Utilisateur/Terminal | Utilisateur |
+| 3. 実現 (製造 / 実装) | ユーザ/端末 | ユーザ |
 
 ### 効果
 
-| Degré de priorité |      Mise en oeuvre       |  Impact écologique    |
+| 優先度 |      実装難易度       |  エコロジーへの影響度    |
 |:-------------------:|:-------------------------:|:---------------------:|
 | 4 | 4 | 4 |
 
-|Ressources Economisées                                      |
+|リソース                                      |
 |:----------------------------------------------------------:|
-|  Processeur / Réseau  |
+|  プロセッサ  / ネットワーク  |
 
 ### 説明
 
@@ -34,6 +34,6 @@ La meilleure solution consiste à générer les images à la taille à laquelle 
 
 ### 検証原理
 
-| Le nombre ...     | est inférieur ou égal à   |  
+| 検証項目     | 次の値以下である   |  
 |-------------------|:-------------------------:|
 |  d'images redimensionnées dans le navigateur  | 0  |

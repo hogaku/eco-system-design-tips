@@ -8,19 +8,19 @@
 
 ### カテゴリ
 
-| Cycle de vie |  Tiers  |  Responsable  |
+| ライフサイクル |  サードパーティ  |  担当者  |
 |:---------:|:----:|:----:|
-| 4. Production | Réseau | Administrateur systèmes |
+| 4. 制作 | ネットワーク | Administrateur systèmes |
 
 ### 効果
 
-| Degré de priorité |      Mise en oeuvre       |  Impact écologique    |
+| 優先度 |      実装難易度       |  エコロジーへの影響度    |
 |:-------------------:|:-------------------------:|:---------------------:|
 | 4 | 3 | 4 |
 
-|Ressources Economisées                                      |
+|リソース                                      |
 |:----------------------------------------------------------:|
-|  Réseau / Requêtes  |
+|  ネットワーク / クエリ  |
 
 ### 説明
 
@@ -41,6 +41,6 @@ Strict-Transport-Security : max-age = 63072000 ; includeSubDomains ; preload
 
 ### 検証原理
 
-| Le nombre ...     | est inférieur ou égal à   |  
+| 検証項目     | 次の値以下である   |  
 |-------------------|:-------------------------:|
 | de non activation de HSTS  | 0  |

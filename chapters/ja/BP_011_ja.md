@@ -1,4 +1,4 @@
-## Favoriser un développement sur-mesure à l'usage d'un CMS
+## No.11 CMSを利用したカスタマイズ開発の推進
 
 ### 識別子
 
@@ -8,19 +8,19 @@
 
 ### カテゴリ
 
-| Cycle de vie |  Tiers  |  Responsable  |
+| ライフサイクル |  サードパーティ  |  担当者  |
 |:---------:|:----:|:----:|
-| 2. Conception | Datacenter | Architecte Logiciel/Développeur |
+| 2. 設計 | データセンター | Architecte Logiciel/Développeur |
 
 ### 効果
 
-| Degré de priorité |      Mise en oeuvre       |  Impact écologique    |
+| 優先度 |      実装難易度       |  エコロジーへの影響度    |
 |:-------------------:|:-------------------------:|:---------------------:|
 | 3 | 3 | 3 |
 
-|Ressources Economisées                                      |
+|リソース                                      |
 |:----------------------------------------------------------:|
-|  Processeur / Mémoire vive / Réseau  |
+|  プロセッサ  / RAM / ネットワーク  |
 
 ### 説明
 
@@ -32,6 +32,6 @@ Le test de l’existence de nouvelles fonctions de ces extensions est un process
 
 ### 検証原理
 
-| Le nombre ...     | est inférieur ou égal à   |  
+| 検証項目     | 次の値以下である   |  
 |-------------------|:-------------------------:|
 | d'extensions d'un site reposant sur un CMS  | 3  |

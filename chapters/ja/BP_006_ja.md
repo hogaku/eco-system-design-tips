@@ -1,4 +1,4 @@
-## Privilégier une approche "mobile first", à défaut un chargement adaptatif
+## No.6 モバイルファーストのアプローチで、アダプティブローディングを採用
 
 ### 識別子
 
@@ -8,19 +8,19 @@
 
 ### カテゴリ
 
-| Cycle de vie |  Tiers  |  Responsable  |
+| ライフサイクル |  サードパーティ  |  担当者  |
 |:---------:|:----:|:----:|
-| 2. Conception | Utilisateur/Terminal | PO/AMOA |
+| 2. 設計 | ユーザ/端末 | PO/AMOA |
 
 ### 効果
 
-| Degré de priorité |      Mise en oeuvre       |  Impact écologique    |
+| 優先度 |      実装難易度       |  エコロジーへの影響度    |
 |:-------------------:|:-------------------------:|:---------------------:|
 | 4 | 4 | 5 |
 
-|Ressources Economisées                                      |
+|リソース                                      |
 |:----------------------------------------------------------:|
-|Processeur / Réseau  |
+|プロセッサ / ネットワーク  |
 
 ### 説明
 
@@ -30,7 +30,7 @@ et n’élargir sa couverture fonctionnelle pour de plus grands écrans que si l
 Dans ce cas, opter alors pour le chargement adaptatif.
 Cette approche consiste à sélectionner les ressources, y compris JS et CSS, les plus adaptées au contexte d'utilisation (taille de l'écran / de la fenêtre, densité de pixels, qualité du réseau, quantité de mémoire vive, etc.), si possible côté serveur.
 On s’assure ainsi de ne pas consommer inutilement de la bande passante, 
-ni de trop solliciter le processeur et la mémoire du terminal pour des traitements inutiles.
+ni de trop solliciter le プロセッサ  et la mémoire du 端末 pour des traitements inutiles.
 
 ### 例
 
@@ -38,15 +38,15 @@ Côté serveur, on pourra utiliser les _client hints_, ou à défaut l'identifia
 
 Côté client, les _media queries_ (notamment dans les attributs `media` des `<link>` pour la sélection de feuilles de styles CSS), les attributs `srcset` et `sizes` des `<img>`, les sous-éléments `<source>` des `<picture>`, `<video>` et `<audio>` pourront être utiles, et les mêmes informations disponibles dans les _client hints_ peuvent également être récupérées par des APIs JavaScript pour éventuellement charger du code et/ou du contenu complémentaire dynamiquement.
 
-Dans tous les cas, priviligiez un mode par défaut minimaliste permettant l'accès à votre site même si toutes ses fonctionnalités ne sont pas supportées par tous les navigateurs (sans trop détériorer l'expérience utilisateur bien sûr!).
+Dans tous les cas, priviligiez un mode par défaut minimaliste permettant l'accès à votre site même si toutes ses fonctionnalités ne sont pas supportées par tous les navigateurs (sans trop détériorer l'expérience ユーザ bien sûr!).
 
-## Sources
+#ソース
 
 * https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/client-hints
 * https://developers.google.com/web/updates/2015/09/automating-resource-selection-with-client-hints
 
 ### 検証原理
 
-| Le nombre ...     | est inférieur ou égal à   |  
+| 検証項目     | 次の値以下である   |  
 |-------------------|:-------------------------:|
-| de conception ne s'appuyant pas sur une approche "mobile first"  |  1 |
+| de 設計 ne s'appuyant pas sur une approche "mobile first"  |  1 |

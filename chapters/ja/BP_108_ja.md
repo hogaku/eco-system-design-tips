@@ -8,19 +8,19 @@
 
 ### カテゴリ
 
-| Cycle de vie |  Tiers  |  Responsable  |
+| ライフサイクル |  サードパーティ  |  担当者  |
 |:---------:|:----:|:----:|
-| 5. Utilisation | Utilisateur/Terminal | Utilisateur |
+| 5. Utilisation | ユーザ/端末 | ユーザ |
 
 ### 効果
 
-| Degré de priorité |      Mise en oeuvre       |  Impact écologique    |
+| 優先度 |      実装難易度       |  エコロジーへの影響度    |
 |:-------------------:|:-------------------------:|:---------------------:|
 | 3 | 3 | 3 |
 
-|Ressources Economisées                                      |
+|リソース                                      |
 |:----------------------------------------------------------:|
-|  Réseau / Stockage  |
+|  ネットワーク / ストレージ  |
 
 ### 説明
 
@@ -28,7 +28,7 @@ S’assurer, avant leur mise en ligne, que les PDF sont réellement optimisés p
 
 Le cas échéant, proposer le téléchargement des PDF chapitre par chapitre.
 
-Si vous souhaitez offrir à l’utilisateur de télécharger un lecteur PDF, préférer un logiciel léger tel que Sumatra (4,3 Mo) au lecteur d’Adobe (48 Mo), soit une bande passante divisée par 10 à chaque téléchargement et, surtout, une plus faible consommation de mémoire vive (ce qui permet de lutter contre la fracture numérique et l’obsolescence programmée).
+Si vous souhaitez offrir à l’ユーザ de télécharger un lecteur PDF, préférer un logiciel léger tel que Sumatra (4,3 Mo) au lecteur d’Adobe (48 Mo), soit une bande passante divisée par 10 à chaque téléchargement et, surtout, une plus faible consommation de mémoire vive (ce qui permet de lutter contre la fracture numérique et l’obsolescence programmée).
 
 ### 例
 
@@ -40,6 +40,6 @@ our un rapport annuel en PDF :
 
 ### 検証原理
 
-| Le nombre ...     | est inférieur ou égal à   |  
+| 検証項目     | 次の値以下である   |  
 |-------------------|:-------------------------:|
 | de PDF non optimisés  |  0 |

@@ -8,23 +8,23 @@
 
 ### カテゴリ
 
-| Cycle de vie |  Tiers  |  Responsable  |
+| ライフサイクル |  サードパーティ  |  担当者  |
 |:---------:|:----:|:----:|
-| 3. Réalisation (fabrication / développement) | Réseau | UX/UI Designer |
+| 3. 実現 (製造 / 実装) | ネットワーク | UX/UI Designer |
 
 ### 効果
 
-| Degré de priorité |      Mise en oeuvre       |  Impact écologique    |
+| 優先度 |      実装難易度       |  エコロジーへの影響度    |
 |:-------------------:|:-------------------------:|:---------------------:|
 | 4 | 3 | 4 |
 
-|Ressources Economisées                                      |
+|リソース                                      |
 |:----------------------------------------------------------:|
-|  Stockage / Réseau / Requêtes  |
+|  ストレージ / ネットワーク / クエリ  |
 
 ### 説明
 
-Péférer les polices standards, car elles sont déjà présentes sur l’ordinateur de l’utilisateur, qui n’a donc pas besoin de les télécharger. 
+Péférer les polices standards, car elles sont déjà présentes sur l’ordinateur de l’ユーザ, qui n’a donc pas besoin de les télécharger. 
 On économise ainsi de la bande passante, tout en accélérant l’affichage du site. Ces polices standards sont listées sur [https://systemfontstack.com/](https://systemfontstack.com/), par 例.
 
 Cependant si vous avez besoin d'une police particulière pour votre service numérique, même si c'est une Api font (google font, adobe font, etc.), vous devez :
@@ -44,9 +44,9 @@ Voici un tableau comparatif de poids des fonts de la police Oswald :
 
 ### Solution Alternative
 
-Vos utilisateurs peuvent faire le choix, via les préférences de leurs navigateurs, de demander aux sites web, utilisant le media query `prefers-reduced-data` qu'ils visitent d'optimiser les requêtes réseau réalisées.
+Vos ユーザs peuvent faire le choix, via les préférences de leurs navigateurs, de demander aux sites web, utilisant le media query `prefers-reduced-data` qu'ils visitent d'optimiser les requêtes ネットワーク réalisées.
 
-Dans l'例 ci-dessous, nous ne téléchargeons que la font `Montserrat` si et seulement si l'utilisateur n'a pas défini de préférence. A contrario, la font `Arial` sera utilisée sans téléchargement de la `Montserrat`.
+Dans l'例 ci-dessous, nous ne téléchargeons que la font `Montserrat` si et seulement si l'ユーザ n'a pas défini de préférence. A contrario, la font `Arial` sera utilisée sans téléchargement de la `Montserrat`.
 
 ```css
 @media (prefers-reduced-data: no-preference) {
@@ -67,6 +67,6 @@ Pour plus d'informations sur la media query `prefers-reduced-data`: [https://dev
 
 ### 検証原理
 
-| Le nombre ...     | est inférieur ou égal à   |  
+| 検証項目     | 次の値以下である   |  
 |-------------------|:-------------------------:|
 | de polices téléchargées  | 2  |

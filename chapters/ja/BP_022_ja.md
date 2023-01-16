@@ -1,4 +1,4 @@
-## Limiter le nombre de CSS
+## No.22 ロードするCSSの数を減らす
 
 ### 識別子
 
@@ -8,25 +8,25 @@
 
 ### カテゴリ
 
-| Cycle de vie |  Tiers  |  Responsable  |
+| ライフサイクル |  サードパーティ  |  担当者  |
 |:---------:|:----:|:----:|
-| 3. Réalisation (fabrication / développement) | Réseau | Architecte Logiciel/Développeur |
+| 3. 実現 (製造 / 実装) | ネットワーク | Architecte Logiciel/Développeur |
 
 ### 効果
 
-| Degré de priorité |      Mise en oeuvre       |  Impact écologique    |
+| 優先度 |      実装難易度       |  エコロジーへの影響度    |
 |:-------------------:|:-------------------------:|:---------------------:|
 | 4 | 4 | 4 |
 
-|Ressources Economisées                                      |
+|リソース                                      |
 |:----------------------------------------------------------:|
-|  Réseau / Requêtes  |
+|  ネットワーク / クエリ  |
 
 ### 説明
 
-Limiter le nombre de CSS pour ne pas multiplier les requêtes HTTP et pour simplifier le rendu côté navigateur. Utiliser une feuille de style commune pour tous les éléments communs, quel que soit l'affichage, et un fichier par résolution cible ou media querie.
+Limiter le nombre de CSS pour ne pas multiplier les クエリ HTTP et pour simplifier le rendu côté navigateur. Utiliser une feuille de style commune pour tous les éléments communs, quel que soit l'affichage, et un fichier par résolution cible ou media querie.
 
-Attention, intégrer ces fichiers directement dans le code HTML et NON PAS avec des directives @import dans les fichiers CSS eux-mêmes. En découpant de la sorte, le terminal de l'utilisateur choisira ce qu'il lui correspond et dépriorisera le chargement des fichiers dont il a n'a pas besoin.
+Attention, intégrer ces fichiers directement dans le code HTML et NON PAS avec des directives @import dans les fichiers CSS eux-mêmes. En découpant de la sorte, le 端末 de l'ユーザ choisira ce qu'il lui correspond et dépriorisera le chargement des fichiers dont il a n'a pas besoin.
 
 Le cas échéant, des fichiers CSS pour certains composants peuvent être chargés en fonction du contexte.
 
@@ -42,6 +42,6 @@ Le cas échéant, des fichiers CSS pour certains composants peuvent être charg�
 
 ### 検証原理
 
-| Le nombre ...     | est inférieur ou égal à   |  
+| 検証項目     | 次の値以下である   |  
 |-------------------|:-------------------------:|
 | de fichiers CSS  | 10  |

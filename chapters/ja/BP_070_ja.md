@@ -8,19 +8,19 @@
 
 ### カテゴリ
 
-| Cycle de vie |  Tiers  |  Responsable  |
+| ライフサイクル |  サードパーティ  |  担当者  |
 |:---------:|:----:|:----:|
-| 4. Production | Datacenter | Administrateur systèmes |
+| 4. 制作 | データセンター | Administrateur systèmes |
 
 ### 効果
 
-| Degré de priorité |      Mise en oeuvre       |  Impact écologique    |
+| 優先度 |      実装難易度       |  エコロジーへの影響度    |
 |:-------------------:|:-------------------------:|:---------------------:|
 | 2 | 3 | 2 |
 
-|Ressources Economisées                                      |
+|リソース                                      |
 |:----------------------------------------------------------:|
-| Processeur / Stockage   |
+| プロセッサ  / ストレージ   |
 
 ### 説明
 
@@ -44,6 +44,6 @@ Les warnings et notices ralentissent les serveurs d’applications tels que PHP,
 
 ### 検証原理
 
-| Le nombre ...     | est inférieur ou égal à   |  
+| 検証項目     | 次の値以下である   |  
 |-------------------|:-------------------------:|
-| de warning et notice en production | 0  |
+| de warning et notice en 制作 | 0  |

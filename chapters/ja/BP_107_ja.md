@@ -8,19 +8,19 @@
 
 ### カテゴリ
 
-| Cycle de vie |  Tiers  |  Responsable  |
+| ライフサイクル |  サードパーティ  |  担当者  |
 |:---------:|:----:|:----:|
-| 5. Utilisation | Utilisateur/Terminal | Utilisateur |
+| 5. Utilisation | ユーザ/端末 | ユーザ |
 
 ### 効果
 
-| Degré de priorité |      Mise en oeuvre       |  Impact écologique    |
+| 優先度 |      実装難易度       |  エコロジーへの影響度    |
 |:-------------------:|:-------------------------:|:---------------------:|
 | 3 | 2 | 4 |
 
-|Ressources Economisées                                      |
+|リソース                                      |
 |:----------------------------------------------------------:|
-|  Réseau / Stockage  |
+|  ネットワーク / ストレージ  |
 
 ### 説明
 
@@ -38,6 +38,6 @@ Types de fichiers bureautiques pouvant être compressés facilement :
 
 ### 検証原理
 
-| Le nombre ...     | est inférieur ou égal à   |  
+| 検証項目     | 次の値以下である   |  
 |-------------------|:-------------------------:|
 | de documents non compressés   | 0  |

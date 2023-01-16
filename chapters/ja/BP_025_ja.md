@@ -1,4 +1,4 @@
-## Grouper les déclarations CSS similaires
+## No.25.類似のCSSのグループ化
 
 ### 識別子
 
@@ -8,19 +8,19 @@
 
 ### カテゴリ
 
-| Cycle de vie |  Tiers  |  Responsable  |
+| ライフサイクル |  サードパーティ  |  担当者  |
 |:---------:|:----:|:----:|
-| 3. Réalisation (fabrication / développement) | Réseau | Architecte Logiciel/Développeur |
+| 3. 実現 (製造 / 実装) | ネットワーク | Architecte Logiciel/Développeur |
 
 ### 効果
 
-| Degré de priorité |      Mise en oeuvre       |  Impact écologique    |
+| 優先度 |      実装難易度       |  エコロジーへの影響度    |
 |:-------------------:|:-------------------------:|:---------------------:|
 | 3 | 3 | 2 |
 
-|Ressources Economisées                                      |
+|リソース                                      |
 |:----------------------------------------------------------:|
-|  Réseau  |
+|  ネットワーク  |
 
 ### 説明
 
@@ -59,6 +59,6 @@ Vous trouverez la liste complète de ces propriétés raccourcies sur le site [M
 
 ### 検証原理
 
-| Le nombre ...     | est inférieur ou égal à   |  
+| 検証項目     | 次の値以下である   |  
 |-------------------|:-------------------------:|
 |  de déclaration CSS similaires non regroupées | 1  |

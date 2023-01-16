@@ -1,4 +1,4 @@
-## Utiliser certains forks applicatifs orientés "performance"
+## No.16 パフォーマンス重視のアプリケーションフォークをいくつか使用する
 
 ### 識別子
 
@@ -8,19 +8,19 @@
 
 ### カテゴリ
 
-| Cycle de vie |  Tiers  |  Responsable  |
+| ライフサイクル |  サードパーティ  |  担当者  |
 |:---------:|:----:|:----:|
-| 3. Réalisation (fabrication / développement) | Datacenter | Administrateur systèmes |
+| 3. 実現 (製造 / 実装) | データセンター | Administrateur systèmes |
 
 ### 効果
 
-| Degré de priorité |      Mise en oeuvre       |  Impact écologique    |
+| 優先度 |      実装難易度       |  エコロジーへの影響度    |
 |:-------------------:|:-------------------------:|:---------------------:|
 | 3 | 3 | 3 |
 
-|Ressources Economisées                                      |
+|リソース                                      |
 |:----------------------------------------------------------:|
-|  Processeur / Mémoire vive / Réseau  |
+|  プロセッサ  / RAM / ネットワーク  |
 
 ### 説明
 
@@ -35,6 +35,6 @@ un périmètre fonctionnel et technique suffisant pour votre projet, vous devez 
 
 ### 検証原理
 
-| Le nombre ...     | est inférieur ou égal à   |  
+| 検証項目     | 次の値以下である   |  
 |-------------------|:-------------------------:|
 | de forks orientés performance est supérieur ou égal à   | 1  |

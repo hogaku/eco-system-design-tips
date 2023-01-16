@@ -1,4 +1,4 @@
-## Limiter le nombre de domaines servant les ressources
+## No.18 リソースを提供するドメイン数を制限する
 
 ### 識別子
 
@@ -8,19 +8,19 @@
 
 ### カテゴリ
 
-| Cycle de vie |  Tiers  |  Responsable  |
+| ライフサイクル |  サードパーティ  |  担当者  |
 |:---------:|:----:|:----:|
-| 4. Production | Réseau | Architecte Logiciel/Développeur |
+| 4. 制作 | ネットワーク | Architecte Logiciel/Développeur |
 
 ### 効果
 
-| Degré de priorité |      Mise en oeuvre       |  Impact écologique    |
+| 優先度 |      実装難易度       |  エコロジーへの影響度    |
 |:-------------------:|:-------------------------:|:---------------------:|
 | 3 | 3 | 4 |
 
-|Ressources Economisées                                      |
+|リソース                                      |
 |:----------------------------------------------------------:|
-|  Requêtes  |
+|  クエリ  |
 
 ### 説明
 
@@ -43,6 +43,6 @@ On limite ainsi le nombre de domaines tout en évitant de transporter inutilemen
 
 ### 検証原理
 
-| Le nombre ...     | est inférieur ou égal à   |  
+| 検証項目     | 次の値以下である   |  
 |-------------------|:-------------------------:|
-| Le nombre de domaines servant les ressources   |  5 |
+| 検証項目 domaines servant les ressources   |  5 |

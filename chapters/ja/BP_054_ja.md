@@ -8,25 +8,25 @@
 
 ### カテゴリ
 
-| Cycle de vie |  Tiers  |  Responsable  |
+| ライフサイクル |  サードパーティ  |  担当者  |
 |:---------:|:----:|:----:|
-| 3. Réalisation (fabrication / développement) | Utilisateur/Terminal | Architecte Logiciel/Développeur |
+| 3. 実現 (製造 / 実装) | ユーザ/端末 | Architecte Logiciel/Développeur |
 
 ### 効果
 
-| Degré de priorité |      Mise en oeuvre       |  Impact écologique    |
+| 優先度 |      実装難易度       |  エコロジーへの影響度    |
 |:-------------------:|:-------------------------:|:---------------------:|
 | 3 | 3 | 3 |
 
-|Ressources Economisées                                      |
+|リソース                                      |
 |:----------------------------------------------------------:|
-|  Processeur / Mémoire vive  |
+|  プロセッサ  / RAM  |
 
 ### 説明
 
-L’accès au DOM (Document Object Model) via JavaScript est une procédure lourde qui consomme beaucoup de cycles processeur (CPU). Réduire autant que possible ces accès.
+L’accès au DOM (Document Object Model) via JavaScript est une procédure lourde qui consomme beaucoup de cycles プロセッサ  (CPU). Réduire autant que possible ces accès.
 
-Pour cela, vous pouvez assigner le nœud dans des variables que vous réutiliserez lors du cycle de vie de l’application, ce qui évite de retraverser l’arbre à chaque manipulation du document.
+Pour cela, vous pouvez assigner le nœud dans des variables que vous réutiliserez lors du ライフサイクル de l’application, ce qui évite de retraverser l’arbre à chaque manipulation du document.
 
 Il est également possible d’utiliser des bibliothèques de type « Shadow DOM », qui optimisent les modifications de l’arbre par un système de batch.
 
@@ -40,6 +40,6 @@ https://www.w3.org/wiki/JavaScript_best_practices#Keep_DOM_access_to_a_minimum
 
 ### 検証原理
 
-| Le nombre ...     | est inférieur ou égal à   |  
+| 検証項目     | 次の値以下である   |  
 |-------------------|:-------------------------:|
 |  d'accès à un élément HTML sans passer par une variable locale | 0  |

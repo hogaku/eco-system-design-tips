@@ -8,17 +8,17 @@
 
 ### カテゴリ
 
-| Cycle de vie |  Tiers  |  Responsable  |
+| ライフサイクル |  サードパーティ  |  担当者  |
 |:---------:|:----:|:----:|
-| 4. Production | Datacenter | Administrateur systèmes |
+| 4. 制作 | データセンター | Administrateur systèmes |
 
 ### 効果
 
-| Degré de priorité |      Mise en oeuvre       |  Impact écologique    |
+| 優先度 |      実装難易度       |  エコロジーへの影響度    |
 |:-------------------:|:-------------------------:|:---------------------:|
 | 2 | 2 | 3 |
 
-|Ressources Economisées                                      |
+|リソース                                      |
 |:----------------------------------------------------------:|
 | Consommation électrique   |
 
@@ -30,10 +30,10 @@
 
 Lors de l’achat, privilégier des serveurs équipés d’une alimentation électrique conforme à l’écolabel 80Plus (niveaux Platinum et Titanium). Préférer également les serveurs estampillés Energy Star.
 
-Il est aussi possible de choisir une architecture matérielle adaptée au type d’application web. Par 例, pour un site web à fort trafic, la physicalisation est mieux adaptée : elle consiste à utiliser n CPU très basse consommation, plutôt que n machines virtuelles s’exécutant sur un serveur physique dont le processeur (Xeon, etc.) est souvent énergivore.
+Il est aussi possible de choisir une architecture matérielle adaptée au type d’application web. Par 例, pour un site web à fort trafic, la physicalisation est mieux adaptée : elle consiste à utiliser n CPU très basse consommation, plutôt que n machines virtuelles s’exécutant sur un serveur physique dont le プロセッサ  (Xeon, etc.) est souvent énergivore.
 
 ### 検証原理
 
-| Le nombre ...     | est inférieur ou égal à   |  
+| 検証項目     | 次の値以下である   |  
 |-------------------|:-------------------------:|
 |  de serveurs sans une alimentation électrique certifiée 80Plus Platinium ou plus OU non écolabellisés ou Energy Star for server. | 0  |

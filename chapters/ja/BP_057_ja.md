@@ -8,23 +8,23 @@
 
 ### カテゴリ
 
-| Cycle de vie |  Tiers  |  Responsable  |
+| ライフサイクル |  サードパーティ  |  担当者  |
 |:---------:|:----:|:----:|
-| 4. Production | Datacenter | Administrateur systèmes |
+| 4. 制作 | データセンター | Administrateur systèmes |
 
 ### 効果
 
-| Degré de priorité |      Mise en oeuvre       |  Impact écologique    |
+| 優先度 |      実装難易度       |  エコロジーへの影響度    |
 |:-------------------:|:-------------------------:|:---------------------:|
 | 4 | 3 | 4 |
 
-|Ressources Economisées                                      |
+|リソース                                      |
 |:----------------------------------------------------------:|
-|  Processeur / Mémoire vive  |
+|  プロセッサ  / RAM  |
 
 ### 説明
 
-Si le CMS (comme Wordpress, Drupal, eZ Publish...) propose un système de cache à plusieurs niveaux, utiliser ces différents niveaux car leur granularité permet de réduire les ressources consommées (cycles CPU, mémoire) et d’offrir de bonnes performances à l’utilisateur.
+Si le CMS (comme Wordpress, Drupal, eZ Publish...) propose un système de cache à plusieurs niveaux, utiliser ces différents niveaux car leur granularité permet de réduire les ressources consommées (cycles CPU, mémoire) et d’offrir de bonnes performances à l’ユーザ.
 
 ### 例
 
@@ -34,11 +34,11 @@ Un CMS comme WordPress ne dispose pas nativement de système de cache, mais il e
 - Wp Super Cache
 - Wp-rocket
 
-Dès lors avec l'un de ces plugins, les pages sont mises en cache sur le serveur et ne sont plus générées pour chaque utilisateur. Accessoirement, ce genre d'outil fournit aussi d'autres optimisations orientées WebPerf qui vont dans le sens de l'écoconception web.
+Dès lors avec l'un de ces plugins, les pages sont mises en cache sur le serveur et ne sont plus générées pour chaque ユーザ. Accessoirement, ce genre d'outil fournit aussi d'autres optimisations orientées WebPerf qui vont dans le sens de l'éco設計 web.
 
 
 ### 検証原理
 
-| Le nombre ...     | est inférieur ou égal à   |  
+| 検証項目     | 次の値以下である   |  
 |-------------------|:-------------------------:|
 |  de cache non activé |  0 |

@@ -8,19 +8,19 @@
 
 ### カテゴリ
 
-| Cycle de vie |  Tiers  |  Responsable  |
+| ライフサイクル |  サードパーティ  |  担当者  |
 |:---------:|:----:|:----:|
-| 2. Conception | Datacenter | Architecte Logiciel/Développeur |
+| 2. 設計 | データセンター | Architecte Logiciel/Développeur |
 
 ### 効果
 
-| Degré de priorité |      Mise en oeuvre       |  Impact écologique    |
+| 優先度 |      実装難易度       |  エコロジーへの影響度    |
 |:-------------------:|:-------------------------:|:---------------------:|
 | 3 | 3 | 3 |
 
-|Ressources Economisées                                      |
+|リソース                                      |
 |:----------------------------------------------------------:|
-| Processeur / Mémoire vive / Réseau   |
+| プロセッサ  / RAM / ネットワーク   |
 
 ### 説明
 Quelque soit le système de base de données, l’ouverture d’une connexion est un processus coûteux en ressources pour le client et le serveur :
@@ -44,6 +44,6 @@ Dans les cas où il n'y a pas de pool de connexion, réutiliser une connexion et
 
 ### 検証原理
 
-| Le nombre ...     | est inférieur ou égal à   |  
+| 検証項目     | 次の値以下である   |  
 |-------------------|:-------------------------:|
 |  de connexions à une base de données pour requêter, stocker une donnée non nécessaire à l'utilisation du service | 0  |

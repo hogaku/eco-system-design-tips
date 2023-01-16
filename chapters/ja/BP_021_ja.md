@@ -1,4 +1,4 @@
-## Découper les CSS
+## No.21 公式SNSのシェアボタンの書き方
 
 ### 識別子
 
@@ -8,19 +8,19 @@
 
 ### カテゴリ
 
-| Cycle de vie |  Tiers  |  Responsable  |
+| ライフサイクル |  サードパーティ  |  担当者  |
 |:---------:|:----:|:----:|
-| 3. Réalisation (fabrication / développement) | Réseau | UX/UI Designer |
+| 3. 実現 (製造 / 実装) | ネットワーク | UX/UI Designer |
 
 ### 効果
 
-| Degré de priorité |      Mise en oeuvre       |  Impact écologique    |
+| 優先度 |      実装難易度       |  エコロジーへの影響度    |
 |:-------------------:|:-------------------------:|:---------------------:|
 | 4 | 4 | 4 |
 
-|Ressources Economisées                                      |
+|リソース                                      |
 |:----------------------------------------------------------:|
-|  Processeur / Réseau  |
+|  プロセッサ  / ネットワーク  |
 
 ### 説明
 
@@ -45,6 +45,6 @@ Les CSS complémentaires (ici, « module x » et « module y ») seront téléch
 
 ### 検証原理
 
-| Le nombre ...     | est inférieur ou égal à   |  
+| 検証項目     | 次の値以下である   |  
 |-------------------|:-------------------------:|
 | de librairies CSS est supérieur ou égal  | 2  |

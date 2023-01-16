@@ -8,19 +8,19 @@
 
 ### カテゴリ
 
-| Cycle de vie |  Tiers  |  Responsable  |
+| ライフサイクル |  サードパーティ  |  担当者  |
 |:---------:|:----:|:----:|
-| 3. Réalisation (fabrication / développement) | Réseau | UX/UI Designer |
+| 3. 実現 (製造 / 実装) | ネットワーク | UX/UI Designer |
 
 ### 効果
 
-| Degré de priorité |      Mise en oeuvre       |  Impact écologique    |
+| 優先度 |      実装難易度       |  エコロジーへの影響度    |
 |:-------------------:|:-------------------------:|:---------------------:|
 | 4 | 3 | 4 |
 
-|Ressources Economisées                                      |
+|リソース                                      |
 |:----------------------------------------------------------:|
-| Stockage / Réseau / Requêtes  |
+| ストレージ / ネットワーク / クエリ  |
 
 ### 説明
 
@@ -42,6 +42,6 @@ Pour aller plus loin : [https://coding.smashingmagazine.com/2011/03/19/styling-e
 
 ### 検証原理
 
-| Le nombre ...     | est inférieur ou égal à   |  
+| 検証項目     | 次の値以下である   |  
 |-------------------|:-------------------------:|
 | d'images qui auraient pu être remplacées par un glyphe (symbole de police de caractère)  | 0  |

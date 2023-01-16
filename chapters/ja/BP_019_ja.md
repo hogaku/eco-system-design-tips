@@ -1,4 +1,4 @@
-## Remplacer les boutons officiels de partage des réseaux sociaux
+## No.19 公式SNSのシェアボタンの書き方
 
 ### 識別子
 
@@ -8,25 +8,25 @@
 
 ### カテゴリ
 
-| Cycle de vie |  Tiers  |  Responsable  |
+| ライフサイクル |  サードパーティ  |  担当者  |
 |:---------:|:----:|:----:|
-| 3. Réalisation (fabrication / développement) | Utilisateur/Terminal | UX/UI Designer |
+| 3. 実現 (製造 / 実装) | ユーザ/端末 | UX/UI Designer |
 
 ### 効果
 
-| Degré de priorité |      Mise en oeuvre       |  Impact écologique    |
+| 優先度 |      実装難易度       |  エコロジーへの影響度    |
 |:-------------------:|:-------------------------:|:---------------------:|
 | 4 | 4 | 4 |
 
-|Ressources Economisées                                      |
+|リソース                                      |
 |:----------------------------------------------------------:|
-|  Réseau / Requêtes  |
+|  ネットワーク / クエリ  |
 
 ### 説明
 
 Les principaux réseaux sociaux tels que Facebook, Twitter, Pinterest, etc. fournissent des plugins à installer sur une page web
 pour y afficher un bouton Partager et un compteur de J’aime. Ces plugins JavaScript sont très gourmands en ressources : 
-pour fonctionner, ils nécessitent un grand nombre de requêtes et de télécharger des fichiers lourds. 
+pour fonctionner, ils nécessitent un grand nombre de クエリ et de télécharger des fichiers lourds. 
 Mieux vaut leur préférer des liens directs, en HTML, vers les pages de partage. 
 On peut générer ces liens à la main (voir ci-dessous) ou via un outil tel que https://www.sharelinkgenerator.com/.
 
@@ -49,6 +49,6 @@ https://www.nuweb.fr/736
 
 ### 検証原理
 
-| Le nombre ...     | est inférieur ou égal à   |  
+| 検証項目     | 次の値以下である   |  
 |-------------------|:-------------------------:|
 | de librairies externes  | 0  |

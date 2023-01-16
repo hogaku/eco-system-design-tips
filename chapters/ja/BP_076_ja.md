@@ -8,19 +8,19 @@
 
 ### カテゴリ
 
-| Cycle de vie |  Tiers  |  Responsable  |
+| ライフサイクル |  サードパーティ  |  担当者  |
 |:---------:|:----:|:----:|
-| 2. Conception | Réseau | Architecte Logiciel/Développeur |
+| 2. 設計 | ネットワーク | Architecte Logiciel/Développeur |
 
 ### 効果
 
-| Degré de priorité |      Mise en oeuvre       |  Impact écologique    |
+| 優先度 |      実装難易度       |  エコロジーへの影響度    |
 |:-------------------:|:-------------------------:|:---------------------:|
 | 3 | 3 | 3 |
 
-|Ressources Economisées                                      |
+|リソース                                      |
 |:----------------------------------------------------------:|
-| Processeur / Mémoire vive / Réseau   |
+| プロセッサ  / RAM / ネットワーク   |
 
 ### 説明
 
@@ -44,6 +44,6 @@ Tous les SGBDR récents (SQL Server, MySQL, PostgreSQL, etc.) prennent en charge
 
 ### 検証原理
 
-| Le nombre ...     | est inférieur ou égal à   |  
+| 検証項目     | 次の値以下である   |  
 |-------------------|:-------------------------:|
 |  de traitements avec une grande quantité de données exécutés en dehors du serveur de base de données |  1 |

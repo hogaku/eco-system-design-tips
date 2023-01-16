@@ -1,4 +1,4 @@
-## Stocker les données statiques localement
+## No.10 静的データをローカルに保存
 
 ### 識別子
 
@@ -8,19 +8,19 @@
 
 ### カテゴリ
 
-| Cycle de vie |  Tiers  |  Responsable  |
+| ライフサイクル |  サードパーティ  |  担当者  |
 |:---------:|:----:|:----:|
-| 3. Réalisation (fabrication / développement) | Datacenter | Architecte Logiciel/Développeur |
+| 3. 実現 (製造 / 実装) | データセンター | Architecte Logiciel/Développeur |
 
 ### 効果
 
-| Degré de priorité |      Mise en oeuvre       |  Impact écologique    |
+| 優先度 |      実装難易度       |  エコロジーへの影響度    |
 |:-------------------:|:-------------------------:|:---------------------:|
 | 4 | 3 | 4 |
 
-|Ressources Economisées                                      |
+|リソース                                      |
 |:----------------------------------------------------------:|
-| Réseau / Requêtes    |
+| ネットワーク / クエリ    |
 
 ### 説明
 
@@ -34,6 +34,6 @@ des serveurs HTTP jusqu’aux serveurs de base données.
 
 ### 検証原理
 
-| Le nombre ...     | est inférieur ou égal à   |  
+| 検証項目     | 次の値以下である   |  
 |-------------------|:-------------------------:|
 | de données statiques non stockées localement  | 25%  |

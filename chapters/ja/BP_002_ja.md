@@ -1,4 +1,4 @@
-## Quantifier précisément le besoin
+## No.2 ニーズを的確に定量化する
 
 ### 識別子
 
@@ -8,19 +8,19 @@
 
 ### カテゴリ
 
-| Cycle de vie |  Tiers  |  Responsable  |
+| ライフサイクル |  サードパーティ  |  担当者  |
 |:---------:|:----:|:----:|
-| 1. Spécification | Utilisateur/Terminal | PO/AMOA |
+| 1. 仕様 | ユーザ/端末 | PO/AMOA |
 
 ### 効果
 
-| Degré de priorité |      Mise en oeuvre       |  Impact écologique    |
+| 優先度 |      実装難易度       |  エコロジーへの影響度    |
 |:-------------------:|:-------------------------:|:---------------------:|
 | 5 | 4 | 5 |
 
-|Ressources Economisées                                      |
+|リソース                                      |
 |:----------------------------------------------------------:|
-|Processeur / Mémoire vive / Stockage / Réseau / Requêtes    |
+|プロセッサ  / RAM / ストレージ / ネットワーク / クエリ    |
 
 ### 説明
 
@@ -33,7 +33,7 @@ La logique doit donc être inversée par rapport aux habitudes actuelles. Si une
 c’est le niveau de qualité ou la quantité minimale qui est proposé. Par 例, en l’absence de précision, 
 le nombre d’items d’une liste est limité à 5 éléments ou au nombre maximal affichable sur le plus petit écran cible de l’application.
 
-Les valeurs par défaut, rarement modifiées par l'utilisateur, doivent être choisies pour répondre au besoin avec un impact minimal.
+Les valeurs par défaut, rarement modifiées par l'ユーザ, doivent être choisies pour répondre au besoin avec un impact minimal.
 
 ### 例
 
@@ -41,11 +41,11 @@ Gain potentiel : en jouant sur le nombre d’items affichés sur la page de rés
 Microsoft Research a démontré qu’il était possible de réduire jusqu’à 80 % l’infrastructure physique (nombre de serveurs) sous-jacente.
 
 Autre 例 : en utilisant par défaut une résolution de vidéo acceptable (480p) plutôt que maximale, on réduit la bande passante 
-utilisée pour la plupart des utilisateurs (qui ne changeront pas la valeur par défaut), tout en laissant la possibilité aux autres 
+utilisée pour la plupart des ユーザs (qui ne changeront pas la valeur par défaut), tout en laissant la possibilité aux autres 
 d'augmenter la résolution s'ils en en ont le besoin.
 
 ### 検証原理
 
-| Le nombre ...     | est égal à   |  
+| 検証項目     | 以下に等しい   |  
 |-------------------|:-------------------------:|
 | de fonctionnalités avec des dimensions supérieures au besoin	| 0 |

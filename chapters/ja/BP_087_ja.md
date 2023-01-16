@@ -1,4 +1,4 @@
-## Privilégier un fournisseur d'électricité écoresponsable
+## Privilégier un fournisseur d'électricité éco担当者
 
 ### 識別子
 
@@ -8,23 +8,23 @@
 
 ### カテゴリ
 
-| Cycle de vie |  Tiers  |  Responsable  |
+| ライフサイクル |  サードパーティ  |  担当者  |
 |:---------:|:----:|:----:|
-| 4. Production | Datacenter | Administrateur systèmes |
+| 4. 制作 | データセンター | Administrateur systèmes |
 
 ### 効果
 
-| Degré de priorité |      Mise en oeuvre       |  Impact écologique    |
+| 優先度 |      実装難易度       |  エコロジーへの影響度    |
 |:-------------------:|:-------------------------:|:---------------------:|
 | 3 | 3 | 2 |
 
-|Ressources Economisées                                      |
+|リソース                                      |
 |:----------------------------------------------------------:|
 | Émissions de gaz à effet de serre  |
 
 ### 説明
 
-Pour alimenter vos équipements numériques, utilisez autant que possible une électricité ayant le minimum d'impacts environnementaux lors de sa production (ex: hydraulique).
+Pour alimenter vos équipements numériques, utilisez autant que possible une électricité ayant le minimum d'impacts environnementaux lors de sa 制作 (ex: hydraulique).
 À ce jour, il n'existe pas de mécanisme solide garantissant que l'électricité que vous consommez a été produite avec des impacts plus faibles. 
 Faute de mieux, une possibilité est soit de choisir un fournisseur qui n'achète aucune électricité produite à partir de ressources fossiles, soit d'acheter des certificats de garantie d’origine.
 
@@ -37,6 +37,6 @@ https://www.greenit.fr/tag/electricite
 
 ### 検証原理
 
-| Le nombre ...     | est inférieur ou égal à   |  
+| 検証項目     | 次の値以下である   |  
 |-------------------|:-------------------------:|
 | de non fourniture de preuve de l'achat de certificats de garantie d'origine par l'hébergeur   | 0  |

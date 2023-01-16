@@ -8,19 +8,19 @@
 
 ### カテゴリ
 
-| Cycle de vie |  Tiers  |  Responsable  |
+| ライフサイクル |  サードパーティ  |  担当者  |
 |:---------:|:----:|:----:|
-| 2. Conception | Utilisateur/Terminal | UX/UI Designer |
+| 2. 設計 | ユーザ/端末 | UX/UI Designer |
 
 ### 効果
 
-| Degré de priorité |      Mise en oeuvre       |  Impact écologique    |
+| 優先度 |      実装難易度       |  エコロジーへの影響度    |
 |:-------------------:|:-------------------------:|:---------------------:|
 | 4 | 3 | 5 |
 
-|Ressources Economisées                                      |
+|リソース                                      |
 |:----------------------------------------------------------:|
-| Processeur / Mémoire vive  |
+| プロセッサ  / RAM  |
 
 ### 説明
 
@@ -43,7 +43,7 @@ https://web.dev/animations-guide/
 ```
 ### Solution alternative
 
-Vous pouvez aussi laissez le choix à vos utilisateurs, via les préférences de leurs navigateurs et la media query `prefers-reduced-motion`, de jouer ou non l'animation. L'animation est jouée seulement si l'utilisateur n'a pas défini de préférence.
+Vous pouvez aussi laissez le choix à vos ユーザs, via les préférences de leurs navigateurs et la media query `prefers-reduced-motion`, de jouer ou non l'animation. L'animation est jouée seulement si l'ユーザ n'a pas défini de préférence.
 
 ```css
 @media (prefers-reduced-motion : no-preference ) {
@@ -55,6 +55,6 @@ Vous pouvez aussi laissez le choix à vos utilisateurs, via les préférences de
 
 ### 検証原理
 
-| Le nombre ...     | est inférieur ou égal à   |  
+| 検証項目     | 次の値以下である   |  
 |-------------------|:-------------------------:|
 | d'animations JS / CSS par page  |  2 |

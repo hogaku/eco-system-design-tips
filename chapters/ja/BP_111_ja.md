@@ -8,23 +8,23 @@
 
 ### カテゴリ
 
-| Cycle de vie |  Tiers  |  Responsable  |
+| ライフサイクル |  サードパーティ  |  担当者  |
 |:---------:|:----:|:----:|
-| 5. Utilisation | Utilisateur/Terminal | Utilisateur |
+| 5. Utilisation | ユーザ/端末 | ユーザ |
 
 ### 効果
 
-| Degré de priorité |      Mise en oeuvre       |  Impact écologique    |
+| 優先度 |      実装難易度       |  エコロジーへの影響度    |
 |:-------------------:|:-------------------------:|:---------------------:|
 | 3 | 3 | 3 |
 
-|Ressources Economisées                                      |
+|リソース                                      |
 |:----------------------------------------------------------:|
-|  Réseau / Requêtes  |
+|  ネットワーク / クエリ  |
 
 ### 説明
 
-Lorsqu’une notification, une alerte ou un message de confirmation doit être envoyé par e-mail à l’utilisateur, limiter la taille du courriel envoyé.
+Lorsqu’une notification, une alerte ou un message de confirmation doit être envoyé par e-mail à l’ユーザ, limiter la taille du courriel envoyé.
 Éviter les pièces jointes et les images intégrées. Préférer un contenu court. Éventuellement, utiliser du texte brut plutôt que du HTML.
 
 ### 例
@@ -45,6 +45,6 @@ Dans le cas d’un site transactionnel avec, par 例, des alertes clients et int
 
 ### 検証原理
 
-| Le nombre ...     | est inférieur ou égal à   |  
+| 検証項目     | 次の値以下である   |  
 |-------------------|:-------------------------:|
 | de courriels envoyés de plus de 1mo  |  0 |

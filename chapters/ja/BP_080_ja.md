@@ -7,19 +7,19 @@
 
 ### カテゴリ
 
-| Cycle de vie |  Tiers  |  Responsable  |
+| ライフサイクル |  サードパーティ  |  担当者  |
 |:---------:|:----:|:----:|
-| 3. Réalisation (fabrication / développement) | Utilisateur/Terminal | Utilisateur |
+| 3. 実現 (製造 / 実装) | ユーザ/端末 | ユーザ |
 
 ### 効果
 
-| Degré de priorité |      Mise en oeuvre       |  Impact écologique    |
+| 優先度 |      実装難易度       |  エコロジーへの影響度    |
 |:-------------------:|:-------------------------:|:---------------------:|
 | 4 | 3 | 4 |
 
-|Ressources Economisées                                      |
+|リソース                                      |
 |:----------------------------------------------------------:|
-| Réseau / Requêtes /  Stockage |
+| ネットワーク / クエリ /  ストレージ |
 
 ### 説明
 Les images représentent souvent la majorité des octets téléchargés, après les vidéos et juste avant les bibliothèques CSS et JavaScript.
@@ -69,6 +69,6 @@ Pour aller plus loin :
 
 ### 検証原理
 
-| Le nombre ...     | est inférieur ou égal à   |  
+| 検証項目     | 次の値以下である   |  
 |-------------------|:-------------------------:|
 | d'images non optimisées  | 0  |

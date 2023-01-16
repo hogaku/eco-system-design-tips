@@ -8,19 +8,19 @@
 
 ### カテゴリ
 
-| Cycle de vie |  Tiers  |  Responsable  |
+| ライフサイクル |  サードパーティ  |  担当者  |
 |:---------:|:----:|:----:|
-| 5. Utilisation | Utilisateur/Terminal | Utilisateur |
+| 5. Utilisation | ユーザ/端末 | ユーザ |
 
 ### 効果
 
-| Degré de priorité |      Mise en oeuvre       |  Impact écologique    |
+| 優先度 |      実装難易度       |  エコロジーへの影響度    |
 |:-------------------:|:-------------------------:|:---------------------:|
 | 4 | 4 | 4 |
 
-|Ressources Economisées                                      |
+|リソース                                      |
 |:----------------------------------------------------------:|
-|  Réseau  |
+|  ネットワーク  |
 
 ### 説明
 
@@ -30,7 +30,7 @@ doit être privilégiée par rapport à des images matricielles.
 Grâce à cette bonne pratique, l’interface est indépendante de la résolution de l’écran. On limite donc aussi la dette technique.
 La première règle consiste à remplacer les images matricielles (GIF, PNG, JPEG, WebP, etc.) par des styles (CSS), des pictos,
 des glyphes ou des icônes fournis par une webfont ou une police standard. L’internaute n’a ainsi aucune ressource supplémentaire à télécharger.
-S’il n’est pas possible d’utiliser des CSS ou une police standard (déjà installée sur le terminal de l’internaute), vous pouvez aussi :
+S’il n’est pas possible d’utiliser des CSS ou une police standard (déjà installée sur le 端末 de l’internaute), vous pouvez aussi :
  - employer une webfont ;
  - recourir à une image vectorielle au format standard SVG.
 
@@ -50,6 +50,6 @@ Le format vectoriel est, dans ce cas précis, 5 à 10 fois moins lourd qu’un f
 
 ### 検証原理
 
-| Le nombre ...     | est inférieur ou égal à   |  
+| 検証項目     | 次の値以下である   |  
 |-------------------|:-------------------------:|
 | d'images matricielles pour l'URL testée   | 5  |
