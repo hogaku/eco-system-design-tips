@@ -11,6 +11,8 @@ Le contenu du référentiel d'écoconception a été publié par Frédéric Bord
 
 Nous remercions chaleureusement l'ensemble des contributrices et contributeurs qui ont participé à la mise au point de ce référentiel et le font évoluer.
 
+**Localisation**
+- Cliquez ici pour la page [japonaise](README-ja.md)
 ## Les besoins
 
 Étant donné les évolutions continues du web, ce référentiel a besoin de régulièrement être mis à jour.
