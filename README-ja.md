@@ -53,7 +53,7 @@ Webの継続的な進化を考えると、このリポジトリは定期的に�
 20. [ロードするCSSの数を減らす](/chapters/BP_022_fr.md)
 21. [画像よりCSSを優先](/chapters/BP_023_fr.md)
 22. [効果的なCSSセレクタの書き方](/chapters/BP_024_fr.md)
-23.[類似のCSSのグループ化](/chapters/BP_025_fr.md)
+23. [類似のCSSのグループ化](/chapters/BP_025_fr.md)
 24. [CSSの略記号の使用](/chapters/BP_026_fr.md)
 25. [CSSにおけるフットプリントを抑える](/chapters/BP_027_fr.md)
 26. [標準フォントの利用](/chapters/BP_029_fr.md)
