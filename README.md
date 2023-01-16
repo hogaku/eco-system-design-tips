@@ -1,4 +1,4 @@
-# eco-system-design-tips
+# The 115 Eco-system-design-tips
 
 ## プロジェクト
 
@@ -19,7 +19,7 @@ Webの継続的な進化を考えると、このリポジトリは定期的に�
 
 [Contributing Guide](CONTRIBUTING.md)を参照ください。
 
-## 本プロジェクtのDiscussionに関するショートカットリンク
+## 本プロジェクトのDiscussionに関するショートカットリンク
 
 検索の手間を省くために、ディスカッションのページではフィルタを利用することができます。
   - :infinity: [全スレッド一覧](https://github.com/cnumr/best-practices/discussions)
