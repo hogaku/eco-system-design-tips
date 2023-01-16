@@ -1,18 +1,18 @@
 ## N'utilisez que les portions indispensables des librairies JavaScript et frameworks CSS
 
-### Identifiants
+### 識別子
 
 | GreenIT |  V2  |  V3  |  V4  |
 |:-------:|:----:|:----:|:----:|
 |   811   | 77  | 40  |      |
 
-### Catégories
+### カテゴリ
 
 | Cycle de vie |  Tiers  |  Responsable  |
 |:---------:|:----:|:----:|
 | 2. Conception | Réseau | Architecte Logiciel/Développeur |
 
-### Indications
+### 効果
 
 | Degré de priorité |      Mise en oeuvre       |  Impact écologique    |
 |:-------------------:|:-------------------------:|:---------------------:|
@@ -22,7 +22,7 @@
 |:----------------------------------------------------------:|
 |  Processeur / Mémoire vive / Réseau |
 
-### Description
+### 説明
 
 Les bibliothèques JavaScript telles que jQuery et les frameworks CSS prêts à l’emploi (Bootstrap, skeleton, gumby, foundation…)
 sont d’excellents outils pour réaliser rapidement des sites, car ils répondent à presque tous les besoins les plus courants. 
@@ -34,14 +34,14 @@ ou de n’en conserver que les portions réellement utilisées (voir https://get
 
 Utiliser un bundler (ex: Webpack) permet de faire facilement du tree shaking, soit d'éliminer du code "mort" donc non utilisé.
 
-### Exemple
+### 例
 
-![img_1.png](img_1.png)
+![img_1.png](../img/img_1.png)
 
 Certains frameworks, ici Bootstrap, permettent de créer des bibliothèques sur mesure qui ne contenant que les portions réellement
 utilisées par le site, ce qui réduit le poids des bibliothèques et les ressources consommées lors de l’exécution.
 
-### Principe de validation
+### 検証原理
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|

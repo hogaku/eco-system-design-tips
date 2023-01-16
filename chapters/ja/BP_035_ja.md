@@ -1,18 +1,18 @@
 ## Eviter d'utiliser des images matricielles pour l'interface
 
-### Identifiants
+### 識別子
 
 | GreenIT |  V2  |  V3  |  V4  |
 |:-------:|:----:|:----:|:----:|
 |  161    | 21  | 35  |      |
 
-### Catégories
+### カテゴリ
 
 | Cycle de vie |  Tiers  |  Responsable  |
 |:---------:|:----:|:----:|
 | 5. Utilisation | Utilisateur/Terminal | Utilisateur |
 
-### Indications
+### 効果
 
 | Degré de priorité |      Mise en oeuvre       |  Impact écologique    |
 |:-------------------:|:-------------------------:|:---------------------:|
@@ -22,7 +22,7 @@
 |:----------------------------------------------------------:|
 |  Réseau  |
 
-### Description
+### 説明
 
 Choisir le bon format d’image est crucial pour éviter de transporter des octets inutilement et économiser ainsi de la bande passante. 
 Par ailleurs, avec la multiplication des terminaux, des tailles d’écran et l’augmentation de leur résolution, une approche vectorielle
@@ -35,10 +35,10 @@ S’il n’est pas possible d’utiliser des CSS ou une police standard (déjà 
  - recourir à une image vectorielle au format standard SVG.
 
 
-### Exemple
+### 例
 
 
-![img.png](img.png)
+![img.png](../img/img.png)
 
 Cette image de 198 × 198 pixels pèse : 
  - 118 Ko dans un format matriciel non compressé ;
@@ -48,7 +48,7 @@ Cette image de 198 × 198 pixels pèse :
 
 Le format vectoriel est, dans ce cas précis, 5 à 10 fois moins lourd qu’un format matriciel tout en pouvant être retaillé à l’infini.
 
-### Principe de validation
+### 検証原理
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|

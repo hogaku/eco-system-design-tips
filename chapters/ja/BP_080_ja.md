@@ -1,17 +1,17 @@
 ## Optimiser les images
 
-### Identifiants
+### 識別子
 | GreenIT |  V2  |  V3  |  V4  |
 |:-------:|:----:|:----:|:----:|
 |  21     | 76   |  80  |      |
 
-### Catégories
+### カテゴリ
 
 | Cycle de vie |  Tiers  |  Responsable  |
 |:---------:|:----:|:----:|
 | 3. Réalisation (fabrication / développement) | Utilisateur/Terminal | Utilisateur |
 
-### Indications
+### 効果
 
 | Degré de priorité |      Mise en oeuvre       |  Impact écologique    |
 |:-------------------:|:-------------------------:|:---------------------:|
@@ -21,7 +21,7 @@
 |:----------------------------------------------------------:|
 | Réseau / Requêtes /  Stockage |
 
-### Description
+### 説明
 Les images représentent souvent la majorité des octets téléchargés, après les vidéos et juste avant les bibliothèques CSS et JavaScript.
 Leur optimisation est donc cruciale pour réduire la bande passante consommée. La première étape consiste à choisir le format idéal
 à vos besoins d'affichage. 
@@ -51,15 +51,15 @@ De nombreux outils vous aideront à réduire au minimum le poids des images :
  - [PngCrush](https://pmt.sourceforge.io/pngcrush/)
  - JpegTran 
 
-### Exemple
-Dans cet exemple, l'élement `<picture>` du DOM indique au navigateur qu'il y a deux images : une image `.webp` et une image
+### 例
+Dans cet 例, l'élement `<picture>` du DOM indique au navigateur qu'il y a deux images : une image `.webp` et une image
 `.jpg`, celle par défaut. Le navigateur décidera quelle image télécharger, s'il supporte le format `.webp` il téléchargera l'image 
 `image.webp` sinon, il téléchargera l'image `image.jpg`
 
 ```html
 <picture>
     <source srcset="image.webp" type="image/webp">
-    <img src="image.jpg" alt="..." loading="lazy">
+    <img src="../img/image.jpg" alt="..." loading="lazy">
 </picture>
 ```
 
@@ -67,7 +67,7 @@ Pour aller plus loin :
  - https://web.dev/choose-the-right-image-format/
  - https://www.fasterize.com/fr/blog/webp-avif-compresser-images/
 
-### Principe de validation
+### 検証原理
 
 | Le nombre ...     | est inférieur ou égal à   |  
 |-------------------|:-------------------------:|
