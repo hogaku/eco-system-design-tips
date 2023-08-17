@@ -38,7 +38,7 @@ S’il n’est pas possible d’utiliser des CSS ou une police standard (déjà 
 ### Exemple
 
 
-![img.png](img.png)
+![img.png](../img/img.png)
 
 Cette image de 198 × 198 pixels pèse : 
  - 118 Ko dans un format matriciel non compressé ;

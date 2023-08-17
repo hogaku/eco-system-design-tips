@@ -1,27 +1,27 @@
 ## Optimiser les images
 
-### Identifiants
+### 識別子
 | GreenIT |  V2  |  V3  |  V4  |
 |:-------:|:----:|:----:|:----:|
 |  21     | 76   |  80  |      |
 
-### Catégories
+### カテゴリ
 
-| Cycle de vie |  Tiers  |  Responsable  |
+| ライフサイクル |  サードパーティ  |  担当者  |
 |:---------:|:----:|:----:|
-| 3. Réalisation (fabrication / développement) | Utilisateur/Terminal | Utilisateur |
+| 3. 実現 (製造 / 実装) | ユーザ/端末 | ユーザ |
 
-### Indications
+### 効果
 
-| Degré de priorité |      Mise en oeuvre       |  Impact écologique    |
+| 優先度 |      実装難易度       |  エコロジーへの影響度    |
 |:-------------------:|:-------------------------:|:---------------------:|
 | 4 | 3 | 4 |
 
-|Ressources Economisées                                      |
+|リソース                                      |
 |:----------------------------------------------------------:|
-| Réseau / Requêtes /  Stockage |
+| ネットワーク / クエリ /  ストレージ |
 
-### Description
+### 説明
 Les images représentent souvent la majorité des octets téléchargés, après les vidéos et juste avant les bibliothèques CSS et JavaScript.
 Leur optimisation est donc cruciale pour réduire la bande passante consommée. La première étape consiste à choisir le format idéal
 à vos besoins d'affichage. 
@@ -51,15 +51,15 @@ De nombreux outils vous aideront à réduire au minimum le poids des images :
  - [PngCrush](https://pmt.sourceforge.io/pngcrush/)
  - JpegTran 
 
-### Exemple
-Dans cet exemple, l'élement `<picture>` du DOM indique au navigateur qu'il y a deux images : une image `.webp` et une image
+### 例
+Dans cet 例, l'élement `<picture>` du DOM indique au navigateur qu'il y a deux images : une image `.webp` et une image
 `.jpg`, celle par défaut. Le navigateur décidera quelle image télécharger, s'il supporte le format `.webp` il téléchargera l'image 
 `image.webp` sinon, il téléchargera l'image `image.jpg`
 
 ```html
 <picture>
     <source srcset="image.webp" type="image/webp">
-    <img src="image.jpg" alt="..." loading="lazy">
+    <img src="../img/image.jpg" alt="..." loading="lazy">
 </picture>
 ```
 
@@ -67,8 +67,8 @@ Pour aller plus loin :
  - https://web.dev/choose-the-right-image-format/
  - https://www.fasterize.com/fr/blog/webp-avif-compresser-images/
 
-### Principe de validation
+### 検証原理
 
-| Le nombre ...     | est inférieur ou égal à   |  
+| 検証項目     | 次の値以下である   |  
 |-------------------|:-------------------------:|
 | d'images non optimisées  | 0  |
