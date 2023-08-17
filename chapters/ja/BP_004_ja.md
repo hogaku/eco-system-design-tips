@@ -24,44 +24,38 @@
 
 ### 説明
 
-L'autocomplétion, ou complément automatique est une fonctionnalité très répandue consistant à suggérer à l'ユーザ
-des résultats correspondant à sa recherche pendant sa saisie. Par 例, un site permettant de rechercher un itinéraire
-va proposer « Paris », « Lyon Part-Dieu » et « Paray le Monial » quand l'ユーザ tape « Par ».
+オートコンプリート、または自動補完は、ユーザーが入力中にその検索に対応する結果を提案する非常に一般的な機能です。例として、ルートを検索するサイトでは、ユーザーが「Par」と入力したときに「パリ」、「リヨン・パール・デュー」、「パレ・ル・モニアル」を提案します。
 
-L'implémentation de l'autocomplétion consiste à envoyer une requête au serveur à chaque caractère saisi pour récupérer les
-résultats correspondants. On peut donc avoir beaucoup de requêtes effectuées et beaucoup de ressources dépensées.
+オートコンプリートの実装は、対応する結果を取得するために、入力される各文字ごとにサーバーへのリクエストを送信するものです。そのため、多くのリクエストが実行され、多くのリソースが消費されることがあります。
 
-Dans la mesure du possible, cette fonctionnalité est à remplacer par la saisie assistée.
-Cela consiste à guider l’ユーザ par un ensemble d’informations et d’indices : 
- - Présentation du format attendu en grisé dans le champ de saisie (`placeholder`)
- - Texte expliquant le format attendu
- - Réaction de l’interface avec un message d’erreur ou un changement de couleur et aide textuelle lorsque la saisie est incorrecte
- - etc.
+可能な限り、この機能はアシステッド入力に置き換えるべきです。これには、以下のような情報と手がかりによってユーザーを導くことが含まれます：
 
-Les interactions liées à la saisie assistée sont gérées localement, ce qui réduit les échanges avec le serveur.
+* 入力フィールドでグレー表示される期待される形式（placeholder）
+* 期待される形式を説明するテキスト
+* 入力が誤っている場合のエラーメッセージや色の変更と、テキストによる支援によるインターフェイスの反応
+など
+アシステッド入力に関連するインタラクションはローカルで管理されるため、サーバーとの通信が減ります。
 
-Pour l'例 de la recherche d'itinéraire et de la complétion des villes, il est possible, en cas d'ambiguïté, de proposer
-les différents résultats après la soumission du formulaire. L'ユーザ entre une chaine de caractère, par 例 « Lens »,
-soumet le formulaire, et se voit à ce moment proposées différentes options : « Lens (France) », « Lens (Belgique) », 
-« Loison sous Lens ».
+都市の補完とルート検索の例では、曖昧さがある場合、フォームを送信した後にさまざまな結果を提案することができます。ユーザーは文字列を入力し、たとえば「レンズ」と入力してフォームを送信し、「レンズ（フランス）」、「レンズ（ベルギー）」、「ロワゾン・スー・レンズ」などの異なるオプションが提示されます。
 
-Si le recours à l'autocomplétion ne peut pas être évité il est possible de minimiser le nombre de requêtes avec des optimisations simples : 
- - Ajouter un délai de quelque dixièmes de secondes entre l'ajout d'un caractère et la requête : cela permet de ne pas déclencher de requête si l'ユーザ n'a pas terminé sa saisie.
- - Limiter le nombre de résultats affichés par l'autocomplétion, priorisés par une note de pertinence
- - Fixer un nombre de caractères minimal avant de chercher à compléter.
- - Si la taille de la base de données le permet, l'inclure dans le code html ou dans le `local storage` et effectuer l'autocomplétion côté client.
- - Mettre en cache les résultats des recherches avec pour clef la chaîne saisie pour moins solliciter la base de données.
- - Contextualiser les résultats pour en limiter le nombre.
+オートコンプリートを避けることができない場合、以下のような単純な最適化でリクエストの数を最小限に抑えることができます：
+
+* 文字を追加してからリクエストするまでの数十分の1秒の遅延を追加する：ユーザーが入力を終了していない場合、リクエストをトリガーしないようにします。
+* オートコンプリートによって表示される結果の数を制限し、関連性のスコアで優先順位をつけます。
+* 補完を試みる前に最小文字数を設定する。
+* データベースのサイズが許容する場合、HTMLコードまたはlocal storageに含め、クライアント側でオートコンプリートを実行します。
+* 入力された文字列をキーとして検索結果をキャッシュし、データベースへのアクセスを減らします。
+* 結果の数を制限するために結果を文脈化します。
 
 ### 例
 
-Gain potentiel : à chaque fois que l’on utilise la saisie assistée pour une fonctionnalité, plutôt que l’autocomplétion, on réduit le nombre de requêtes associées par un facteur 10.
+潜在的な利益：機能に対してアシステッド入力を使用するたびに、関連するリクエストの数を10倍減らします。
 
-### Solution alternative
+### 代替ソリューション
 
-Si la donnée qui est proposée à l'ユーザ est assez petite en quantité, vous pouvez l'inclure directement dans votre code HTML et utiliser l'éléments natif [datalist](https://developer.mozilla.org/fr/docs/Web/HTML/Element/datalist).
+ユーザーに提案されるデータが量的に十分小さい場合、HTMLコードに直接含め、ネイティブの[datalist要素](https://developer.mozilla.org/fr/docs/Web/HTML/Element/datalist)を使用することができます。
 
-Ce système proposera nativement, et sans aller/retour avec le serveur, un mécanisme d'autocompletion.
+このシステムは、サーバーとの往復なしに、ネイティブで自動補完のメカニズムを提供します。
 
 ```html
 <label for="ice-cream-choice">Choose a flavor:</label>
@@ -80,4 +74,4 @@ Ce système proposera nativement, et sans aller/retour avec le serveur, un méca
 
 | 検証項目     | 次の値以下である   |  
 |-------------------|:-------------------------:|
-| de champs en autocomplétion  | 20%  |
+| 自動補完のフィールド | 20%  |

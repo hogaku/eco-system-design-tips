@@ -24,28 +24,20 @@
 
 ### 説明
 
-Les « dimensions » de chaque fonctionnalité doivent être définies précisément et dans leur ensemble. Il peut s’agir 
-d’un taux de compression pour les images de l’interface graphique, du temps de réponse maximum pour une requête HTTP, 
-du nombre d’items affichés dans une liste, etc.
+各機能の「次元」は、具体的に、全体で定義されなければなりません。これには、グラフィカルインターフェイスの画像の圧縮率、HTTPリクエストの最大応答時間、リストに表示されるアイテムの数などがあります。
 
-Plus les « dimensions » et exigences associées à chaque fonctionnalité collent au métier, plus on évite la surqualité.
-La logique doit donc être inversée par rapport aux habitudes actuelles. Si une information n’est pas précisée, 
-c’est le niveau de qualité ou la quantité minimale qui est proposé. Par 例, en l’absence de précision, 
-le nombre d’items d’une liste est limité à 5 éléments ou au nombre maximal affichable sur le plus petit écran cible de l’application.
+各機能に関連する「次元」および要件が業務に密着しているほど、過剰な品質を避けることができます。したがって、現在の習慣とは逆の論理が必要です。情報が明確でない場合、提案されるのは品質または最小限の数量です。たとえば、明確ではない場合、リストのアイテム数は5つまたはアプリケーションの最小ターゲット画面に表示できる最大数に制限されます。
 
-Les valeurs par défaut, rarement modifiées par l'ユーザ, doivent être choisies pour répondre au besoin avec un impact minimal.
+デフォルト値は、ユーザーによってめったに変更されないため、最小限の影響でニーズに応えるように選ばれるべきです。
 
 ### 例
 
-Gain potentiel : en jouant sur le nombre d’items affichés sur la page de résultats de son moteur de recherche Bing, 
-Microsoft Research a démontré qu’il était possible de réduire jusqu’à 80 % l’infrastructure physique (nombre de serveurs) sous-jacente.
+潜在的な利益：Microsoft Researchは、Bingの検索結果ページに表示されるアイテムの数を操作することで、下層の物理的なインフラストラクチャ（サーバーの数）を最大80％削減することが可能であることを示しました。
 
-Autre 例 : en utilisant par défaut une résolution de vidéo acceptable (480p) plutôt que maximale, on réduit la bande passante 
-utilisée pour la plupart des ユーザs (qui ne changeront pas la valeur par défaut), tout en laissant la possibilité aux autres 
-d'augmenter la résolution s'ils en en ont le besoin.
+別の例：デフォルトで許容されるビデオ解像度（480p）を使用することで、最大限にするのではなく、ほとんどのユーザー（デフォルト値を変更しない）で使用される帯域幅を削減し、他の人が必要に応じて解像度を上げる可能性を残します。
 
 ### 検証原理
 
 | 検証項目     | 以下に等しい   |  
 |-------------------|:-------------------------:|
-| de fonctionnalités avec des dimensions supérieures au besoin	| 0 |
+| 必要以上の次元を持つ機能	| 0 |
