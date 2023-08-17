@@ -23,23 +23,23 @@
 |プロセッサ  / RAM / ストレージ / ネットワーク / クエリ    |
 
 ### 概要
-Plusieurs études (Cast Software et Standish Group, notamment) démontrent que 70 % des fonctionnalités demandées par les ユーザs ne sont pas essentielles et que 45 % ne sont jamais utilisées. En réduisant la couverture et la profondeur fonctionnelle de l’application, on abaisse son coût de développement initial, sa dette technique et les impacts environnementaux associés. 
+いくつかの研究（特にCast SoftwareとStandish Group）が示しているように、ユーザーが求める機能の70％は必須ではなく、45％は決して使用されません。アプリケーションの機能の範囲と深度を削減することで、初期開発コスト、技術的負債、および関連する環境への影響を削減します。
 
-On diminue ainsi mécaniquement l’infrastructure nécessaire à son exécution. Par ailleurs, à niveau ergonomique constant, plus l’application est pauvre fonctionnellement, plus elle sera simple à utiliser. Il faut donc réduire le plus possible la couverture fonctionnelle de l’application, en la centrant sur le besoin essentiel de l’ユーザ.
+これによって、その実行に必要なインフラストラクチャーが機械的に減少します。さらに、エルゴノミクスのレベルが一定であれば、アプリケーションが機能的に貧弱であるほど、使用するのが簡単になります。したがって、アプリケーションの機能範囲をできるだけ削減し、ユーザーの本質的なニーズに集中する必要があります。
 
-Détecter une fonctionnalité non essentielle est possible au moment de l'analyse de l'expression du besoin. La méthode MoSCoW, des ateliers, des wireframes (maquettes fonctionnelles) ou des prototypes avec tests ユーザs permettent de vérifier l'utilité d’une fonctionnalité en amont de son développement. 
+必要のない機能を検出することは、ニーズの表現の分析時に可能です。MoSCoWメソッド、ワークショップ、ワイヤーフレーム（機能的な模型）、またはユーザーテスト付きのプロトタイプを使用して、開発の前段階で機能の有用性を確認することができます。
 
 
 ### 例
-Les succès récents du Web – Google, Twitter, WhatsApp, Pinterest, Instagram, etc. – fournissent un seul service et misent sur une grande sobriété fonctionnelle.
+最近のWebの成功例 – Google、Twitter、WhatsApp、Pinterest、Instagramなど – は、単一のサービスを提供し、機能的な簡素さに重点を置いています。
 
-Se poser, au moment de l'analyse de l'expression du besoin, la question : « Que se passe-t-il si on ne l’a pas ? ».
+ニーズの表現の分析時に、「もし持っていなかったらどうなるか？」という質問をすること。
 
-Respecter le principe YAGNI (You Ain't Gonna Need It) de l’extreme programming : développez quand vous avez effectivement besoin d’une fonctionnalité, pas lorsque vous imaginez en avoir besoin.
+エクストリームプログラミングのYAGNI（You Ain't Gonna Need It）の原則を尊重する：機能が実際に必要になったときに開発し、必要になると想像するときではない。
 
 ### 検証原理
 
 
 | 検証項目 |     次の値以下である   |  
 |-------------------|:-------------------------:|
-| de fonctionnalités dont l'utilité n'a pas été vérifiée avec un panel d'ユーザs avant développement |  0 % |
+| 開発前にユーザーのパネルでその有用性が確認されていない機能の存在 |  0 % |
