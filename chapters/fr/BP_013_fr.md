@@ -10,7 +10,7 @@
 
 | Cycle de vie |  Tiers  |  Responsable  |
 |:---------:|:----:|:----:|
-| 2. Conception | Utilisateur/Terminal | Architecte Logiciel/Développeur |
+| 2. Conception | Utilisateur/Terminal | ソフトウェアアーキテクト/開発者 |
 
 ### Indications
 

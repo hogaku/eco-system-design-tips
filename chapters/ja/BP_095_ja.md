@@ -10,7 +10,7 @@
 
 | ライフサイクル |  サードパーティ  |  担当者  |
 |:---------:|:----:|:----:|
-| 6. Support / maintenance | Réseau | Architecte Logiciel/Développeur |
+| 6. Support / maintenance | Réseau | ソフトウェアアーキテクト/開発者 |
 
 ### 効果
 

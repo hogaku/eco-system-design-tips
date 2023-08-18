@@ -10,7 +10,7 @@
 
 | Cycle de vie |  Tiers  |  Responsable  |
 |:---------:|:----:|:----:|
-| 2. Conception | Datacenter | Architecte Logiciel/Développeur |
+| 2. Conception | Datacenter | ソフトウェアアーキテクト/開発者 |
 
 ### Indications
 

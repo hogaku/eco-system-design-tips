@@ -10,7 +10,7 @@
 
 | Cycle de vie |  Tiers  |  Responsable  |
 |:---------:|:----:|:----:|
-| 4. Production | Datacenter | Architecte Logiciel/Développeur |
+| 4. Production | Datacenter | ソフトウェアアーキテクト/開発者 |
 
 ### Indications
 

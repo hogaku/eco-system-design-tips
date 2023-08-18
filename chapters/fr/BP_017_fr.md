@@ -10,7 +10,7 @@
 
 | Cycle de vie |  Tiers  |  Responsable  |
 |:---------:|:----:|:----:|
-| 3. Réalisation (fabrication / développement) | Datacenter | Architecte Logiciel/Développeur |
+| 3. Réalisation (fabrication / développement) | Datacenter | ソフトウェアアーキテクト/開発者 |
 
 ### Indications
 

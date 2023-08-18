@@ -10,7 +10,7 @@
 
 | Cycle de vie |  Tiers  |  Responsable  |
 |:---------:|:----:|:----:|
-| 6. Support / maintenance | Réseau | Architecte Logiciel/Développeur |
+| 6. Support / maintenance | Réseau | ソフトウェアアーキテクト/開発者 |
 
 ### Indications
 

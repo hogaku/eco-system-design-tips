@@ -10,7 +10,7 @@
 
 | Cycle de vie |  Tiers  |  Responsable  |
 |:---------:|:----:|:----:|
-| 4. Production | Réseau | Architecte Logiciel/Développeur |
+| 4. Production | Réseau | ソフトウェアアーキテクト/開発者 |
 
 ### Indications
 
