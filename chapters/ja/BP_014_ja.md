@@ -10,7 +10,7 @@
 
 | ライフサイクル |  サードパーティ  |  担当者  |
 |:---------:|:----:|:----:|
-| 2. 設計 | データセンター | Architecte Logiciel/Développeur |
+| 2. 設計 | データセンター | ソフトウェアアーキテクト/開発者 |
 
 ### 効果
 
@@ -24,20 +24,19 @@
 
 ### 説明
 
-L’architecture modulaire popularisée par les logiciels open source apporte souvent une plus grande capacité à monter en charge,
-des coûts réduits de maintenance corrective et évolutive, ainsi qu’un code plus efficient.
-Si la couverture fonctionnelle du site web ou du service en ligne peut être amenée à évoluer, mieux vaut implémenter les fonctionnalités de base dans un noyau et les compléter au besoin par des modules. Ces modules peuvent rassembler des fonctions appartenant à un même domaine métier. Cela permet de les développer indépendamment des autres domaines métier ainsi que les partager à d'autres applications.
+オープンソースソフトウェアで一般的になったモジュラーなアーキテクチャは、より高いスケーラビリティ、修正と進化のメンテナンスコストの削減、より効率的なコードをもたらすことが多いです。
+ウェブサイトまたはオンラインサービスの機能範囲が変更される可能性がある場合、基本機能をコアに実装し、必要に応じてモジュールで補完する方が良いでしょう。これらのモジュールは、同じビジネスドメインに属する関数をまとめることができます。これにより、他のビジネスドメインから独立して開発し、他のアプリケーションと共有することができます。
 
-Cette approche est valable à tous les niveaux de granularité, pour un développement sur mesure comme pour le choix d’un serveur HTTP ou d’un CMS.
+このアプローチは、カスタム開発だけでなく、HTTPサーバーやCMSの選択においても、すべての粒度レベルで有効です。
 
 ### 例
 
-Les logiciels open source les plus efficients, comme nginX, Apache, MySQL ou PHP, reposent sur cette architecture modulaire.
+最も効率的なオープンソースソフトウェア、例えばnginx、Apache、MySQL、PHPなどは、このモジュラーなアーキテクチャに基づいています。
 
-Côté backend, le découpage en microservices permet d'apporter un niveau de modularité pour des services HTTP. Il faudra néanmoins porter une attention particulière sur la granularité du découpage pour éviter un effet contre-productif (ajout d'une complexité d'interfaçage entre les services, augmentation globale des ressources informatiques).
+バックエンド側では、マイクロサービスへの分割により、HTTPサービスのためのモジュラリティレベルを提供することができます。ただし、反作用を避けるために、サービス間のインターフェースの複雑さの追加、全体のコンピューティングリソースの増加など、分割の粒度に特別な注意が必要です。
 
 ### 検証原理
 
 | 検証項目     | 次の値以下である   |  
 |-------------------|:-------------------------:|
-| Le nombre d'architectures non modulaires | 0  |
+| 非モジュラーなアーキテクチャの数 | 0  |
