@@ -24,11 +24,11 @@
 
 ### 説明
 
-Limiter le nombre de CSS pour ne pas multiplier les クエリ HTTP et pour simplifier le rendu côté navigateur. Utiliser une feuille de style commune pour tous les éléments communs, quel que soit l'affichage, et un fichier par résolution cible ou media querie.
+HTTPクエリを増やさず、ブラウザ側のレンダリングを簡素化するために、CSSの数を制限します。全ての共通要素に対して共通のスタイルシートを使用し、ターゲット解像度またはメディアクエリごとに1つのファイルを使用します。
 
-Attention, intégrer ces fichiers directement dans le code HTML et NON PAS avec des directives @import dans les fichiers CSS eux-mêmes. En découpant de la sorte, le 端末 de l'ユーザ choisira ce qu'il lui correspond et dépriorisera le chargement des fichiers dont il a n'a pas besoin.
+注意：これらのファイルをCSSファイル自体での@importディレクティブではなく、直接HTMLコードに組み込む必要があります。このように分割すると、ユーザーの端末が対応するものを選び、必要のないファイルのロードを優先順位の低いものにします。
 
-Le cas échéant, des fichiers CSS pour certains composants peuvent être chargés en fonction du contexte.
+必要に応じて、特定のコンポーネント用のCSSファイルをコンテキストに応じてロードすることもできます。
 
 ### 例
 
@@ -44,4 +44,4 @@ Le cas échéant, des fichiers CSS pour certains composants peuvent être charg�
 
 | 検証項目     | 次の値以下である   |  
 |-------------------|:-------------------------:|
-| de fichiers CSS  | 10  |
+| CSSファイルの数  | 10  |

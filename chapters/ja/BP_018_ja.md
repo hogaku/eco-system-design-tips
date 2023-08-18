@@ -24,25 +24,20 @@
 
 ### 説明
 
-Lorsqu’un site web ou un service en ligne héberge les composants d’une page web sur plusieurs domaines, 
-le navigateur doit établir une connexion HTTP avec chacun de ces domaines. Une fois la page HTML récupérée, 
-le navigateur appelle les ressources au fur et à mesure qu’il parcourt le DOM (Document Object Model). 
-Certaines ressources sont indispensables au fonctionnement de la page. Si elles sont hébergées sur un autre domaine peu réactif,
-cela peut rallonger le délai d’attente avant que la page soit opérationnelle. Dans la mesure du possible, il faut donc regrouper toutes les ressources sur un seul domaine.
+ウェブサイトまたはオンラインサービスがウェブページのコンポーネントを複数のドメイン上にホストする場合、ブラウザはこれらの各ドメインとHTTP接続を確立する必要があります。HTMLページが取得されると、ブラウザはDOM（Document Object Model）を順に処理するにつれてリソースを呼び出します。いくつかのリソースはページの動作に不可欠です。これらが反応の悪い別のドメイン上にホストされている場合、ページが操作可能になるまでの待ち時間が長くなることがあります。可能な限り、すべてのリソースを単一のドメイン上にまとめる必要があります。
 
-Seule exception à cette règle, le fait d’héberger les ressources statiques (feuilles de styles, images, etc.) sur un domaine séparé,
-pour éviter d’avoir à transporter un ou plusieurs cookies à chaque GET HTTP du navigateur. On réduit le temps de réponse ainsi que la bande passante consommée inutilement.
+このルールの唯一の例外は、静的リソース（スタイルシート、画像など）を別のドメイン上にホストすることで、ブラウザの各HTTP GETで1つまたは複数のクッキーを転送する必要がないようにすることです。これにより、応答時間と無駄に消費される帯域幅が削減されます。
 
 ### 例
 
-Pour un site web institutionnel à fort trafic, on privilégiera deux sous-domaines :
- - le serveur applicatif sur www.domain.tld ;
- - le serveur media « cookie-less » sur media.domain.tld.
+高トラフィックの機関ウェブサイトの場合、2つのサブドメインを優先します：
+ - アプリケーションサーバーはwww.domain.tld上に；
+ - 「クッキーレス」メディアサーバーはmedia.domain.tld上に。
 
-On limite ainsi le nombre de domaines tout en évitant de transporter inutilement un cookie à chaque GET HTTP sur une ressource statique
+これにより、ドメインの数を制限し、静的リソース上での各HTTP GETでクッキーを不必要に転送するのを避けます。
 
 ### 検証原理
 
 | 検証項目     | 次の値以下である   |  
 |-------------------|:-------------------------:|
-| 検証項目 domaines servant les ressources   |  5 |
+| リソースを提供するドメインの検証項目   |  5 |

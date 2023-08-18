@@ -24,16 +24,13 @@
 
 ### 説明
 
-Utiliser les propriétés CSS3 à la place d’images. En effet, le poids d’une feuille de styles est bien plus faible, 
-surtout si elle est compressée. En outre, l’appel d’une feuille de styles ne génère qu’une seule requête HTTP, 
-contre un grand nombre si l’on emploie beaucoup d’images
-(une requête HTTP pour chaque image).
+画像の代わりにCSS3のプロパティを使用すること。実際、スタイルシートの重さは、特に圧縮されている場合、かなり軽いからです。さらに、スタイルシートの呼び出しは1つのHTTPリクエストしか生成しませんが、多くの画像を使用する場合は、画像ごとに1つのHTTPリクエストが生成されます。
 
 ### 例
 
-Les coins arrondis des cases doivent être gérés en CSS3 plutôt qu’avec des images.
+ケースの丸い角は、画像ではなくCSS3で処理する必要があります。
 
-Préférer l’écriture :
+以下の記述を推奨します：
 ```css
 #cadre {
     border-radius: 10px;
@@ -53,4 +50,4 @@ Préférer l’écriture :
 
 | 検証項目     | 次の値以下である   |  
 |-------------------|:-------------------------:|
-|  d'images qui auraient pu être remplacées par des CSS |  0 |
+|  CSSで置き換えることができた画像の数 |  0 |

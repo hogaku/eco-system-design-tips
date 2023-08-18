@@ -24,21 +24,20 @@
 
 ### 説明
 
-Le choix des technologies étant primordial pour optimiser les ressources, sélectionner l’outil le plus économe en fonction de ses besoins
-et de ses contraintes métier.
+技術の選択はリソースを最適化するために非常に重要であり、自分のニーズとビジネス上の制約に応じて、最も経済的なツールを選ぶ必要があります。
 
-Dans la mesure du possible, il faut privilégier un site statique dont le contenu change très peu, pourra être mis en cache et ne sollicitera pas de serveur d'application ou de base de données.
+可能な限り、内容がほとんど変わらない静的なサイトを優先するとよいでしょう。静的サイトはキャッシュすることができ、アプリケーションサーバーやデータベースサーバーの負荷をかけずに済みます。
 
-Dans le cas d'un site plus dynamique, le sur-mesure permet plus de souplesse dans l'optimisation technique et d'embarquer le strict nécessaire pour répondre au besoin métier.
+もっと動的なサイトの場合、カスタム開発は技術の最適化でより柔軟性を提供し、ビジネスニーズに応えるために必要最小限のものを取り込むことができます。
 
-Si vous avez une partie d'un site web qui repose sur un nombre de pages très limité et qui délivre un service métier encadré (tunnel de commande, demande de devis) l'utilisation d'une SPA (Single Page Application) peut être recommandée. Cela permet de limiter les aller retours avec le serveur et rendre l'expérience plus fluide et performante.
+Webサイトの一部が非常に限られたページ数に基づいており、ビジネスサービスが規制されている場合（注文の隧道、見積もりの要求など）、SPA（Single Page Application）の使用が推奨されることがあります。これにより、サーバーとの往復を限定し、より流れるような、効果的な経験を提供します。
 
 ### 例
 
-Un site institutionnel avec uniquement une présentation de l'entreprise et un formulaire de contact devra privilégier un site statique étant donné la faible fréquence de mise à jour. 
+企業の紹介と連絡先のフォームのみを提供する機関サイトの場合、更新頻度が低いため、静的サイトを優先するべきです。
 
 ### 検証原理
 
 | 検証項目     | 次の値以下である   |  
 |-------------------|:-------------------------:|
-| de technologies inopportunes  | 1  |
+| 不適切な技術の数  | 1  |

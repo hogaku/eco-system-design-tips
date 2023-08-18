@@ -24,27 +24,22 @@
 
 ### 説明
 
-Employer un ensemble de CSS plutôt qu’une seule, et appeler uniquement les CSS utiles en fonction du contexte. 
-Cette méthode permet de limiter le poids de la page lors du premier téléchargement, donc d’économiser de la bande passante 
-et de réduire la charge CPU.
+一連のCSSを使用するのではなく、一つのCSSを使用し、コンテキストに応じて必要なCSSのみを呼び出す方法。この方法により、最初のダウンロード時にページの重量を制限し、帯域幅を節約し、CPU負荷を軽減することができます。
 
 ### 例
 
-Découper les CSS en fonction de la logique fonctionnelle :
+機能的なロジックに基づいてCSSを分割する：
  - layout ;
  - content ;
  - module x ;
  - module y ;
  - etc...
 
-Dans le cas d’un site fonctionnellement riche, cela permettra d’exclure toutes les CSS des modules non utilisés. 
-Le nombre de CSS doit rester raisonnable, plus pour des questions de maintenabilité que de performance, 
-dans la mesure où les CSS générales (« layout » et « content » dans notre 例) seront concaténées en un seul fichier. 
-Les CSS complémentaires (ici, « module x » et « module y ») seront téléchargées en fonction du contexte (page, fonctionnalités...).
+機能的に豊かなサイトの場合、未使用のモジュールのすべてのCSSを排除することができます。CSSの数は合理的でなければならず、パフォーマンスよりも保守性の問題であるため、一般的なCSS（ここでは「レイアウト」と「コンテンツ」）は単一のファイルに連結されます。補完的なCSS（ここでは「モジュールx」と「モジュールy」）は、コンテキスト（ページ、機能など）に応じてダウンロードされます。
 
 
 ### 検証原理
 
 | 検証項目     | 次の値以下である   |  
 |-------------------|:-------------------------:|
-| de librairies CSS est supérieur ou égal  | 2  |
+| CSSライブラリの数が等しいか超えている | 2  |
