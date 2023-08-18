@@ -24,37 +24,36 @@
 
 ### 説明
 
-Les navigateurs possèdent une fonction de navigation rapide dans l’historique (boutons Page précédente et Page suivante),
-souvent nommée _back-forward cache_ ou encore _bfcache_.
+ブラウザには、履歴内での高速ナビゲーション機能（「前のページ」と「次のページ」のボタン）があり、これは一般に_back-forward cache_または_bfcache_と呼ばれます。
 
-Contrairement au cache HTTP qui permet de garder en mémoire les réponses aux requêtes précédemment effectuées et donc d'éviter de les générer plusieurs fois inutilement et d'accélérer le chargement de pages, le cache _bfcache_ permet de garder en mémoire une page entière. 
-Néanmoins, comme l'utilisation de cette fonctionnalité mobilise des resources machine supplémentaires côté ユーザ, il faut veiller à alléger au maximum les fonctionnalités des pages stockées avec le _bfcache_. 
-Par ailleurs, l'utilisation de _bfcache_ implique certaines précautions notamment lorsque le délai d'attente est dépassé (_setTimeout_). 
-En effet, comme les navigateurs suspendent l'exécution des timers en attente et les tâches dans les files d'attente JavaScript, et reprennent le traitement des tâches lorsque la page est restaurée à partir du _bfcache_, il peut y avoir des situations problématiques. 
-Par 例, si le navigateur suspend une tâche requise dans le cadre d'une transaction IndexedDB ou d'utilisation d'API et que d'autres onglets (utilisant les mêmes bases de données IndexedDB) sont ouverts à ce moment-là, le navigateur ne mettra pas en cache les différentes pages.
+HTTPキャッシュが以前に行われたリクエストへの応答をメモリに保持し、それらを何度も無駄に生成するのを避け、ページのロードを高速化するのとは対照的に、_bfcache_はページ全体をメモリに保持することができます。
+しかし、この機能の使用はユーザー側のマシンリソースを追加で使用するため、_bfcache_で保存されるページの機能をできるだけ軽くする必要があります。
+さらに、_bfcache_の使用には、待機時間が超過した場合（_setTimeout_など）など、いくつかの注意が必要です。
+実際、ブラウザは待機中のタイマーやJavaScriptのキュー内のタスクの実行を一時停止し、ページが_bfcache_から復元されたときにタスクの処理を再開するため、問題が発生する場合があります。
+例えば、IndexedDBトランザクションやAPIの使用に必要なタスクが一時停止され、その時点で同じIndexedDBデータベースを使用する他のタブが開かれている場合、ブラウザは異なるページをキャッシュしません。
 
-Par conséquent, il faut éviter tout élément qui rendrait la page inéligible au _bfcache_,
-et/ou qui rendrait la page inutilisable après l'avoir quittée
-(ou éventuellement les rendre utilisables à nouveau quand la page est réutilisée, ou juste avant qu'elle soit mise en cache).
+したがって、ページを_bfcache_に適格にする要素を避ける必要があります。
+また、ページを離れた後にページを使用不能にする要素、
+（またはページが再利用されるとき、またはキャッシュされる直前に再利用可能にする）も避けるべきです。
 
 ### 例
 
-Éviter :
- - les actions lorsqu'on quitte la page (événements `unload` ou `beforeunload`, leur préférer `pagehide` si c'est vraiment nécessaire)
- - les liens qui ouvrent de nouveaux onglets / fenêtres sans `rel="noopener"` ou `rel="noreferrer"`
- - de laisser des connexions (IndexedDB, `fetch()` ou XMLHttpRequest, Web Sockets, etc.) ouvertes quand l'Utilisateur quitte la page
+避けるべき点 :
+ - ページを離れる際のアクション（unloadまたはbeforeunloadイベント、本当に必要な場合はpagehideを使用）
+ - 新しいタブ/ウィンドウを開くリンクで、rel="noopener"またはrel="noreferrer"がない場合
+ - ユーザーがページを離れるときに接続（IndexedDB、fetch()またはXMLHttpRequest、Web Socketsなど）を開いたままにする
 
-Utiliser les événéments `pageshow` et/ou `pagehide` pour réinitialiser les éléments qui le nécessitent,
-par Exemple réactiver les boutons de formulaire qui se désactivent lors de la soumission
-ou supprimer les informations sensibles (comme les mots de passe),
-ou pour fermer/rouvrir des connexions persistantes.
+必要な要素をリセットするために、pageshowおよび/またはpagehideイベントを使用する。
+例：フォームのボタンを送信時に無効にし再有効にする、
+または機密情報（パスワードなど）を削除する、
+または持続的な接続を閉じたり開いたりする。
 
 Source:
-* https://web.dev/bfcache/ (contenu sous licence CC BY 4.0 - _Back/forward cache_ par Philip Walton)
+* https://web.dev/bfcache/ (CC BY 4.0ライセンスのコンテンツ - Philip Waltonによる_Back/forward cache_)
 
 
 ### 検証原理
 
 | 検証項目     | 次の値以下である   |  
 |-------------------|:-------------------------:|
-| de pages inéligibles au _bfcache_  |  0% |
+| _bfcache_に適格でないページの割合  |  0% |

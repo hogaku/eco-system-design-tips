@@ -10,7 +10,7 @@
 
 | Cycle de vie |  Tiers  |  Responsable  |
 |:---------:|:----:|:----:|
-| 3. Réalisation (fabrication / développement) | Réseau | Architecte Logiciel/Développeur |
+| 3. Réalisation (fabrication / développement) | Réseau | ソフトウェアアーキテクト/開発者 |
 
 ### Indications
 

@@ -24,20 +24,20 @@
 
 ### 説明
 
-Tout design d'interface ou webdesign doit être réfléchi en amont, en prenant en compte :
-- les besoins de l'ユーザ (voir la bonne pratique "Optimiser le parcours ユーザ")
-- les heuristiques d'ergonomie (Bastien et Scapin, Nielsen, etc.)
-- les contraintes techniques
-- les bonnes pratiques d'éco設計
-- et de préférence les bonnes pratiques d'accessibilité
+インターフェイスのデザインやウェブデザインは、以下の点を考慮して事前に検討する必要があります：
 
-**Privilégiez un design simple et épuré réalisable uniquement en HTML5 et CSS3.**
+- ユーザーのニーズ（「ユーザーの経路を最適化する」という良い方法を参照）
+- エルゴノミクスのヒューリスティック（BastienとScapin、Nielsenなど）
+- 技術的な制約
+- エコ設計の良い方法
+- できれば、アクセシビリティの良い方法
+**HTML5とCSS3だけで実現可能なシンプルで洗練されたデザインを優先してください。**
 
 ### 例
 
-**説明 :** Certains sites contiennent des images encadrées, non contrastées et non lisibles (RGAA) et créent une surcharge mentale non nécessaire (2.2. Densité Informationnelle de Scapin et Bastien). Téléchargées, elles ne sont pourtant pas visibles sur mobile (éco設計). On peut parfois soulever l'incohérence entre signalétique et colorimétrie (1.2.2. Groupement/Distinction par le Format de Scapin et Bastien).
+**説明 :** 一部のサイトには、枠付きでコントラストがなく、読み取りが困難な画像（RGAA）が含まれており、不要な精神的な過負荷を生じています（2.2. ScapinとBastienの情報密度）。ダウンロードされても、モバイルでは表示されません（エコ設計）。時には、標識と色彩学の間の非整合性を指摘することがあります（1.2.2. ScapinとBastienの形式によるグループ化/区別）。
 
-**推奨 :** Supprimer les images de fond et ajouter un glyphe (Préférer les glyphes aux images, bonne pratique d'éco設計) avec une colorimétrie cohérente si un groupement doit avoir lieu.
+**推奨 :** 背景画像を削除し、グループ化が必要な場合には、一貫した色彩学でグリフを追加します（画像よりもグリフを優先する、エコ設計の良い方法）。
 
 ### 検証原理
 

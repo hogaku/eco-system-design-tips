@@ -10,7 +10,7 @@
 
 | ライフサイクル |  サードパーティ  |  担当者  |
 |:---------:|:----:|:----:|
-| 2. 設計 | ユーザ/端末 | Architecte Logiciel/Développeur |
+| 2. 設計 | ユーザ/端末 | ソフトウェアアーキテクト/開発者 |
 
 ### 効果
 
@@ -24,22 +24,20 @@
 
 ### 説明
 
-Si une page ne doit être modifiée que deux fois par an, préférer des pages statiques, construites en dehors du CMS. 
-Cela permettra d’économiser des cycles CPU, de la bande passante, et réduira la consommation électrique.
+年に2回しか変更されないページの場合、CMSの外部で構築された静的なページを優先するとよいでしょう。
+これによって、CPUのサイクル、帯域幅が節約され、電力消費も削減されます。
 
-L’utilisation d’un système de gestion de contenu dynamique requiert en effet de charger les différentes couches logicielles 
-pour servir le contenu demandé par l’internaute : le serveur HTTP, le serveur d’applications, le système de stockage du contenu (base de données),
-éventuellement les systèmes de cache associés, etc. En revanche, un fichier statique est directement lu et renvoyé à l’internaute par le serveur HTTP ou le serveur de cache, sans solliciter le serveur d’applications ou la base de données.
+動的なコンテンツ管理システムを使用すると、インターネットユーザーに要求されたコンテンツを提供するために、さまざまなソフトウェアレイヤーをロードする必要があります。すなわち、HTTPサーバー、アプリケーションサーバー、コンテンツの保存システム（データベース）、場合によっては関連するキャッシュシステムなどです。一方、静的なファイルは、アプリケーションサーバーまたはデータベースを要求せず、HTTPサーバーまたはキャッシュサーバーによって直接読み取られ、インターネットユーザーに送信されます。
 
 ### 例
 
-En fonction du service numérique à concevoir, il est envisageable :
-- pour une landing page ou simple site vitrine de créer un site statique en HTML, CSS et JS.
-- pour un blog avec peu d'activité, ou de petite taille, de créer un site statique généré via un JAMstack (Jekyll, Hugo, Gasby, Eleventy, etc.) administré, si nécessaire, via un headless CMS ou un headless flat-file CMS (Strapi, Contenful, Flextype, etc.).
-- pour un site ou une application web plus complexe de rendre les pages à faible taux de modifications (FAQ, About, mentions légales, etc.) statiques en utilisant des frameworks (Next, Nuxt, Svelte, etc.).
+デジタルサービスを設計する際の可能性 :
+- ランディングページやシンプルな展示サイトの場合、HTML、CSS、JSで静的なサイトを作成する。
+- 活動が少ないブログや小規模なサイトの場合、必要に応じてヘッドレスCMSまたはヘッドレスフラットファイルCMS（Strapi、Contentful、Flextypeなど）で管理されたJAMstack（Jekyll、Hugo、Gatsby、Eleventyなど）で静的なサイトを生成する。
+- より複雑なサイトやウェブアプリケーションの場合、変更率の低いページ（FAQ、About、法的注意事項など）をフレームワーク（Next、Nuxt、Svelteなど）を使用して静的にする。
 
 ### 検証原理
 
 | 検証項目     | 次の値以下である   |  
 |-------------------|:-------------------------:|
-| de pages dynamiques est   | 25%  |
+| 動的ページの割合   | 25%  |

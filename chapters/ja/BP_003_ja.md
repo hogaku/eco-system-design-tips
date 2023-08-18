@@ -24,22 +24,22 @@
 
 ### 説明
 
-Optimiser le parcours ユーザ consiste à diminuer le temps passé par l'ユーザ sur ses usages les plus fréquents. Dans un premier temps, cibler les parcours les plus fréquents puis optimiser leur usage : diminuer le nombre d'étapes, diminuer le nombre d'actions, supprimer l'inutile, identifier les cas d'échecs, optimiser les temps de réponse... Un parcours est bien conçu lorsque le programme se comporte exactement comme l'ユーザ l'avait imaginé.
+ユーザーの経路を最適化することは、ユーザーが最も頻繁に使用する用途で過ごす時間を減らすことから始まります。最初に、最も頻繁な経路をターゲットにし、その使用を最適化します：ステップの数を減らす、アクションの数を減らす、不要なものを削除する、失敗のケースを特定する、応答時間を最適化するなど。プログラムがユーザーが想像していた通りに正確に動作するとき、経路はうまく設計されています。
 
-A minima, sonder en observant son entourage utilisant le service est un bon moyen d’identifier les points de friction - situations ou interactions qui contribuent à dégrader l’expérience ユーザ et à ralentir le parcours - des ユーザs. Les tests ユーザs permettent d'aller plus en profondeur dans la recherche de ces points de friction.
+最小限にとどめて、サービスを使用している周囲の人々を観察することは、摩擦点（ユーザーの経験を悪化させ、経路を遅くする状況または相互作用）を特定するための良い方法です。ユーザーテストは、これらの摩擦点をさらに深く探求するために役立ちます。
 
-Le temps passé par l'ユーザ sur son 端末 est le deuxième post en termes d'impacts environnementaux.
+ユーザーが端末で過ごす時間は、環境への影響において2番目に大きな要因です。
 
 ### 例
 
-* Proposer, pour un site de grande distribution, une nouvelle commande sur la base du contenu de la précédente.
-* Acheter sans inscription sur un site d'e-commerce.
-* Copier/Coller son RIB directement plutôt que le télécharger puis le transférer.
-* Mettre en avant les champs ou les filtres les plus utilisés.
+* 大量販売サイトで、前回の内容を基に新しい注文を提案する。
+* eコマースサイトで登録せずに購入する。
+* RIB（銀行のID）を直接コピー/ペーストする、ダウンロードしてから転送するのではなく。
+* 最も使用されるフィールドやフィルターを強調する。
 
 
 ### 検証原理
 
 |  検証項目 | 以下である  |  
 |-------------------|:-------------------------:|
-| points de friction | 0 |
+| 摩擦点 | 0 |

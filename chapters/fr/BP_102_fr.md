@@ -10,7 +10,7 @@
 
 | Cycle de vie |  Tiers  |  Responsable  |
 |:---------:|:----:|:----:|
-| 4. Production | Utilisateur/Terminal | Architecte Logiciel/Développeur |
+| 4. Production | Utilisateur/Terminal | ソフトウェアアーキテクト/開発者 |
 
 ### Indications
 

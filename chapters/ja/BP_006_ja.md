@@ -24,21 +24,17 @@
 
 ### 説明
 
-Lorsque le contexte le permet, privilégier l’approche « mobile first » qui consiste à concevoir un site/service en ligne
-pour les terminaux mobiles,
-et n’élargir sa couverture fonctionnelle pour de plus grands écrans que si l’apport fonctionnel/ergonomique est justifié.
-Dans ce cas, opter alors pour le chargement adaptatif.
-Cette approche consiste à sélectionner les ressources, y compris JS et CSS, les plus adaptées au contexte d'utilisation (taille de l'écran / de la fenêtre, densité de pixels, qualité du réseau, quantité de mémoire vive, etc.), si possible côté serveur.
-On s’assure ainsi de ne pas consommer inutilement de la bande passante, 
-ni de trop solliciter le プロセッサ  et la mémoire du 端末 pour des traitements inutiles.
+コンテキストが許す場合、まずモバイル端末向けにオンラインサイト/サービスを設計する「モバイルファースト」のアプローチを優先し、機能的/人間工学的に正当な利益がある場合にのみ、より大きな画面での機能カバーを拡大します。この場合、適応的な読み込みを選びます。
+このアプローチでは、画面/ウインドウサイズ、ピクセル密度、ネットワークの品質、RAMの量など、使用状況の文脈に最も適したリソース（JSとCSSを含む）を選ぶことができます。できればサーバー側で。
+これにより、必要以上に帯域幅を消費したり、プロセッサや端末のメモリを無駄に処理したりすることがないようにします。
 
 ### 例
 
-Côté serveur, on pourra utiliser les _client hints_, ou à défaut l'identifiant du navigateur couplé à un tableau de capacités des navigateurs (aussi appelé _user agent sniffing_, avec ses limitations).
+サーバー側では、_client hints_を使用するか、またはブラウザの識別子とブラウザの機能表（user agent sniffing、その制限も含めて）を組み合わせることができます。
 
-Côté client, les _media queries_ (notamment dans les attributs `media` des `<link>` pour la sélection de feuilles de styles CSS), les attributs `srcset` et `sizes` des `<img>`, les sous-éléments `<source>` des `<picture>`, `<video>` et `<audio>` pourront être utiles, et les mêmes informations disponibles dans les _client hints_ peuvent également être récupérées par des APIs JavaScript pour éventuellement charger du code et/ou du contenu complémentaire dynamiquement.
+クライアント側では、CSSスタイルシートの選択に`<link>`の`media`属性などの_media queries_、`<img>`の`srcset`と`sizes`属性、`<picture>`、`<video>`、`<audio>`の`<source>`サブ要素などが役立つでしょう。また、_client hints_で利用可能な同じ情報をJavaScriptのAPIで取得し、必要に応じてコードや追加の動的コンテンツをロードすることもできます。
 
-Dans tous les cas, priviligiez un mode par défaut minimaliste permettant l'accès à votre site même si toutes ses fonctionnalités ne sont pas supportées par tous les navigateurs (sans trop détériorer l'expérience ユーザ bien sûr!).
+いずれの場合も、すべてのブラウザでそのすべての機能がサポートされていなくても、サイトへのアクセスを可能にするミニマリストなデフォルトモードを優先してください（もちろん、ユーザー体験をあまり損なわないように！）。
 
 #ソース
 
@@ -49,4 +45,4 @@ Dans tous les cas, priviligiez un mode par défaut minimaliste permettant l'acc�
 
 | 検証項目     | 次の値以下である   |  
 |-------------------|:-------------------------:|
-| de 設計 ne s'appuyant pas sur une approche "mobile first"  |  1 |
+|「モバイルファースト」のアプローチに依存しない設計 |  1 |

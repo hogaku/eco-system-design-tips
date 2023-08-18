@@ -10,7 +10,7 @@
 
 | ライフサイクル |  サードパーティ  |  担当者  |
 |:---------:|:----:|:----:|
-| 3. 実現 (製造 / 実装) | ネットワーク | Architecte Logiciel/Développeur |
+| 3. 実現 (製造 / 実装) | ネットワーク | ソフトウェアアーキテクト/開発者 |
 
 ### 効果
 
@@ -24,23 +24,15 @@
 
 ### 説明
 
-Le temps de chargement d’une page côté navigateur est directement corrélé au nombre de fichiers que le navigateur doit télécharger,
-et au poids unitaire de chaque fichier.
+ブラウザ側のページの読み込み時間は、ブラウザがダウンロードする必要のあるファイルの数と、各ファイルの単位当たりの重さに直接相関しています。
 
-Pour chaque fichier, le navigateur émet un GET HTTP vers le serveur.
+各ファイルに対して、ブラウザはサーバーに対してHTTP GETを発行します。
 
-Il attend sa réponse, puis télécharge la ressource dès qu’elle est disponible. Selon le type de serveur web que vous utilisez,
-plus le nombre de requêtes par page est important, moins vous pourrez servir de pages par serveur. 
-Diminuer le nombre de requêtes par page est crucial pour réduire le nombre de serveurs HTTP (voire des serveurs d'application et de base de données) nécessaires au fonctionnement du site,
-et donc les impacts environnementaux associés.
-
-### 例
-
-Pour afficher des petits drapeaux pour le choix d'une langue, l'utilisation d'une spritesheet CSS permet de les regrouper dans une seule image de plus grande taille.
-Ce procédé réduit le nombre de requêtes HTTP.
+サーバーからの応答を待ち、リソースが利用可能になるとすぐにダウンロードします。使用しているWebサーバーのタイプに応じて、ページあたりのリクエスト数が多いほど、サーバーごとに提供できるページ数が少なくなります。
+ページごとのリクエスト数を減らすことは、サイトの運用に必要なHTTPサーバー（場合によってはアプリケーションサーバーやデータベースサーバー）の数を減らし、それに伴う環境への影響を減らすために重要です。
 
 ### 検証原理
 
 | 検証項目     | 次の値以下である   |  
 |-------------------|:-------------------------:|
-| de クエリ HTTP  | 40  |
+| HTTPクエリの数  | 40  |
