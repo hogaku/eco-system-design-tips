@@ -10,7 +10,7 @@
 
 | ライフサイクル |  サードパーティ  |  担当者  |
 |:---------:|:----:|:----:|
-| 3. 実現 (製造 / 実装) | データセンター | Architecte Logiciel/Développeur |
+| 3. 実現 (製造 / 実装) | データセンター | ソフトウェアアーキテクト/開発者 |
 
 ### 効果
 
@@ -24,16 +24,15 @@
 
 ### 説明
 
-Avec le support désormais généralisé sur tous les navigateurs des bases de données clé-valeur (IndexDB, Web Storage), et de la mise en cache dans le Cache Storage API, il est possible de stocker localement des données structurées statiques.
+すべてのブラウザでキー値データベース（IndexDB、Web Storage）のサポートが一般的になり、Cache Storage APIでのキャッシュにより、ローカルに静的な構造化データを保存することが可能になりました。
 
-L’intérêt du stockage local est double. D’une part, on évite les allers-retours inutiles avec le serveur, ce qui économise des ressources et du temps de réponse.
-D’autre part, comme les données sont locales, il est plus facile et plus rapide de les manipuler au sein de l’interface.
+ローカルストレージの利点は2つあります。一方で、サーバーとの不必要な往復を避けることで、リソースと応答時間を節約します。
+他方、データがローカルにあるため、インタフェース内でそれらを操作するのがより簡単で迅速です。
 
-Le gain potentiel est la réduction de la charge serveur, donc du nombre d’équipements nécessaires (de leur empreinte environnementale et économique),
-des serveurs HTTP jusqu’aux serveurs de base données.
+潜在的な利点は、サーバーの負荷の削減、したがって必要な機器の数（その環境的および経済的な足跡）、HTTPサーバーからデータベースサーバーまでの削減です。
 
 ### 検証原理
 
 | 検証項目     | 次の値以下である   |  
 |-------------------|:-------------------------:|
-| de données statiques non stockées localement  | 25%  |
+| ローカルに保存されていない静的データの割合  | 25%  |

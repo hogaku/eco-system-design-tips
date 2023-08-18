@@ -10,7 +10,7 @@
 
 | ライフサイクル |  サードパーティ  |  担当者  |
 |:---------:|:----:|:----:|
-| 2. 設計 | ネットワーク | Architecte Logiciel/Développeur |
+| 2. 設計 | ネットワーク | ソフトウェアアーキテクト/開発者 |
 
 ### 効果
 
@@ -24,19 +24,18 @@
 
 ### 説明
 
-Lorsque l’interaction avec l’ユーザ induit un traitement lourd et long côté serveur, proposer un traitement asynchrone lorsque c’est possible.
-L’idée est d’encourager l’ユーザ à déclencher le traitement, puis à se reconnecter quand celui-ci est terminé sans attendre sur son 端末 la fin de l'exécution; 
-par 例, via la réception d’un e-mail contenant un lien.
-Cette approche permet de réaliser des traitements par lots (batchs), souvent plus efficients en ressources que des traitements synchrones à la volée.
-On libère ainsi les serveurs de présentation, qui peuvent prendre en charge d’autres internautes pendant que le traitement s’effectue en mode asynchrone côté serveur.
-Il est également plus aisé de lisser la charge du serveur 担当者 du traitement, ce qui permet une meilleure mutualisation de serveurs et par conséquent moins de serveurs.
+ユーザとの対話がサーバー側での重くて時間のかかる処理を引き起こす場合、可能であれば非同期の処理を提案します。
+このアプローチのアイデアは、ユーザに処理を開始させ、その実行が終了するのを端末で待つことなく、実行が完了したときに再接続させることです。例えば、リンクを含むメールを受信することによります。
+この方法によって、バッチ（一括）処理が可能になり、多くの場合、飛び飛びの同期処理よりもリソースの効率が向上します。
+これにより、プレゼンテーションサーバーが解放され、処理がサーバー側で非同期モードで行われている間に他のインターネットユーザーを処理することができます。
+また、処理を担当するサーバーの負荷を平滑化することも容易になり、それによってサーバーの共有が向上し、結果として必要なサーバーの数が減少します。
 
 ### 例
 
-Dans le cas d’un service en ligne de conversion de documents bureautiques, inciter l’ユーザ à déposer ses fichiers en une seule fois, puis l’avertir par e-mail lorsque le traitement est terminé. Pour optimiser le processus, l’ensemble des fichiers peut être regroupé et compressé dans une archive.
+オンライン文書変換サービスの場合、ユーザに一度にファイルをアップロードさせ、処理が終了したらメールで通知するよう促します。プロセスを最適化するために、すべてのファイルをまとめてアーカイブに圧縮することができます。
 
 ### 検証原理
 
 | 検証項目     | 次の値以下である   |  
 |-------------------|:-------------------------:|
-| de traitements synchrones qui prennent plus d'une minute  | 0  |
+| 1分以上かかる同期処理の数  | 0  |
