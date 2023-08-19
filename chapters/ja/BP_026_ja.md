@@ -24,20 +24,20 @@
 
 ### 説明
 
-Utiliser les notations CSS abrégées pour réduire le poids de la feuille de styles.
+スタイルシートの重さを減らすために、CSSの短縮記法を使用する。
 
 ### 例
 
-Ne pas écrire :
+以下のように書かない：
 ```css
 margin-top:1em; margin-right:0; margin-bottom:2em; margin-left:0.5em;
 ```
-mais plutôt :
+以下のように書く：
 ```css
 margin:1em 0 2em 0.5em;
 ```
 
-Pour aller plus loin :
+さらに詳しくは：
  - https://www.w3.org/TR/CSS
  - https://www.456bereastreet.com/archive/200502/efficient_css_with_shorthand_properties/
 
@@ -45,4 +45,4 @@ Pour aller plus loin :
 
 | 検証項目     | 次の値以下である   |  
 |-------------------|:-------------------------:|
-| de notations CSS non abrégés  |  0% |
+| 短縮されていないCSSの記法  |  0% |

@@ -24,13 +24,12 @@
 
 ### 説明
 
-Lorsque plusieurs éléments du DOM (Document Object Model) ont des propriétés CSS communes,
-les déclarer ensemble dans la même feuille de styles. Cette méthode permet de réduire le poids de la CSS.
+DOM（Document Object Model）の複数の要素が共通のCSSプロパティを持っている場合、同じスタイルシート内で一緒に宣言する。この方法により、CSSの重さを削減できます。
 
 ### 例
 
 
-Ne pas écrire :
+以下のように書かない：
 ```css
 h1 {
 background-color: gray; color: navy;
@@ -45,20 +44,19 @@ background-color: gray; color: navy;
 }
 ```
 
-mais plutôt :
+以下のように書く：
 ```css
 h1, h2, h3 {
 background-color: gray; color: navy;
 }
 ```
 
-Si vous souhaitez vous assurer que cette règle est bien respectée, vous pouvez mettre en place le module [stylelint](https://stylelint.io/) 
-dans votre projet (`devDependencies`) et utiliser la règle `shorthand-property-no-redundant-values`
+このルールがきちんと守られているかを確認したい場合、プロジェクト（`devDependencies`）に [stylelint](https://stylelint.io/) モジュールを導入し、`shorthand-property-no-redundant-values` ルールを使用することができます。
 
-Vous trouverez la liste complète de ces propriétés raccourcies sur le site [MDN](https://developer.mozilla.org/fr/docs/Web/CSS/Propri%C3%A9t%C3%A9s_raccourcies)
+これらの省略プロパティの完全なリストは、[MDN](https://developer.mozilla.org/fr/docs/Web/CSS/Propri%C3%A9t%C3%A9s_raccourcies) サイトで見ることができます。
 
 ### 検証原理
 
 | 検証項目     | 次の値以下である   |  
 |-------------------|:-------------------------:|
-|  de déclaration CSS similaires non regroupées | 1  |
+|  グループ化されていない同様のCSS宣言 | 1  |
