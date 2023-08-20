@@ -1,4 +1,4 @@
-## Optimiser les images vectorielles
+## ベクター画像の最適化
 
 ### 識別子
 
@@ -24,29 +24,27 @@
 
 ### 説明
 
-Les navigateurs modernes sont tous compatibles avec le format d’image vectorielle SVG (Scalable Vector Graphics), 
-basé sur un ensemble de vecteurs décrits en XML. Les images SVG ont deux avantages indéniables : d’une part, 
-elles peuvent être réduites et agrandies à l’infini sans dégradation de qualité ; d’autre part, elles sont,
-la plupart du temps, moins lourdes que des images bitmap.
+モダンなブラウザはすべて、XMLで記述されたベクターのセットに基づいているベクター画像形式であるSVG（Scalable Vector Graphics）と互換性があります。 
+SVG画像には、質の劣化なく無限に縮小および拡大できるという利点と、ほとんどの場合、ビットマップ画像よりも軽いという利点の2つの利点があります。
 
-Cependant, la plupart des images SVG contiennent de nombreuses métadonnées qui ont été nécessaires à leur création. 
-C’est par 例 le cas des informations de couche (layer), des commentaires, etc., qui sont indispensables pour éditer l’image,
-mais inutiles pour l’afficher. D’où l’idée de les supprimer pour réduire le poids des fichiers.
-De nombreux outils de minification et d’optimisation, tels que Compressor.io, SVG Cleaner, ou SVGO sont disponibles.
+しかし、ほとんどのSVG画像には、作成に必要だった多くのメタデータが含まれています。
+例えば、レイヤー（layer）の情報、コメントなどが画像の編集には必須ですが、表示には不要です。
+したがって、ファイルのサイズを削減するためにこれらを削除する考えが生まれました。
+Compressor.io、SVG Cleaner、SVGOなどの最小化および最適化ツールが多数利用できます。
 
-Le taux de compression via gzip varie selon la complexité de l’image. Mais il est toujours élevé, car il s’agit de compresser du texte :
-en général, on atteint des ratios de l’ordre de 75 % à 80 %.
+gzipを介した圧縮率は、画像の複雑さによって異なりますが、常に高いです。
+これはテキストを圧縮するためで、一般に75％から80％の範囲の比率に達します。
 
 
 ### 例
 
-Gain potentiel : jusqu’à 75 % de Ko en moins.
+潜在的な利益：最大75％のKo削減。
 
-Nous avons testé SVGO sur un fichier SVG de 1 Ko. Il a réduit sa taille de 36 %, le faisant passer de 1101 à 700 octets. En compressant le fichier via gzip avant son transfert, le poids passe à 498 octets, soit moins de la moitié (45 %) de la taille initiale, sans aucune perte de qualité à l’affichage.
+1 KoのSVGファイルでSVGOをテストしました。 これにより、そのサイズが36％削減され、1101バイトから700バイトになりました。 転送前にファイルをgzipで圧縮すると、重さが498バイトになり、初期サイズの半分未満（45％）になり、表示の品質は全く損なわれません。
 
 
 ### 検証原理
 
 | 検証項目     | 次の値以下である   |  
 |-------------------|:-------------------------:|
-| d'images non optimisées  |  0% |
+| 最適化されていない画像の数  |  0% |

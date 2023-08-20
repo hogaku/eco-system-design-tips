@@ -1,4 +1,4 @@
-## Eviter d'utiliser des images matricielles pour l'interface
+## インターフェイスにラスター画像を使用しない
 
 ### 識別子
 
@@ -24,15 +24,13 @@
 
 ### 説明
 
-Choisir le bon format d’image est crucial pour éviter de transporter des octets inutilement et économiser ainsi de la bande passante. 
-Par ailleurs, avec la multiplication des terminaux, des tailles d’écran et l’augmentation de leur résolution, une approche vectorielle
-doit être privilégiée par rapport à des images matricielles.
-Grâce à cette bonne pratique, l’interface est indépendante de la résolution de l’écran. On limite donc aussi la dette technique.
-La première règle consiste à remplacer les images matricielles (GIF, PNG, JPEG, WebP, etc.) par des styles (CSS), des pictos,
-des glyphes ou des icônes fournis par une webfont ou une police standard. L’internaute n’a ainsi aucune ressource supplémentaire à télécharger.
-S’il n’est pas possible d’utiliser des CSS ou une police standard (déjà installée sur le 端末 de l’internaute), vous pouvez aussi :
- - employer une webfont ;
- - recourir à une image vectorielle au format standard SVG.
+画像の正しい形式を選ぶことは、不必要なバイトを転送せずに帯域幅を節約するために非常に重要です。
+さらに、端末の多様化、画面サイズの変化、および解像度の向上に伴い、ベクター画像のアプローチが、ビットマップ画像よりも優先されるべきです。
+この良い方法により、インターフェイスは画面の解像度から独立します。したがって、技術的な負債も制限します。
+最初のルールは、ビットマップ画像（GIF、PNG、JPEG、WebPなど）を、スタイル（CSS）、ピクト、グリフ、またはwebfontまたは標準フォントによって提供されるアイコンに置き換えることです。インターネットユーザーは追加のリソースをダウンロードする必要はありません。
+CSSまたは標準フォント（インターネットユーザーの端末にすでにインストールされている）を使用することができない場合、以下の方法も使用できます：
+ - webfontを使用する ;
+ - 標準SVG形式のベクター画像を使用する。
 
 
 ### 例
@@ -40,16 +38,16 @@ S’il n’est pas possible d’utiliser des CSS ou une police standard (déjà 
 
 ![img.png](../img/img.png)
 
-Cette image de 198 × 198 pixels pèse : 
- - 118 Ko dans un format matriciel non compressé ;
- - 6,5 Ko en JPEG (compression à 90 %) ;
- - 3,8 Ko en PNG ;
- - 0,7 Ko en SVG minifié.
+この198×198のピクセル画像の容量は : 
+ - 圧縮されていないビットマップ形式で118KB
+ - JPEGで6.5KB（90％圧縮）
+ - PNGで3.8KB
+ - PNGで3.8KB
 
-Le format vectoriel est, dans ce cas précis, 5 à 10 fois moins lourd qu’un format matriciel tout en pouvant être retaillé à l’infini.
+この特定の場合、ベクター形式はビットマップ形式よりも5〜10倍軽く、無限にリサイズすることができます。
 
 ### 検証原理
 
 | 検証項目     | 次の値以下である   |  
 |-------------------|:-------------------------:|
-| d'images matricielles pour l'URL testée   | 5  |
+| テストされたURLのビットマップ画像の数   | 5  |

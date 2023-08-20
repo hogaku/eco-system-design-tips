@@ -1,4 +1,4 @@
-## Externaliser les CSS et JavaScript
+## CSSとJavaScriptのアウトソーシング
 
 ### 識別子
 
@@ -24,25 +24,23 @@
 
 ### 説明
 
-Veiller à ce que les codes CSS et JavaScript ne soient pas embarqués dans le code HTML de la page, à l’exception d’éventuelles
-variables de configuration pour les objets JavaScript.
 
-En effet, si vous incluez du code CSS ou JavaScript dans le corps du fichier HTML, alors que ce dernier est utilisé par plusieurs pages
-(voire tout le site), ce code doit être transféré pour chaque page demandée par l’ internaute, ce qui augmente le volume de données transmises.
-En revanche, si les codes CSS et JavaScript sont inclus dans leurs propres fichiers, 
-le navigateur peut les stocker dans son système de cache local afin de ne pas les redemander.
+CSSとJavaScriptのコードがページのHTMLコードに埋め込まれていないことを確認してください。ただし、JavaScriptオブジェクトの設定変数などの例外がある場合もあります。
+
+実際、HTMLファイルの本体にCSSまたはJavaScriptコードを含めると、これが複数のページ（あるいはサイト全体）で使用されている場合、ユーザーが要求する各ページごとにこのコードを転送する必要があります。これによって送信されるデータ量が増加します。
+一方、CSSとJavaScriptのコードがそれぞれのファイルに含まれている場合、ブラウザはそれらをローカルキャッシュシステムに保存できるため、再度要求する必要がありません。
 
 ### 例
 
-Dans le code HTML, ne pas écrire :
+HTMLコード内で以下のように書かないでください :
 ```html
 <style type="text/css" media="screen">
     p { color: #333; margin: 2px 0 }
-    /* Toutes les déclarations CSS du site */
+    /* サイトの全CSS宣言 */
 </style>
 ```
 
-mais plutôt :
+代わりに以下のように書いてください :
 ```html
 <link href="css/styles.css" rel="stylesheet">
 ```
@@ -53,4 +51,4 @@ mais plutôt :
 
 | 検証項目     | 次の値以下である   |  
 |-------------------|:-------------------------:|
-| d'URL intégrant une quantité et / ou un nombre significatif de code CSS / Javascript (inline)   | 2  |
+| CSS / Javascriptのコード（インライン）を含むURLの量および/または数   | 2  |
