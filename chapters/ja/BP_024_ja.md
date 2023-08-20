@@ -24,24 +24,24 @@
 
 ### 説明
 
-Privilégier les sélecteurs basés sur des ID ou des classes. Ils seront ainsi filtrés plus rapidement, économisant des cycles CPU à la machine interprétant les règles.
+IDまたはクラスに基づいたセレクタを優先する。それによって、ルールを解釈するマシンのCPUサイクルが節約され、より迅速にフィルタリングされます。
 
 ### 例
 
-Ne pas écrire :
+以下のように書かない：
 ```css
 treeitem[mailfolder="true"] > treerow > treecell {…}
 ```
-mais plutôt :
+以下のように書く：
 ```css
 .treecell-mailfolder {…}
 ```
 
-Ne pas écrire :
+以下のように書かない：
 ```css
 treehead > treerow > treecell {…}
 ```
-mais plutôt :
+以下のように書く：
 ```css
 .treecell-header {…}
 ```
@@ -50,4 +50,4 @@ mais plutôt :
 
 | 検証項目     | 次の値以下である   |  
 |-------------------|:-------------------------:|
-| de sélecteurs CSS qui n'utilisent ni d'id, ni de class et ni d'attribut  |  0 |
+| ID、クラス、属性を使用しないCSSセレクタ  |  0 |

@@ -1,4 +1,4 @@
-## Utiliser le chargement paresseux
+## レイジーロードの使用
 
 ### 識別子
 
@@ -23,34 +23,31 @@
 |  プロセッサ  / ネットワーク  |
 
 ### 説明
-Lorsqu’un internaute ne consulte pas la totalité d’une page web, par défaut toutes les ressources (images, vidéos, iframes...)
-situées en dehors de la zone visitée, en dessous de la ligne de flottaison, sont chargées inutilement. Pour éviter cela, 
-il est possible d'utiliser la technique du chargement paresseux (lazy loading) qui consiste à ne charger un élement que
-lorsque son emplacement devient visible à l’écran. 
+インターネット利用者がウェブページの全体を閲覧しない場合、デフォルトでは訪れていないエリアにあるリソース（画像、ビデオ、iframeなど）が無駄にロードされます。
+これを防ぐために、画面上でその場所が表示されるまで要素をロードしない「遅延ロード（lazy loading）」というテクニックを使用することができます。
 
-Il est possible, en HTML5, d'ajouter un attribut `loading` à vos images et à vos iframes pour que le navigateur s'occupe
-de ne télécharger que les images qui apparaissent à l'écran. Cependant, cet attribut est très récent : il ne sera
-pas pris en compte sur d'anciennes versions de navigateurs. Dans un souci de compatibilité accrue, on pourra néanmoins
-utiliser des mini-librairies Javascript, très légères, qui s'occuperont de lazy-loader vos images comme : 
+HTML5では、画像やiframeにloading属性を追加して、画面上に表示される画像のみをブラウザがダウンロードするようにすることが可能です。
+しかし、この属性は非常に新しいため、古いバージョンのブラウザではサポートされない場合があります。
+より高い互換性を確保するために、以下のような非常に軽量なJavaScriptのミニライブラリを使用して画像をlazy-loadすることもできます：
     - [LOZAD](https://cdn.jsdelivr.net/npm/lozad) 1,9 Ko (gzip)
     - [Vanilla-lazyload](https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.min.js) 3,5 Ko (gzip)
 
 ### 例
-Dans cet 例, l'image et l'iframe seront lazy-loadés automatiquement par le navigateur, si l'image doit apparaitre à
-l'écran, elle sera téléchargée et affichée, si elle est en dessous de la ligne de flottaison, elle ne sera pas téléchargée.
+この例では、画像とiframeがブラウザによって自動的にlazy-loadされます。
+画面上に表示されるべき画像はダウンロードされて表示され、水面下にある場合はダウンロードされません。
 
 ```html
 <img src="image.jpg" alt="..." loading="lazy">
 <iframe src="video-player.html" title="..." loading="lazy"></iframe>
 ```
 
-Pour aller plus loin :
- - https://developer.mozilla.org/en-US/docs/Web/Performance/Lazy_loading
- - https://web.dev/browser-level-image-lazy-loading/
- - https://web.dev/lazy-loading-video/
+さらに詳しく知りたい方は以下を参照してください :
+ - [MDN Web Docsによる遅延ロードについて](https://developer.mozilla.org/en-US/docs/Web/Performance/Lazy_loading)
+ - [Browser-level image lazy-loadingについて](https://web.dev/browser-level-image-lazy-loading/)
+ - [Lazy-loading videoについて](https://web.dev/lazy-loading-video/)
 
 ### 検証原理
 
 | 検証項目     | 次の値以下である   |  
 |-------------------|:-------------------------:|
-| d'images, d'iframes et de vidéos appelés sans lazy loading, en dessous de la ligne de flottaison  |  0% |
+| 水面下の画像、iframe、ビデオがlazy loadingなしで呼び出される数  |  0% |

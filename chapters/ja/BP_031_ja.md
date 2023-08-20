@@ -1,4 +1,4 @@
-## Valider les pages auprès du W3C
+## W3Cでページを検証する
 
 ### 識別子
 
@@ -24,16 +24,17 @@
 
 ### 説明
 
-Vérifier que le code HTML des pages est bien formé. Dans le cas contraire, le navigateur corrigera dynamiquement un certain nombre d’éléments pour afficher au mieux les pages posant problème.
-Ces corrections dynamiques consomment inutilement des ressources à chaque chargement des pages concernées.
+ページのHTMLコードが適切に形成されていることを確認してください。そうでない場合、ブラウザは問題のあるページをできるだけよく表示するために、いくつかの要素を動的に修正します。
+これらの動的な修正は、対象となるページが毎回読み込まれるたびに無駄にリソースを消費します。
+
 
 ### 例
 
-Utiliser le validateur du W3C (World Wide Web Consortium) pour vérifier que les pages sont bien valides et que le code HTML est correctement formé :
+W3C（World Wide Web Consortium）のバリデーターを使用して、ページが有効であり、HTMLコードが適切に形成されていることを確認します：
 https://validator.w3.org
 
 ### 検証原理
 
 | 検証項目     | 次の値以下である   |  
 |-------------------|:-------------------------:|
-| d'erreurs critiques  | 0  |
+| 重大なエラーの数  | 0  |

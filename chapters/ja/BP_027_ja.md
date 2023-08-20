@@ -1,4 +1,4 @@
-## Fournir une CSS print
+## CSSにおけるフットプリントを抑える
 
 ### 識別子
 
@@ -24,14 +24,14 @@
 
 ### 説明
 
-Outre le service apporté à l’internaute, cette feuille de styles réduit le nombre de pages imprimées, 
-et donc indirectement l’empreinte écologique du site web. La plus dépouillée possible, elle doit proposer une police
-de caractères économe en encre (Century Gothic, par 例). Pensez aussi à masquer le header, le footer, le menu, le sidebar,
-supprimer toutes les images sauf celles du contenu, etc.
+このスタイルシートは、インターネット利用者へのサービスの提供に加えて、印刷されるページ数を削減し、
+したがって間接的にウェブサイトの環境への影響を減らします。できるだけシンプルにし、インクの消費が少ないフォント
+（Century Gothicなど）を使用するよう努めるべきです。ヘッダー、フッター、メニュー、サイドバーを隠し、
+コンテンツの画像以外はすべて削除するなどの工夫も考えられます。
 
 ### 例
 
-Cette CSS print « nettoie » la page affichée à l’écran afin de proposer une impression épurée :
+この「CSSプリント」は、画面上で表示されるページを「きれいに」し、洗練された印刷を提供するためのものです：
 ```css
 body {
 background-color :#ﬀf; font-family :Serif; font-size :15pt;
@@ -51,4 +51,4 @@ text-indent :0; line-height :25pt; font-size :25pt;
 
 | 検証項目     | 次の値以下である   |  
 |-------------------|:-------------------------:|
-| de CSS print manquante  |  1 |
+| 足りないCSSプリント  |  1 |

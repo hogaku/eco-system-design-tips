@@ -1,4 +1,4 @@
-## Préférer les glyphs aux images
+## 画像よりもグリフを優先
 
 ### 識別子
 
@@ -24,24 +24,24 @@
 
 ### 説明
 
- Les glyphes sont des caractères typographiques spécifiques, inclus dans les polices de caractères comme celles d'un système d'exploitation, utilisables en remplacement d'images monochromes telles que des symboles ou pictogrammes (chevron, triangle, point, carré, signes astrologiques, etc.) jusqu'aux illustrations permettant :
-- de réduire la bande passante en économisant sur le poids
-- de réduire le nombre de requêtes
-- de réduire la complexité du DOM, notamment avec de nombreux pictogrammes SVG
+グリフは、オペレーティングシステムのような文字フォントに含まれる特定の印刷文字で、モノクロのイメージ（シェブロン、三角形、点、四角、星座の記号など）やイラストの代わりとして使用でき、以下のような利点があります：
+- 重量を節約して帯域幅を削減する
+- リクエストの数を削減する
+- 特に多くのSVGのピクトグラムとともにDOMの複雑さを削減する
 
 ### 例
 
-Pour optimiser une landing page comprenant visuellement :
+視覚的に以下を含むランディングページを最適化する場合：
 
-![例 de police créée via Font Forge pour illustrer une landing page](https://github.com/florinesueur/images/blob/main/vue-font-forge.svg)
-*Extrait d'une police créée via Font Forge*
+![例 フォントフォージで作成されたランディングページを示す例](https://github.com/florinesueur/images/blob/main/vue-font-forge.svg)
+*フォントフォージで作成されたランディングページを示す例*
 
-Un gain de 91% du poids a été réalisé en incluant pictogrammes et illustrations vectorielles dans une icon font via [Font Forge](https://fontforge.org/en-US/).
+ピクトグラムとベクターイラストを[Font Forge](https://fontforge.org/en-US/)を通じてアイコンフォントに組み込むことで、容量の91％の削減が実現されました。
 
-Pour aller plus loin : [https://coding.smashingmagazine.com/2011/03/19/styling-elements-with-glyphs-sprites-and-pseudo-elements](https://coding.smashingmagazine.com/2011/03/19/styling-elements-with-glyphs-sprites-and-pseudo-elements)
+詳細については、次のリンクをご覧ください： [https://coding.smashingmagazine.com/2011/03/19/styling-elements-with-glyphs-sprites-and-pseudo-elements](https://coding.smashingmagazine.com/2011/03/19/styling-elements-with-glyphs-sprites-and-pseudo-elements)
 
 ### 検証原理
 
 | 検証項目     | 次の値以下である   |  
 |-------------------|:-------------------------:|
-| d'images qui auraient pu être remplacées par un glyphe (symbole de police de caractère)  | 0  |
+| グリフ（文字フォントのシンボル）で置き換えられる可能性のある画像 | 0  |

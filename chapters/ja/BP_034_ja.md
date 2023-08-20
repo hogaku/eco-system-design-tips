@@ -1,4 +1,4 @@
-## Ne pas redimensionner les images coté navigateur
+## ブラウザ側で画像のリサイズを行わない
 
 ### 識別子
 
@@ -24,16 +24,16 @@
 
 ### 説明
 
-Ne pas redimensionner les images en utilisant les attributs HEIGHT et WIDTH du code HTML. Cette approche impose en effet de transférer ces images dans leur taille originale, gaspillant ainsi de la bande passante et des cycles CPU.
+HTMLのコード内でHEIGHTとWIDTH属性を使用して画像をリサイズしないでください。この方法では、画像を元のサイズで転送する必要があり、帯域幅とCPUサイクルが無駄になります。
 
 ### 例
 
-Une image de 350 × 300 pixels encodée en PNG 24 pèse 41 Ko. Redimensionnée dans le code HTML, la même image affichée en vignette à 70 × 60 pixels pèse toujours 41 Ko, alors qu’elle ne devrait pas dépasser 3 Ko ! Soit 38 Ko téléchargés à chaque fois pour rien… NB : le redimensionnement étant fait par le navigateur peut aussi avoir un effet pixel sur le rendu final.
+350×300ピクセルでエンコードされたPNG 24の画像は41KBの重さがあります。HTMLコードでリサイズされた場合、同じ画像が70×60ピクセルのサムネイルとして表示されても、重さは依然として41KBで、3KBを超えてはならないのに、毎回38KBが無駄にダウンロードされます。注：リサイズがブラウザによって行われるため、最終的なレンダリングにピクセル効果がある場合があります。
 
-La meilleure solution consiste à générer les images à la taille à laquelle elles sont affichées. Soit vous le faites manuellement en utilisant un éditeur d'image, soit le CMS dispose d'une routine automatique qui va générer les images à la taille où elles sont appelées dans le template.
+最良の解決策は、画像を表示されるサイズで生成することです。これは、画像エディターを使用して手動で行うか、CMSがテンプレートで呼び出されるサイズで画像を生成する自動ルーチンを持っているかのいずれかです。
 
 ### 検証原理
 
 | 検証項目     | 次の値以下である   |  
 |-------------------|:-------------------------:|
-|  d'images redimensionnées dans le navigateur  | 0  |
+|  ブラウザでリサイズされた画像の数  | 0  |
