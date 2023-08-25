@@ -1,4 +1,4 @@
-## Utiliser le rechargement partiel d'une zone de contenu
+## コンテンツエリアの部分再読み込みの利用
 
 ### 識別子
 
@@ -24,18 +24,17 @@
 
 ### 説明
 
-Si votre page web comporte une ou plusieurs zones de contenus qui nécessitent un taux de rafraîchissement élevé, alors nous vous conseillons de procéder à un rechargement uniquement de celles-ci et non pas de toute la page.
-Pour cela vous pouvez utiliser plusieurs techniques généralement Javascript couramment appelées AJAX mais qui peuvent aussi utilisées un Service Worker, un Web Component ou un développement sur mesure.
+あなたのウェブページに更新頻度が高い必要があるコンテンツエリアが一つまたはそれ以上ある場合、それらのエリアだけをリロードし、ページ全体をリロードしないようにお勧めします。
+それには、一般的にJavascriptでよく使われるAJAXと呼ばれるいくつかの技術を使うことができますが、Service Worker、Web Component、またはカスタム開発も使用できます。
 
-Il est même envisageable de ne pas inclure ces parties dans l'appel HTTP de la page pour l'hydrater avec ces zones dynamiques en Javascript, ce que certains appellent "component islands" ou "islands architecture". L'intérêt étant de pouvoir conserver une solution de cache pour la page "container" et de ne recharger que les "ilots" de contenu qui le nécessitent.
+これらの部分をページのHTTP呼び出しに含めず、Javascriptでこれらの動的エリアで水分補給することさえ考えられます。これを一部の人々が「コンポーネントの島々」または「島々のアーキテクチャ」と呼ぶことがあります。利点は、ページ「コンテナ」のキャッシュソリューションを維持し、「必要なコンテンツの小島」だけをリロードできることです。
 
 ### 例
 
-Les sites d’actualité utilisent très souvent ce procédé, qui permet d’identifier clairement les zones qui nécessitent 
-d’être mises à jour rapidement (flash d’informations, données météo, cours de la Bourse, résultats sportifs, etc.).
+ニュースサイトはこの手法を非常に頻繁に使用し、迅速に更新する必要があるゾーン（ニュースフラッシュ、天気データ、株価、スポーツ結果など）を明確に識別できます。
 
 ### 検証原理
 
 | 検証項目     | 次の値以下である   |  
 |-------------------|:-------------------------:|
-| de zones de contenu pouvant être mis à jour partiellement mais qui ne le sont pas  | 0%  |
+| 部分的に更新可能だが更新されていないコンテンツのエリア  | 0%  |

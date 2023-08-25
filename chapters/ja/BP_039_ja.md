@@ -1,4 +1,4 @@
-## Éviter les animations JavaScript / CSS
+## JavaScript / CSSによるアニメーションの回避
 
 ### 識別子
 
@@ -24,14 +24,16 @@
 
 ### 説明
 
-Les animations JavaScript/CSS peuvent être très coûteuses en termes de cycles CPU et de consommation mémoire. 
-Elles déclenchent toutes une action de type (re)paint/(re)ﬂow très coûteuse en ressources. Il faut donc éviter au maximum les animations, et ne les utiliser que lorsqu’elles sont indispensables.
+JavaScript/CSSのアニメーションは、CPUのサイクルとメモリ消費の点で非常に高価になることがあります。
+それらはすべて、リソースにとって非常に高価な（再）ペイント/（再）フローというタイプのアクションを引き起こします。したがって、できるだけアニメーションを避け、それらが不可欠な場合にのみ使用する必要があります。
 
 Si vous ne pouvez pas vous passer d’une animation, limitez-vous aux propriétés CSS3 `opacity` et `transform`, et aux fonctions associées `translate`, `rotate`, `scale` de `transform`. Ces deux propriétés sont automatiquement optimisées par le navigateur, et l’animation peut être prise en charge par le processeur graphique (GPU). Le site [www.csstriggers.com](https://csstriggers.com/) liste les actions sur le DOM déclenchées par une animation.
 
-Pour que le navigateur puisse réduire au minimum les ressources consommées par l’animation, vous pouvez le prévenir qu’une animation va avoir lieu grâce à l'instruction `will-change`.
+アニメーションなしでは済ませられない場合は、CSS3の `opacity` および `transform` プロパティ、および `transform` の `translate`、 `rotate` 、`scale` 関数に制限してください。これらの2つのプロパティはブラウザによって自動的に最適化され、アニメーションはグラフィックプロセッサ（GPU）によって処理されることがあります。サイト [www.csstriggers.com](https://csstriggers.com/)は、アニメーションによって引き起こされるDOM上のアクションを一覧表示します。
 
-Pour en savoir plus :
+アニメーションによって消費されるリソースを最小限に抑えるために、 `will-change` 命令を使用してアニメーションが発生することをブラウザに事前に知らせることができます。
+
+詳細についてはこちら：
 https://web.dev/animations-guide/
 
 ### 例
@@ -41,9 +43,9 @@ https://web.dev/animations-guide/
     will-change: transform, opacity;
 }
 ```
-### Solution alternative
+### 代替ソリューション
 
-Vous pouvez aussi laissez le choix à vos ユーザs, via les préférences de leurs navigateurs et la media query `prefers-reduced-motion`, de jouer ou non l'animation. L'animation est jouée seulement si l'ユーザ n'a pas défini de préférence.
+ユーザーのブラウザの設定とメディアクエリ `prefers-reduced-motion` を通じて、アニメーションを再生するかどうかをユーザーに選択させることもできます。アニメーションは、ユーザーが設定を定義していない場合のみ再生されます。
 
 ```css
 @media (prefers-reduced-motion : no-preference ) {
@@ -57,4 +59,4 @@ Vous pouvez aussi laissez le choix à vos ユーザs, via les préférences de l
 
 | 検証項目     | 次の値以下である   |  
 |-------------------|:-------------------------:|
-| d'animations JS / CSS par page  |  2 |
+| 1ページあたりのJS/CSSのアニメーション数 |  2 |
