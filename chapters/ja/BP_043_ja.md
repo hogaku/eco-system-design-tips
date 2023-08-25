@@ -1,4 +1,4 @@
-## Réduire au maximum le repaint (appearence) et le reflow (layout)
+## 再描画（外観）とリフロー（レイアウト）の最小化
 
 ### 識別子
 
@@ -24,15 +24,15 @@
 
 ### 説明
 
-Le repaint est le changement d’apparence d’un élément du DOM (Document Object Model), tandis que le reﬂow est le changement/ recalcul de la position des éléments dans le DOM. Ces deux opérations sont coûteuses en ressources, notamment en cycles CPU : il faut donc éviter de les déclencher.
+再描画（repaint）はDOM（Document Object Model）の要素の外観の変更であり、リフロー（reﬂow）はDOM内の要素の位置の変更/再計算です。これら2つの操作は、特にCPUサイクルにおいてリソースを多く消費するため、これらを引き起こすべきではありません。
 
 ### 例
 
-Pour éviter les repaint, ne pas modifier les propriétés stylistiques d’un élément (couleur de fond, style de bordure, couleur du texte, taille, etc.).
+再描画を避けるために、要素のスタイルのプロパティ（背景色、枠線のスタイル、テキストの色、サイズなど）を変更しないようにします。
 
-Pour éviter les reﬂow, limiter les changements de propriétés de position, de dimension, de type de positionnement, de contenu, etc. Cette suggestion est notamment valable pour certains éléments HTML tels que les tables, dont le reﬂow peut nécessiter jusqu’à trois fois plus de temps qu’un élément équivalent avec un block display.
+リフローを避けるために、位置のプロパティ、寸法、配置のタイプ、内容などの変更を制限します。この提案は、特にテーブルなどの一部のHTML要素に対して有効で、リフローがblock displayと同等の要素の3倍の時間を必要とする場合があります。
 
-Pour aller plus loin :
+詳細は以下を参照してください:
 https://developers.google.com/speed/articles/reflow
 
 
@@ -40,4 +40,4 @@ https://developers.google.com/speed/articles/reflow
 
 | 検証項目     | 次の値以下である   |  
 |-------------------|:-------------------------:|
-|  de modifications n'affectant pas le layout et occasionnant un repaint (ex: color, background, visibility) | 1  |
+|  レイアウトに影響を与えずに再描画（repaint）を引き起こす変更の数（例：color, background, visibility） | 1  |

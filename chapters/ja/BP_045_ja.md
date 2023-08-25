@@ -1,4 +1,4 @@
-## Modifier plusieurs propriétés CSS en 1 seule fois
+## 複数のCSSプロパティを一度に変更する
 
 ### 識別子
 
@@ -24,12 +24,12 @@
 
 ### 説明
 
-Pour limiter le nombre de repaint/reﬂow, il est conseillé de ne pas modifier des propriétés une à une. 
-Préférer l’ajout/la suppression de classes CSS, ce qui permet de modifier en une seule fois plusieurs propriétés, tout en ne générant qu’un repaint/reﬂow (voir [la bonne pratique n° 45](/chapters/bonne_pratique_045_fr.md)).
+repaintやreflowの数を制限するために、一度に一つずつプロパティを変更するのではなく、CSSクラスの追加/削除を推奨します。これにより、一度に複数のプロパティを変更し、repaint/reﬂowを一回だけ生成することができます([best_practive45](/chapters/bonne_pratique_045_fr.md))。
+
 
 ### 例
 
-Préférer l’écriture :
+以下のような記述を推奨します :
 ```html
 <style>
     .in-error { color: red;
@@ -51,4 +51,4 @@ Préférer l’écriture :
 
 | 検証項目     | 次の値以下である   |  
 |-------------------|:-------------------------:|
-| de déclarations CSS pouvant être regroupées en une seule (margin, padding, ...), et n'utilisant pas la version courte  | 0  |
+| 一つにまとめることができるCSSの宣言の数（margin、paddingなど）、または短縮バージョンを使用していない数  | 0  |

@@ -1,4 +1,4 @@
-## Ne pas faire de modification du DOM lorsqu’on le traverse
+## DOMをトラバースする際に、DOMに変更を加えないこと
 
 ### 識別子
 
@@ -24,15 +24,14 @@
 
 ### 説明
 
-Modifier le DOM (Document Object Model) lorsqu’on le traverse peut engendrer des situations où la boucle devient très gourmande
-en ressources, notamment en cycles CPU. En effet, si on y ajoute des éléments en le traversant, il est possible de générer une boucle infinie qui consommera une grande quantité de ressources. Ce genre de modification est donc fortement déconseillée.
+DOM（Document Object Model）を走査する際に変更すると、ループが非常にリソースを消費する状況が発生することがあります。特にCPUサイクルにおいてそうです。走査している間に要素を追加すると、大量のリソースを消費する無限ループを生成する可能性があります。この種の変更はしたがって強くお勧めできません。
 
 ### 例
 
 Éviter :
 ```html
 <script>
-    // Notation jQuery
+    // jQueryの記法
     $('a.extlink').each(function(el) {
         $(el).attr('rel','external nofollow');
     });
@@ -44,4 +43,4 @@ en ressources, notamment en cycles CPU. En effet, si on y ajoute des éléments 
 
 | 検証項目     | 次の値以下である   |  
 |-------------------|:-------------------------:|
-| d'insertions dans le DOM réalisées lorsque cette même partie du DOM est traversée par un code JavaScript  | 0  |
+| DOMの同じ部分がJavaScriptのコードで走査される際にDOMに挿入される  | 0  |
