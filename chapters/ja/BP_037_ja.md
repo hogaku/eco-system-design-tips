@@ -29,8 +29,8 @@
 HTML5では、画像やiframeにloading属性を追加して、画面上に表示される画像のみをブラウザがダウンロードするようにすることが可能です。
 しかし、この属性は非常に新しいため、古いバージョンのブラウザではサポートされない場合があります。
 より高い互換性を確保するために、以下のような非常に軽量なJavaScriptのミニライブラリを使用して画像をlazy-loadすることもできます：
-    - [LOZAD](https://cdn.jsdelivr.net/npm/lozad) 1,9 Ko (gzip)
-    - [Vanilla-lazyload](https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.min.js) 3,5 Ko (gzip)
+ - [LOZAD](https://cdn.jsdelivr.net/npm/lozad) 1,9 Ko (gzip)
+ - [Vanilla-lazyload](https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.min.js) 3,5 Ko (gzip)
 
 ### 例
 この例では、画像とiframeがブラウザによって自動的にlazy-loadされます。

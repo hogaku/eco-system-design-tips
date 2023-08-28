@@ -1,4 +1,4 @@
-## Utiliser la délégation d'évènements
+## イベントデリゲーションの使用
 
 ### 識別子
 
@@ -24,12 +24,12 @@
 
 ### 説明
 
-La délégation d’événements permet de ne pas surcharger la mémoire du navigateur en instanciant un seul écouteur pour plusieurs élé- ments du DOM (Document Object Model).
+イベントの委譲は、DOM（Document Object Model）の複数の要素に対して単一のリスナーをインスタンス化することでブラウザのメモリを過剰に消費することなく、処理を行う方法です。
 
 ### 例
 
-L’élément du DOM dont l’ID est t est déclaré comme le délégué. 
-Il intercepte les événements de tous ses fils.
+DOMのIDが「t」である要素は、デリゲートとして宣言されます。
+この要素は、そのすべての子要素からのイベントを傍受します。
 ```html
 <head>
     // ...
@@ -62,4 +62,4 @@ Il intercepte les événements de tous ses fils.
 
 | 検証項目     | 次の値以下である   |  
 |-------------------|:-------------------------:|
-| d'écoutes (listeners) d'un même événement sur plusieurs éléments HTML, faisant partie d'un même groupe, sans utiliser la délégation d'événements  | 0  |
+| イベントの委譲を使用せずに、同じグループに属する複数のHTML要素上で同じイベントのリスナー（listeners）の数  | 0  |

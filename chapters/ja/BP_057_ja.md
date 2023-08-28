@@ -1,4 +1,4 @@
-## Utiliser tous les niveaux de cache du CMS
+## すべてのCMSキャッシュレベルを使用する
 
 ### 識別子
 
@@ -10,7 +10,7 @@
 
 | ライフサイクル |  サードパーティ  |  担当者  |
 |:---------:|:----:|:----:|
-| 4. 制作 | データセンター | Administrateur systèmes |
+| 4. 制作 | データセンター | システム管理者 |
 
 ### 効果
 
@@ -24,21 +24,21 @@
 
 ### 説明
 
-Si le CMS (comme Wordpress, Drupal, eZ Publish...) propose un système de cache à plusieurs niveaux, utiliser ces différents niveaux car leur granularité permet de réduire les ressources consommées (cycles CPU, mémoire) et d’offrir de bonnes performances à l’ユーザ.
+システム管理者としては、CMS（Wordpress、Drupal、eZ Publishなど）が複数レベルのキャッシュシステムを提供している場合、これらの異なるレベルを活用することが有用です。その粒度によって、消費されるリソース（CPUサイクル、メモリ）を減らし、ユーザーに良いパフォーマンスを提供することができます。
 
 ### 例
 
-Un CMS comme WordPress ne dispose pas nativement de système de cache, mais il existe plusieurs plugins qui comblent cette lacune, les plus connus étant :
+WordPressなどのCMSは、ネイティブでキャッシュシステムを提供していない場合がありますが、このギャップを埋めるいくつかの有名なプラグインが存在します :
 
 - W3 total Cache
 - Wp Super Cache
 - Wp-rocket
 
-Dès lors avec l'un de ces plugins, les pages sont mises en cache sur le serveur et ne sont plus générées pour chaque ユーザ. Accessoirement, ce genre d'outil fournit aussi d'autres optimisations orientées WebPerf qui vont dans le sens de l'éco設計 web.
+これらのプラグインのいずれかを使用すると、サーバー上でページがキャッシュされ、それぞれのユーザーに対してページが毎回生成される必要がなくなります。付随して、このようなツールはWebPerfに焦点を当てたその他の最適化も提供しており、ウェブのエコ設計に寄与します。
 
 
 ### 検証原理
 
 | 検証項目     | 次の値以下である   |  
 |-------------------|:-------------------------:|
-|  de cache non activé |  0 |
+|  キャッシュが非アクティブの場合 |  0 |

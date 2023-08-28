@@ -1,4 +1,4 @@
-## Rendre les éléments du DOM invisibles lors de leur modification
+## DOM 要素が変更されたときに見えないようにする
 
 ### 識別子
 
@@ -24,26 +24,26 @@
 
 ### 説明
 
-Lorsqu’un élément du DOM (Document Object Model) doit être modifié par plusieurs propriétés, chaque changement de style ou de contenu va générer un repaint ou un reﬂow. Aussi est-il généralement plus économe de :
- - rendre l’élément invisible (passer la propriété display à none) (1 reﬂow) ;
- - modifier toutes les propriétés de l’élément et rendre l’élément à nou-veau visible (1 reﬂow).
+DOM（Document Object Model）の要素がいくつかのプロパティによって変更される必要がある場合、各スタイルまたは内容の変更は、再描画（repaint）またはリフロー（reﬂow）を生成します。したがって、一般的に以下のようにする方が経済的です：
+- 要素を非表示にする（displayプロパティをnoneに設定）（1回のリフロー）
+- 要素のすべてのプロパティを変更し、要素を再び表示する（1回のリフロー）
 
-Soit 2 reﬂow au maximum.
+最大で2回のリフローです。
 
 ### 例
 
-Procéder comme suit :
+以下のように行う :
 ```javascript
-var elem = document.getElementById('foo'); elem.style.display ='none'; // Génère 1 reﬂow elem.style.width	='10em';
+var elem = document.getElementById('foo'); elem.style.display ='none'; // 1回のリフローを生成 elem.style.width	='10em';
 elem.style.height ='auto';
-// ... autres changements ...
-elem.style.display ='block'; // Génère 1 reﬂow
+// ... 他の変更 ...
+elem.style.display ='block'; // 1回のリフローを生成
 ```
 
-Au final, 2 reﬂow sont nécessaires au lieu de 6 ou 7 potentiellement.
+最終的に、2回のリフローが必要で、潜在的には6または7回の代わりです。
 
 ### 検証原理
 
 | 検証項目     | 次の値以下である   |  
 |-------------------|:-------------------------:|
-|  de manipulations d'un élément du DOM sans qu'il soit rendu invisible pendant sa modification |  1 |
+|  修正中にDOMの要素を非表示にしない操作数 |  1 |

@@ -1,4 +1,4 @@
-## Réduire les accès au DOM via JavaScript
+## JavaScriptによるDOMアクセスの削減
 
 ### 識別子
 
@@ -24,17 +24,17 @@
 
 ### 説明
 
-L’accès au DOM (Document Object Model) via JavaScript est une procédure lourde qui consomme beaucoup de cycles プロセッサ  (CPU). Réduire autant que possible ces accès.
+JavaScriptを介したDOM（Document Object Model）へのアクセスは、プロセッサ（CPU）のサイクルを多く消費する重い処理です。これらのアクセスをできるだけ減らすことが重要です。
 
-Pour cela, vous pouvez assigner le nœud dans des variables que vous réutiliserez lors du ライフサイクル de l’application, ce qui évite de retraverser l’arbre à chaque manipulation du document.
+そのために、アプリケーションのライフサイクル中で再利用する変数にノードを割り当てることができます。これにより、ドキュメントを操作するたびにDOMツリーを再度走査する必要がなくなります。
 
-Il est également possible d’utiliser des bibliothèques de type « Shadow DOM », qui optimisent les modifications de l’arbre par un système de batch.
+また、「Shadow DOM」のようなライブラリを使用することで、バッチシステムによってツリーの変更が最適化されます。
 
 ### 例
 
-Pour en savoir plus, vous pouvez consulter le projet de Shadow DOM du W3C :
+詳しくは、W3CのShadow DOMプロジェクトを参照してください :
 https://w3c.github.io/webcomponents/spec/shadow/
-et les préconisations du W3C pour réduire les accès au DOM via JavaScript :
+また、JavaScriptを介したDOMへのアクセスを減らすためのW3Cの推奨ガイドラインも参照してください :
 https://www.w3.org/wiki/JavaScript_best_practices#Keep_DOM_access_to_a_minimum
 
 
@@ -42,4 +42,4 @@ https://www.w3.org/wiki/JavaScript_best_practices#Keep_DOM_access_to_a_minimum
 
 | 検証項目     | 次の値以下である   |  
 |-------------------|:-------------------------:|
-|  d'accès à un élément HTML sans passer par une variable locale | 0  |
+|  ローカル変数を経由せずにHTML要素にアクセスする回数 | 0  |

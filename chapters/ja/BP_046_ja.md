@@ -1,4 +1,4 @@
-## Valider votre code avec un Linter
+## Linterでコードを検証する
 
 ### 識別子
 
@@ -24,20 +24,18 @@
 
 ### 説明
 
-L’analyseur de qualité du code JSLint vérifie que la syntaxe JavaScript utilisée sera comprise par tous les navigateurs. 
-Le code obtenu respecte ainsi des contraintes syntaxiques qui permettent aux interpréteurs d’exécuter le code plus facilement et donc plus rapidement. Le processeur est donc sollicité moins longtemps.
+JSLintのコード品質分析器は、使用されているJavaScriptの構文がすべてのブラウザで理解されるかどうかを確認します。そのため、得られるコードは、インタープリタがコードをより簡単かつ迅速に実行できるように、構文的な制約を尊重しています。その結果、プロセッサの負荷が長時間続くことはありません。
 
-Dans des développements modernes, nous recommandons d'ajouter à vore process de livraison différents outils permettant 
-d'assurer la qualité de votre code. 
+現代の開発においては、配信プロセスにさまざまなツールを追加することをお勧めします。これにより、コードの品質を確保することができます。
 
 ### 例
 
-Nous pouvons par 例 utiliser: 
-* [ESLint](https://eslint.org/) pour le code JavaScript
-* [Stylelint](https://stylelint.io/) pour vs feuilles de styles
+例えば、次のようなツールを使うことができます：
+* [ESLint](https://eslint.org/) JavaScriptコード用
+* [Stylelint](https://stylelint.io/) スタイルシート用
 
 ### 検証原理
 
 | 検証項目     | 次の値以下である   |  
 |-------------------|:-------------------------:|
-| de lignes de code source non validées par des outils comme ESLint  | 0  |
+| ESLintなどのツールで検証されていないソースコードの行数  | 0  |

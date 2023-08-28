@@ -1,4 +1,4 @@
-## N'utilisez que les portions indispensables des librairies JavaScript et frameworks CSS
+## JavaScriptライブラリやCSSフレームワークの必要な部分のみを使用する
 
 ### 識別子
 
@@ -24,25 +24,21 @@
 
 ### 説明
 
-Les bibliothèques JavaScript telles que jQuery et les frameworks CSS prêts à l’emploi (Bootstrap, skeleton, gumby, foundation…)
-sont d’excellents outils pour réaliser rapidement des sites, car ils répondent à presque tous les besoins les plus courants. 
-Revers de la médaille, on n’en utilise généralement qu’une petite portion ; or ces frameworks et bibliothèques ne s’appuient pas tous sur une architecture modulaire, 
-ce qui contraint l’internaute à télécharger toute la librairie pour n’utiliser qu’un faible pourcentage de ses fonctionnalités.
+JavaScriptのライブラリ（例：jQuery）や即戦力となるCSSフレームワーク（Bootstrap、skeleton、gumby、foundationなど）は、サイトを素早く構築するための優れたツールであり、ほとんどの一般的なニーズに対応しています。
+しかし、これらのフレームワークとライブラリのうち一般的に使用されるのはほんの一部であり、すべてがモジュラーなアーキテクチャに基づいているわけではないため、インターネット利用者はライブラリ全体をダウンロードし、機能のほんの一部しか使用しないという問題があります。
 
-Dans la mesure du possible, il est préférable de se passer de ces bibliothèques (voir https://youmightnotneedjquery.com)
-ou de n’en conserver que les portions réellement utilisées (voir https://getbootstrap.com/customize).
+可能な限り、これらのライブラリを使用しない方が良いです（参照：https://youmightnotneedjquery.com）または、実際に使用されている部分だけを保持することです（参照：https://getbootstrap.com/customize）。
 
-Utiliser un bundler (ex: Webpack) permet de faire facilement du tree shaking, soit d'éliminer du code "mort" donc non utilisé.
+バンドラ（例：Webpack）を使用すると、簡単にツリーシェイキングを行い、使用されていない「死んだ」コードを削除することができます。
 
 ### 例
 
 ![img_1.png](../img/img_1.png)
 
-Certains frameworks, ici Bootstrap, permettent de créer des bibliothèques sur mesure qui ne contenant que les portions réellement
-utilisées par le site, ce qui réduit le poids des bibliothèques et les ressources consommées lors de l’exécution.
+一部のフレームワーク、ここではBootstrapなどは、サイトで実際に使用されている部分だけを含むカスタムライブラリを作成することができます。これにより、ライブラリのサイズと実行時に消費されるリソースが削減されます。
 
 ### 検証原理
 
 | 検証項目     | 次の値以下である   |  
 |-------------------|:-------------------------:|
-| de librairies dont des portions non indispensables sont utilisées  | 1  |
+| 不必要な部分が使用されているライブラリの数  | 1  |
