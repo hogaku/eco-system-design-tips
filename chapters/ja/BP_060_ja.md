@@ -1,4 +1,4 @@
-## Encoder les sons en dehors du CMS
+## CMS以外のサウンドをエンコードする
 
 ### 識別子
 
@@ -24,17 +24,17 @@
 
 ### 説明
 
-Adapter et optimiser les sons en dehors du site web. Cette mesure permet d’économiser beaucoup de bande passante et soulagera la CPU et la mémoire vive, car un serveur web n’est pas optimisé pour le (ré)encodage des fichiers audio.
+利用時には、ウェブサイトの外部で音声を適応させて最適化することが重要です。この手法により、大量の帯域幅を節約し、CPUとRAMを軽減することができます。なぜなら、ウェブサーバーは音声ファイルの（再）エンコーディングに最適化されていないからです。
 
 ### 例
 
-Si le son ajouté directement dans le CMS pèse 7 Mo, on économisera :
- - 7 Mo de bande passante lors de l’envoi ;
- - 100 Ko lors de l’écoute du résultat ;
- - 6,9 Mo de stockage sur le disque dur du serveur.
+CMSに直接追加された音声が7MBであれば、次のように節約できます :
+ - 送信時に7MBの帯域幅 
+ - 結果を聞く際に100KB 
+ - サーバーのハードドライブ上で6.9MBのストレージ
 
 ### 検証原理
 
 | 検証項目     | 次の値以下である   |  
 |-------------------|:-------------------------:|
-| de fichiers sonores encodés directement par le CMS  | 0  |
+| CMSによって直接エンコードされた音声ファイルの数  | 0  |

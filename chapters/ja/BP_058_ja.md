@@ -1,4 +1,4 @@
-## Optimiser et générer les médias avant importation sur un CMS
+## CMSに取り込む前のメディアの最適化および生成
 
 ### 識別子
 
@@ -24,16 +24,16 @@
 
 ### 説明
 
-Les CMS les plus connus proposent de nombreuses fonctionnalités pour optimiser (compresser, redimensionner, etc.) et générer vos médias (images, pdf, documents, audios et vidéos) souvent via l'installation de plugins ou extensions. Parfois payants, mais surtout consommateurs en terme de CPU, de mémoire vive, de ネットワーク et de stockage, ces plugins n'évitent pas l'importation du média disproportionné (taille, dimension et qualité) ou inadapté par son format par rapport à son utilisation finale.
+もっともよく知られているCMSは、多くの機能を提供しており、プラグインや拡張機能をインストールすることでメディア（画像、PDF、ドキュメント、オーディオ、ビデオ）の最適化（圧縮、リサイズなど）と生成が可能です。これらのプラグインは、時には有料であり、特にCPU、RAM、ネットワーク、およびストレージに関してリソースを大量に消費します。それにもかかわらず、これらのプラグインは、過度なサイズ、次元、品質、または最終用途に不適切なフォーマットでメディアをインポートすることを防ぐわけではありません。
 
 ### 例
 
-Quelques outils pouvant vous aider à optimiser vos médias sur votre ordinateur :
+あなたのコンピュータでメディアを最適化するのに役立ついくつかのツール:
 - [FFmpeg](https://www.ffmpeg.org/)
 - [Any Video Converter](https://www.any-video-converter.com/products/video-converter-free/)
-- [Xnview](https://www.xnview.com/fr/)
+- [Xnview](https://www.xnview.com/)
 - [Gimp](https://www.gimp.org/)
-- [Inskape](https://inkscape.org/fr/)
+- [Inskape](https://inkscape.org/)
 - [PDFedit](https://sourceforge.net/projects/pdfedit/)
 - etc.
 
@@ -41,4 +41,4 @@ Quelques outils pouvant vous aider à optimiser vos médias sur votre ordinateur
 
 | 検証項目     | 次の値以下である   |  
 |-------------------|:-------------------------:|
-| de contenus optimisés directement par le CMS   |  0 |
+| CMSによって直接最適化されたコンテンツの数   |  0 |

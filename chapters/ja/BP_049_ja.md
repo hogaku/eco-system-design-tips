@@ -1,4 +1,4 @@
-## Mettre en cache les objets souvent accédés en JavaScript
+## JavaScriptで頻繁にアクセスされるオブジェクトをキャッシュする
 
 ### 識別子
 
@@ -24,16 +24,16 @@
 
 ### 説明
 
-L’accès au DOM (Document Object Model) est coûteux en termes de ressources processeur (cycles CPU). Aussi, lorsque vous utilisez plusieurs fois le même élément du DOM depuis JavaScript, stockez sa référence dans une variable afin de ne pas parcourir à nouveau le DOM pour ce même élément.
+DOM（Document Object Model）へのアクセスは、プロセッサリソース（CPUサイクル）にとって高コストです。そのため、JavaScriptからDOMの同じ要素を複数回使用する場合は、その要素の参照を変数に保存して、DOMを再度走査する必要がないようにします。
 
 ### 例
 
-Ne pas écrire :
+次のように書かないでください :
 ```javascript
 document.getElementById('menu').property1 = 'foo'; document.getElementById('menu').property2 = 'bar';
 ```
 
-mais plutôt :
+代わりに、以下のように書くと良いです :
 ```javascript
 var mmenu = document.getElementById('menu');
 menu.property1 = 'foo';
@@ -44,4 +44,4 @@ menu.property2 = 'bar'
 
 | 検証項目     | 次の値以下である   |  
 |-------------------|:-------------------------:|
-| de données constantes (ou non volatiles) récupérés à plusieurs reprises sans être mises en cache  | 0  |
+| キャッシュされていない定数データ（または非揮発性データ）が何度も取得される  | 0  |
