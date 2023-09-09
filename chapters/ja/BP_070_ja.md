@@ -1,4 +1,4 @@
-## Supprimer tous les warning et toutes les notices
+## 警告と通知を削除する
 
 ### 識別子
 
@@ -10,7 +10,7 @@
 
 | ライフサイクル |  サードパーティ  |  担当者  |
 |:---------:|:----:|:----:|
-| 4. 制作 | データセンター | Administrateur systèmes |
+| 4. 制作 | データセンター | システム管理者 |
 
 ### 効果
 
@@ -24,11 +24,11 @@
 
 ### 説明
 
-Les warnings et notices ralentissent les serveurs d’applications tels que PHP, car ces derniers doivent retracer l’origine des erreurs et inscrire dans les différents journaux système les messages expliquant les problèmes rencontrés.
+PHPなどのアプリケーションサーバーにおいて、警告（warnings）や通知（notices）はパフォーマンスに影響を与える可能性があります。それらが発生すると、サーバーはエラーの原因を追跡し、それについての情報をシステムのログに書き込む必要があります。
 
 ### 例
 
-Éviter :
+避けるべきは、例えば以下のようなコードです :
 ```html
 <html>
     <body>
@@ -39,11 +39,11 @@ Les warnings et notices ralentissent les serveurs d’applications tels que PHP,
     </body>
 </html>
 ```
-`$_POST['ﬁrst_name']` et `$_POST['last_name']` font générer des notices car ils ne sont pas nécessairement définis.
+このコードでは $_POST['ﬁrst_name'] と $_POST['last_name'] が必ずしも定義されていないために、通知が発生します。
 
 
 ### 検証原理
 
 | 検証項目     | 次の値以下である   |  
 |-------------------|:-------------------------:|
-| de warning et notice en 制作 | 0  |
+| 制作中のwarningとnoticeの数 | 0  |

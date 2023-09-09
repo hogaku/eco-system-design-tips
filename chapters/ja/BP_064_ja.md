@@ -1,4 +1,4 @@
-## Mettre en cache les données calculées souvent utilisées
+## よく使う計算データをキャッシュする
 
 ### 識別子
 
@@ -24,17 +24,17 @@
 
 ### 説明
 
-Lorsque des calculs de valeurs ou de données sont coûteux en ressources, les mettre en cache si les valeurs demeurent inchangées, afin de ne pas réitérer ces opérations.
-Les systèmes de cache de type key-value store sont prévus pour stocker ces données. Généralement montés entièrement en mémoire vive (RAM), ils génèrent d’importantes économies de cycles CPU si les données calculées sont très souvent sollicitées.
+値やデータの計算がリソースに負担をかける場合、その値が変更されない限り、それらをキャッシュに保存して計算を繰り返さないようにすると良いです。
+key-value storeタイプのキャッシュシステムは、このようなデータを保存するために設計されています。一般的には完全にRAM（ランダムアクセスメモリ）に載せられており、計算されたデータが頻繁に要求される場合にはCPUのサイクルを大幅に節約することができます。
 
 ### 例
 
-Le nombre de contenus (ex: des produits) appartenant à une catégorie est calculé alors qu'il n'est pas mis à jour de manière très fréquente. Mettre en cache pour chaque catégorie leur nombre de contenus permet de gagner du cycle CPU.
+カテゴリーごとのコンテンツ数（例：商品数）: カテゴリーに属するコンテンツ（例：商品）の数が頻繁に更新されないが、計算が必要な場合、その数を各カテゴリーごとにキャッシュに保存することでCPUのサイクルを節約できます。
 
-Les jetons d'accès en OAuth2 sont associés à une date d'expiration. Mettre en cache le jeton et son délai d'expiration évite des appels inutiles au serveur d'autorisation et de revalider le jeton.
+OAuth2のアクセストークン: トークンとその有効期限をキャッシュに保存することで、認証サーバーへの不必要なリクエストを削減し、トークンの再認証の手間を省くことができます。
 
 ### 検証原理
 
 | 検証項目     | 次の値以下である   |  
 |-------------------|:-------------------------:|
-| de données peu volatiles, demandant un calcul et accédées plusieurs fois, non mises dans un système de cache  |  0 |
+| 変動性が少なく、計算が必要で、何度もアクセスされるがキャッシュに保存されていないデータ  |  0 |

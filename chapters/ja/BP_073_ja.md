@@ -1,4 +1,4 @@
-## Ne se connecter à une base de données que si nécessaire
+## 必要な場合のみデータベースへの接続を行う
 
 ### 識別子
 
@@ -23,27 +23,27 @@
 | プロセッサ  / RAM / ネットワーク   |
 
 ### 説明
-Quelque soit le système de base de données, l’ouverture d’une connexion est un processus coûteux en ressources pour le client et le serveur :
-*	Allocation de mémoire et I/O disque pour les buffers,
-*	Aller-retours réseaux pour le protocole de connexion,
-*	Coût CPU induit.
+データベースの種類に関わらず、接続のオープンはクライアントとサーバーの両方にとってリソースを大量に消費するプロセスです :
+*	メモリの割り当てとディスクI/Oのためのバッファ
+*	接続プロトコルに必要なネットワークの往復
+*	CPUのコスト
 
-例 :  pour Oracle, plusieurs aller-retours sont nécessaires (validation des credentials, information sur le driver, négociation de la taille des paquets optimale, ...).
-Le fait d’ouvrir et de fermer une connexion nécessite l’allocation et la désallocation de ces ressources ainsi que de nombreux échanges réseaux, à chaque fois.
+例 :  Oracleの場合、複数の往復が必要です（資格情報の検証、ドライバー情報、最適なパケットサイズの交渉など）。
+接続を開いて閉じる行為は、これらのリソースの割り当てと解放、および多数のネットワーク通信を毎回必要とします。
 
-La bonne pratique qui est usuellement utilisée est la mise en place d’un pool de connexions.
-Il permet d’optimiser la gestion des connexions ainsi que les performances. Cependant, sa configuration n’est pas forcément une opération triviale (nécessite de superviser le comportement de celui-ci pour trouver le bon paramétrage).
+通常使用される良い実践は、接続プールを設定することです。
+これにより、接続管理とパフォーマンスが最適化されます。ただし、その設定は必ずしも簡単な操作ではありません（適切な設定を見つけるためにその挙動を監視する必要があります）。
 
-Ceci dit, chaque fois que l’application peut éviter un accès à la base de données, faites-le !
+というわけで、アプリケーションがデータベースへのアクセスを避けることができるなら、そのようにしましょう！
 ### 例
 
-HikariCP est un pool de connexions JDBC solide et performant. Il est intégré dans SpringBoot.
+HikariCPは、頑健で高性能なJDBCの接続プールです。SpringBootに統合されています。
 
-Dans les cas où il n'y a pas de pool de connexion, réutiliser une connexion et ne pas ouvrir/fermer une nouvelle connexion à chaque requête.
+接続プールが存在しない場面で、一つの接続を再利用し、各リクエストで新しい接続を開いて閉じることを避けます。
 
 
 ### 検証原理
 
 | 検証項目     | 次の値以下である   |  
 |-------------------|:-------------------------:|
-|  de connexions à une base de données pour requêter, stocker une donnée non nécessaire à l'utilisation du service | 0  |
+|  サービスの使用に不必要なデータを問い合わせ、保存するためのデータベースへの接続数 | 0  |

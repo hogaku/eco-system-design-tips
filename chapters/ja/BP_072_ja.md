@@ -1,4 +1,4 @@
-## Éviter d'effectuer des requêtes SQL à l’intérieur d’une boucle
+## ループ内のSQLクエリを回避する
 
 ### 識別子
 
@@ -24,13 +24,13 @@
 
 ### 説明
 
-Les requêtes SQL à l’intérieur d’une boucle posent de gros problèmes de performance, et ce d’autant plus si le(s) serveur(s) SQL n’est (ne sont) pas sur la machine locale. En effet, ces serveurs sont optimisés pour traiter plusieurs sélections, insertions ou modifications dans une seule requête ou une seule transaction.
+ループ内でのSQLクエリは、パフォーマンスに大きな問題を引き起こします。特に、SQLサーバーがローカルマシンにない場合、この問題はさらに深刻です。これらのサーバーは、複数の選択、挿入、または修正を一つのクエリまたは一つのトランザクションで処理するために最適化されています。
 
-Mal utilisées, ces requêtes consomment inutilement des cycles CPU, de la mémoire vive et de la bande passante.
+不適切に使用された場合、これらのクエリはCPUサイクル、RAM、そして帯域幅を無駄に消費します。
 
 ### 例
 
-Ne pas écrire :
+避けるべきは、例えば以下のようなコードです :
 ```php
 foreach ($userList as $user) {
     $query = 'INSERT INTO users (ﬁrst_name,last_name) VALUES("'. $user['ﬁrst_name'] .'", "'. $user['last_ name'] .'")';
@@ -51,4 +51,4 @@ $query = 'INSERT INTO users (ﬁrst_name,last_name) VALUES'. implode(',', $userD
 
 | 検証項目     | 次の値以下である   |  
 |-------------------|:-------------------------:|
-| de requêtes SQL à l'intérieur d'une boucle  |  0 |
+|  ループ内でのSQLクエリ  |  0 |

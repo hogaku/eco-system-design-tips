@@ -1,4 +1,4 @@
-## Optimiser les requêtes aux bases de données
+## データベースクエリの最適化
 
 ### 識別子
 
@@ -24,46 +24,45 @@
 
 ### 説明
 
-La base de données est en général un composant essentiel des applications et les requêtes effectuées pour récupérer
-et enregistrer des données sont nombreuses; exécutées fréquemment, elles ont une influence importante sur la consommation de 
-ressources de la solution.
+データベースは一般的にアプリケーションの重要な構成要素であり、データを取得および保存するための多くのリクエストが頻繁に実行されます。これにより、ソリューションのリソース使用量に大きな影響を与えます。
 
-Dans cette optique il est important de prêter attention à ces requêtes et de valider, au moins pour celles qui coûtent le
-plus, qu'elles sont bien optimisées.
+この観点から、これらのリクエストに注意を払い、特にコストが高いものについては、しっかりと最適化されているかを確認することが重要です。
 
-Les pistes classiques d'optimisation sont : 
+一般的な最適化の手法は以下のとおりです : 
 
- - Ramener moins de données et se limiter au nécessaire. Par 例, pour les bases relationnelles, la clause `LIMIT` limite le nombre de lignes du résultat. Quand c'est possible, l'utiliser permet de réduire la quantité de données transférées. Le gain en performance sera d’autant plus important si les enregistrements contiennent un grand nombre de champs volumineux.
- - N'utiliser que les champs qui sont nécessaires dans les tables ou documents utilisés. Afin de ne pas transférer inutilement des données qui ne seront pas utilisées, et de ne pas utiliser des ressources du serveur de base de données et du serveur d'application pour les manipuler.
- - Ajouter des index sur les champs utilisés comme clefs. Ceux-ci dépendent de votre modèle. Leur ajout peut complètement changer les performances d'une requête. Attention, ajouter un index rend l'écriture plus longue, car il faut le mettre à jour pour les documents ajoutés, modifiés ou supprimés. Il faut le faire si on a plus de lectures que d'écritures ou si la lecture est particulièrement couteuse.
- - Utiliser les outils du système de gestion de base de données permettant d'analyser les requêtes pour identifier les points d'amélioration, `EXPLAIN` par 例 pour un SGBDR.
- - Conserver en cache le résultat des requêtes les plus couteuses, ainsi que les données qui changent peu ou jamais (données de référence).
- - Éventuellement, modifier le modèle de données pour pouvoir accéder plus facilement aux informations sans jointures (dénormalisation)
+ - 必要最低限のデータのみを取得する。例えば、リレーショナルデータベースにおいては、LIMIT句が結果の行数を制限します。可能な場合、これを使用すると、転送されるデータ量が減少します。特にレコードが多くの大きなフィールドを含む場合、パフォーマンスの向上が顕著です。
+ - 使用するテーブルやドキュメントで必要なフィールドのみを使用する。これにより、不必要なデータを転送しないで済みます。
+ - キーとして使用されるフィールドにインデックスを追加する。これはモデルに依存しますが、インデックスの追加によって、リクエストのパフォーマンスが大幅に向上する場合があります。ただし、インデックスを追加すると、書き込みが遅くなる可能性があります。
+ - データベース管理システムのツールを使用して、リクエストを分析し、改善点を特定する。例えば、RDBMSではEXPLAINが使用されます。
+ - コストが高いリクエストの結果、および少ないまたはまったく変更されないデータ（参照データ）をキャッシュに保存する。
+ - 必要に応じて、データモデルを変更して、結合なしで情報に容易にアクセスできるようにする（非正規化）。
 
 ### 例
 
-Voici un premier 例, avec la clause `LIMIT` :
+まず、LIMIT句を使った例です :
 
-Si vous ne souhaitez afficher que les 25 premiers enregistrements d’une table contenant le nom et le prénom de personnes, remplacer lors de la sélection :
+人々の名前と姓を含むテーブルから最初の25レコードのみを表示したい場合、選択時に以下のように変更します :
 ```sql
 SELECT prenom, nom FROM personnes
 ```
-par :
+を :
 ```sql
 SELECT prenom, nom FROM personnes LIMIT 0, 25
 ```
 
-Autre 例, avec la création d'un index : 
+に変更。
+
+もう1つの例は、インデックスの作成です : 
 
 ```sql
 CREATE INDEX idx_personnes_nom_prenom ON personnes(nom, prenom)
 ```
 
-Suite à cette commande, le système de gestion de base de données pourra retrouver plus rapidement les lignes de `personnes` à partir des informations (nom, prenom).
+このコマンドにより、データベース管理システムはpersonnesの行を（名前、姓）の情報からより迅速に見つけることができます。
 
 
 ### 検証原理
 
 | 検証項目     | 次の値以下である   |  
 |-------------------|:-------------------------:|
-| de requêtes peu performantes identifiées non optimisées | 0  |
+| 最適化されていない低パフォーマンスなリクエストの数 | 0  |
