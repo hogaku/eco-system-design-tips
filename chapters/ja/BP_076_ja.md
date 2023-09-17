@@ -1,4 +1,4 @@
-## Éviter le transfert d'une grande quantité de données pour réaliser un traitement
+## 大量のデータ転送を避ける
 
 ### 識別子
 
@@ -24,26 +24,26 @@
 
 ### 説明
 
-Les systèmes de gestions de base données sont conçus et optimisés pour répondre efficacement aux traitements de grandes quantités de données.
-Dans le cas de traitements avec une logique plus ou moins complexe, il est déconseillé de récupérer les données "brutes" et de réaliser toutes les opérations de calcul, de transformation ou encore d'agrégation côté serveur backend voire frontend.
+データベース管理システムは、大量のデータの処理に効果的に対応するために設計・最適化されています。
+複雑なロジックを持つ処理の場合、"生"のデータを取得し、すべての計算、変換、またはバックエンドサーバー、あるいはフロントエンド側での集約操作を実行することはおすすめしません。
 
-Ces traitements doivent plutôt être réalisés au plus près de la donnée afin de:
+これらの処理は、以下の理由でデータにできるだけ近い場所で実行されるべきです：
 
-- limiter la bande passante à cause du transfert de données non traitées
-- profiter des optimisations de la base données sur la manipulation des données
-- d'alléger le cycle CPU côté serveur backend voire frontend 
+- 処理されていないデータの転送による帯域幅の制限
+- データ操作におけるデータベースの最適化の利用
+- バックエンドサーバー、あるいはフロントエンド側のCPUサイクルの軽減
 
 ### 例
 
-Dans le cas de requêtes complexes avec un nombre important de données et de l'utilisation d'un système de gestion de base de données relationnelles (SGBDR), il est conseillé d'utiliser des procédures stockées car:
+大量のデータと関係データベース管理システム（SGBDR）の使用を伴う複雑なクエリの場合、以下の理由でストアドプロシージャを使用することが推奨されます:
 
- - une procédure stockée économise au serveur l’interprétation de la requête puisqu’elle est précompilée ;
- - une procédure stockée est moins gourmande en bande passante puisqu’il y a moins d’informations échangées entre le serveur et le client.
+- ストアドプロシージャは、事前にコンパイルされているため、サーバーのクエリ解釈の手間を省く。
+- サーバーとクライアント間で交換される情報が少ないため、ストアドプロシージャは帯域幅をあまり消費しない。
 
-Tous les SGBDR récents (SQL Server, MySQL, PostgreSQL, etc.) prennent en charge les procédures stockées.
+最近のすべてのSGBDR（SQL Server、MySQL、PostgreSQLなど）は、ストアドプロシージャをサポートしています。
 
 ### 検証原理
 
 | 検証項目     | 次の値以下である   |  
 |-------------------|:-------------------------:|
-|  de traitements avec une grande quantité de données exécutés en dehors du serveur de base de données |  1 |
+|  データベースサーバーの外部で実行される大量のデータ処理 |  1 |

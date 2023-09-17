@@ -1,4 +1,4 @@
-## Minifier les fichiers CSS, JavaScript, HTML et SVG
+## CSS、JavaScript、HTML、SVGファイルの最小化
 
 ### 識別子
 
@@ -24,20 +24,20 @@
 
 ### 説明
 
-Utiliser un outil de minification CSS, Javascript, HTML et SVG permet de supprimer les espaces inutiles, les commentaires des développeurs, les sauts de ligne, les délimiteurs de blocs et ainsi réduire leur taille.
+CSS、Javascript、HTML、SVGのミニフィケーションツールを使用すると、不要なスペース、開発者のコメント、改行、ブロック区切りを削除して、そのサイズを縮小することができます。
 
 ### 例
 
-Il existe différents outils pour minifier comme par 例:
+ミニフィケーションのためのさまざまなツールが存在します。例としては:
 
 - CSS: cssnano, csso ou clean-css 
 - Javascript: Terser, UglifyJS ou Babel-minify 
 - HTML: htmlnano, HTMLMinifier
-- SVG: SVGO, minify-xml ou équivalent
+- SVG: SVGO, minify-xml など
 
 
 ### 検証原理
 
 | 検証項目     | 次の値以下である   |  
 |-------------------|:-------------------------:|
-| de fichiers CSS, JavaScript, HTML et SVG non minifiés  | 0  |
+| ミニフィケーションされていないCSS、JavaScript、HTML、SVGのファイル数  | 0  |
