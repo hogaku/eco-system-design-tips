@@ -85,7 +85,7 @@ Webの継続的な進化を考えると、このリポジトリは定期的に�
 75. [データベースクエリの最適化](/chapters/ja/BP_075_ja.md)
 76. [大量のデータ転送を避ける](/chapters/ja/BP_076_ja.md)
 77. [CSS、JavaScript、HTML、SVGファイルの最小化](/chapters/ja/BP_077_ja.md)
-78. [CSS、JavaScript、HTML、SVGファイルを圧縮する。](/chapters/ja/BP_078_ja.md)
+78. [CSS、JavaScript、HTML、SVGファイルを圧縮する](/chapters/ja/BP_078_ja.md)
 79. [CSSとJavaScriptのファイルを結合する](/chapters/ja/BP_079_ja.md)
 80. [画像の最適化](/chapters/ja/BP_080_ja.md)
 82. [Cookieのサイズの最適化](/chapters/ja/BP_082_ja.md)
